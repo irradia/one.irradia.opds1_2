@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<atom:entry xmlns:opds="http://opds-spec.org/2010/catalog"
+       xmlns:schema="http://schema.org/"
+       xmlns:atom="http://www.w3.org/2005/Atom"
+       schema:additionalType="http://schema.org/Book">
+  <atom:id>id</atom:id>
+  <atom:title>title</atom:title>
+  <atom:author>
+    <atom:name>Author</atom:name>
+  </atom:author>
+  <atom:summary>Summary</atom:summary>
+  <atom:category label="AdultLabel"
+            scheme="http://schema.org/audience"
+            term="AdultTerm" />
+  <atom:updated>2000-01-01T00:00:00Z</atom:updated>
+  <atom:published>2000-01-01T00:00:01Z</atom:published>
+  <atom:link href="http://example.com/cover.jpg"
+        rel="http://opds-spec.org/image"
+        type="image/jpeg" />
+  <atom:link href="http://example.com/thumb.jpg"
+        rel="http://opds-spec.org/image/thumbnail"
+        type="image/jpeg" />
+  <atom:link href="http://example.com/related.xml"
+        rel="related"
+        title="Recommended Works"
+        type="application/atom+xml;profile=opds-catalog;kind=acquisition" />
+
+  <atom:link href="http://example.com/borrow"
+        rel="http://opds-spec.org/acquisition/borrow"
+        type="application/atom+xml;type=entry;profile=opds-catalog">
+    <opds:indirectAcquisition type="application/vnd.adobe.adept+xml">
+      <opds:indirectAcquisition type="application/epub+zip" />
+    </opds:indirectAcquisition>
+    <opds:indirectAcquisition type="application/atom+xml;type=entry;profile=opds-catalog">
+      <opds:indirectAcquisition type="text/html;profile=http://librarysimplified.org/terms/profiles/streaming-media" />
+    </opds:indirectAcquisition>
+    <opds:availability status="available" />
+    <opds:holds total="0" />
+    <opds:copies available="4"
+                 total="6" />
+  </atom:link>
+
+</atom:entry>

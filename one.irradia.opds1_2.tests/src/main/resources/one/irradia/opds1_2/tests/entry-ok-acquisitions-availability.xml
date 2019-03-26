@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<entry xmlns:opds="http://opds-spec.org/2010/catalog"
+       xmlns:schema="http://schema.org/"
+       xmlns="http://www.w3.org/2005/Atom"
+       schema:additionalType="http://schema.org/Book">
+  <id>id</id>
+  <title>title</title>
+  <author>
+    <name>Author</name>
+  </author>
+
+  <updated>2000-01-01T00:00:00Z</updated>
+  <published>2000-01-01T00:00:01Z</published>
+
+  <!-- Open access -->
+  <link href="http://example.com/Open-Access0"
+        type="application/epub+zip"
+        rel="http://opds-spec.org/acquisition/open-access"/>
+
+  <!-- Loanable -->
+  <link href="http://example.com/Loanable"
+        type="application/epub+zip"
+        rel="http://opds-spec.org/acquisition/borrow" />
+
+  <!-- Loaned timed -->
+  <link
+    href="http://example.com/Loaned-Timed"
+    rel="http://opds-spec.org/acquisition">
+    <opds:indirectAcquisition type="application/vnd.adobe.adept+xml">
+      <opds:indirectAcquisition type="application/epub+zip"/>
+    </opds:indirectAcquisition>
+    <opds:indirectAcquisition type="application/atom+xml;type=entry;profile=opds-catalog">
+      <opds:indirectAcquisition type="text/html;profile=http://librarysimplified.org/terms/profiles/streaming-media"/>
+    </opds:indirectAcquisition>
+    <opds:availability
+      status="available"
+      since="2000-01-01T00:00:00Z"
+      until="2010-01-01T00:00:00Z"/>
+    <opds:holds total="0"/>
+    <opds:copies available="1" total="1"/>
+  </link>
+
+  <!-- Loaned indefinitely -->
+  <link
+    href="http://example.com/Loaned-Indefinite"
+    rel="http://opds-spec.org/acquisition">
+    <opds:indirectAcquisition type="application/vnd.adobe.adept+xml">
+      <opds:indirectAcquisition type="application/epub+zip"/>
+    </opds:indirectAcquisition>
+    <opds:availability
+      status="available"
+      since="2000-01-01T00:00:00Z"/>
+    <opds:holds total="0"/>
+    <opds:copies available="1" total="1"/>
+  </link>
+
+  <!-- Loanable -->
+  <link href="http://example.com/Loanable-0"
+        rel="http://opds-spec.org/acquisition/borrow">
+    <opds:holds total="0"/>
+    <opds:copies available="1" total="1"/>
+  </link>
+
+  <!-- Holdable -->
+  <link href="http://example.com/Holdable-0"
+        rel="http://opds-spec.org/acquisition/borrow">
+    <opds:indirectAcquisition type="application/vnd.adobe.adept+xml">
+      <opds:indirectAcquisition type="application/epub+zip"/>
+    </opds:indirectAcquisition>
+    <opds:holds total="0"/>
+    <opds:copies available="0" total="1"/>
+  </link>
+
+  <!-- Held ready -->
+  <link href="http://example.com/HeldReady"
+        rel="http://opds-spec.org/acquisition/borrow">
+    <opds:indirectAcquisition type="application/vnd.adobe.adept+xml">
+      <opds:indirectAcquisition type="application/epub+zip"/>
+    </opds:indirectAcquisition>
+    <opds:availability
+      status="ready"
+      since="2000-01-01T00:00:00Z"/>
+    <opds:holds total="0"/>
+    <opds:copies available="0" total="1"/>
+  </link>
+
+  <!-- Held ready timed -->
+  <link href="http://example.com/HeldReady-Timed"
+        rel="http://opds-spec.org/acquisition/borrow">
+    <opds:indirectAcquisition type="application/vnd.adobe.adept+xml">
+      <opds:indirectAcquisition type="application/epub+zip"/>
+    </opds:indirectAcquisition>
+    <opds:availability
+      status="ready"
+      since="2000-01-01T00:00:00Z"
+      until="2010-01-01T00:00:00Z"/>
+    <opds:holds total="0"/>
+    <opds:copies available="0" total="1"/>
+  </link>
+
+  <!-- Held ready specific -->
+  <link
+    href="http://example.com/Held-Ready-Specific"
+    rel="http://opds-spec.org/acquisition/borrow">
+    <opds:indirectAcquisition type="application/vnd.adobe.adept+xml">
+      <opds:indirectAcquisition type="application/epub+zip"/>
+    </opds:indirectAcquisition>
+    <opds:availability status="ready" until="2015-08-24T00:30:24Z"/>
+    <opds:holds total="0"/>
+    <opds:copies available="0" total="2"/>
+  </link>
+
+  <!-- Held timed -->
+  <link href="http://example.com/Held-Timed"
+        rel="http://opds-spec.org/acquisition/borrow">
+    <opds:indirectAcquisition type="application/vnd.adobe.adept+xml">
+      <opds:indirectAcquisition type="application/epub+zip"/>
+    </opds:indirectAcquisition>
+    <opds:availability
+      status="reserved"
+      since="2000-01-01T00:00:00Z"
+      until="2010-01-01T00:00:00Z"/>
+    <opds:holds total="0"/>
+    <opds:copies available="0" total="1"/>
+  </link>
+
+  <!-- Held timed queued -->
+  <link href="http://example.com/Held-Timed-Queued"
+        rel="http://opds-spec.org/acquisition/borrow">
+    <opds:indirectAcquisition type="application/vnd.adobe.adept+xml">
+      <opds:indirectAcquisition type="application/epub+zip"/>
+    </opds:indirectAcquisition>
+    <opds:availability
+      status="reserved"
+      since="2000-01-01T00:00:00Z"
+      until="2010-01-01T00:00:00Z"/>
+    <opds:holds total="0" position="3"/>
+    <opds:copies available="0" total="1"/>
+  </link>
+
+  <!-- Held indefinite -->
+  <link href="http://example.com/Held-Indefinite"
+        rel="http://opds-spec.org/acquisition">
+    <opds:indirectAcquisition type="application/vnd.adobe.adept+xml">
+      <opds:indirectAcquisition type="application/epub+zip"/>
+    </opds:indirectAcquisition>
+    <opds:availability
+      status="reserved"
+      since="2000-01-01T00:00:00Z"/>
+    <opds:holds total="0"/>
+    <opds:copies available="0" total="1"/>
+  </link>
+
+  <!-- Held indefinite queued -->
+  <link href="http://example.com/Held-Indefinite-Queued"
+        rel="http://opds-spec.org/acquisition/borrow">
+    <opds:indirectAcquisition type="application/vnd.adobe.adept+xml">
+      <opds:indirectAcquisition type="application/epub+zip"/>
+    </opds:indirectAcquisition>
+    <opds:availability
+      status="reserved"
+      since="2000-01-01T00:00:00Z"/>
+    <opds:holds total="0" position="3"/>
+    <opds:copies available="0" total="1"/>
+  </link>
+
+  <!-- Buy is loanable -->
+  <link href="http://example.com/Buy-Is-Loanable"
+        rel="http://opds-spec.org/acquisition/buy" />
+
+  <!-- Subscribe is loanable -->
+  <link href="http://example.com/Subscribe-Is-Loanable"
+        rel="http://opds-spec.org/acquisition/subscribe" />
+
+  <!-- Sample is loanable -->
+  <link href="http://example.com/Sample-Is-Loanable"
+        rel="http://opds-spec.org/acquisition/sample" />
+
+  <!-- Generic is loaned -->
+  <link href="http://example.com/Generic-Is-Loaned"
+        rel="http://opds-spec.org/acquisition" />
+
+  <!-- Unavailable is holdable -->
+  <link href="http://example.com/Unavailable-Is-Holdable"
+        rel="http://opds-spec.org/acquisition/borrow">
+    <opds:availability status="unavailable" />
+  </link>
+
+  <!-- Open access is open access -->
+  <link href="http://example.com/OpenAccess-Is-OpenAccess"
+        rel="http://opds-spec.org/acquisition/open-access">
+    <opds:availability status="available" />
+  </link>
+
+  <!-- Buy is loanable -->
+  <link href="http://example.com/Buy-Available-Is-Loanable2"
+        rel="http://opds-spec.org/acquisition/buy">
+    <opds:availability status="available" />
+  </link>
+
+  <!-- Subscribe is loanable -->
+  <link href="http://example.com/Subscribe-Available-Is-Loanable2"
+        rel="http://opds-spec.org/acquisition/subscribe">
+    <opds:availability status="available" />
+  </link>
+
+  <!-- Sample is loanable -->
+  <link href="http://example.com/Sample-Available-Is-Loanable2"
+        rel="http://opds-spec.org/acquisition/sample">
+    <opds:availability status="available" />
+  </link>
+
+  <!-- Generic and nonsense is loanable -->
+  <link href="http://example.com/Generic-Nonsense-Is-Loanable"
+        rel="http://opds-spec.org/acquisition">
+    <opds:availability status="idon'tknow" />
+  </link>
+
+</entry>
