@@ -140,36 +140,7 @@ internal class OPDS12AcquisitionFeedEntryParser internal constructor(
             alternate = alternate,
             extensions = listOf())
 
-        val context = object: OPDS12AcquisitionFeedEntryExtensionParserContextType {
-          override val documentURI: URI
-            get() = this@OPDS12AcquisitionFeedEntryParser.uri
-          override val entryWithoutExtensions: OPDS12AcquisitionFeedEntry
-            get() = entry
-          override val xmlElement: Element
-            get() = this@OPDS12AcquisitionFeedEntryParser.element
-          override fun xmlElementFor(element: OPDS12ElementType): Element? {
-            return elementMap[element]
-          }
-        }
-
-        val extensions =
-          this.extensionParsers
-            .map { provider -> provider.createParser(context) }
-            .map { parser -> parser.parse() }
-
-        val extensionErrors =
-          extensions.filterIsInstance(OPDS12ParseResult.OPDS12ParseFailed::class.java)
-            .flatMap(OPDS12ParseResult.OPDS12ParseFailed<*>::errors)
-
-        if (extensionErrors.isEmpty()) {
-          val extensionsOK =
-            extensions.flatMap(this::extensionValues)
-
-          OPDS12ParseResult.OPDS12ParseSucceeded(entry.copy(extensions = extensionsOK))
-        } else {
-          this.errors.addAll(extensionErrors)
-          OPDS12ParseResult.OPDS12ParseFailed(this.errors.toList())
-        }
+        this.runExtensionParsers(entry)
       } else {
         OPDS12ParseResult.OPDS12ParseFailed(this.errors.toList())
       }
@@ -193,6 +164,42 @@ internal class OPDS12AcquisitionFeedEntryParser internal constructor(
 
       this.errors.add(error)
       OPDS12ParseResult.OPDS12ParseFailed(errors = this.errors.toList())
+    }
+  }
+
+  private fun runExtensionParsers(
+    entry: OPDS12AcquisitionFeedEntry): OPDS12ParseResult<OPDS12AcquisitionFeedEntry> {
+
+    val context = object : OPDS12AcquisitionFeedEntryExtensionParserContextType {
+      override val documentURI: URI
+        get() = this@OPDS12AcquisitionFeedEntryParser.uri
+      override val entryWithoutExtensions: OPDS12AcquisitionFeedEntry
+        get() = entry
+      override val xmlElement: Element
+        get() = this@OPDS12AcquisitionFeedEntryParser.element
+
+      override fun xmlElementFor(element: OPDS12ElementType): Element? {
+        return elementMap[element]
+      }
+    }
+
+    val extensions =
+      this.extensionParsers
+        .map { provider -> provider.createParser(context) }
+        .map { parser -> parser.parse() }
+
+    val extensionErrors =
+      extensions.filterIsInstance(OPDS12ParseResult.OPDS12ParseFailed::class.java)
+        .flatMap(OPDS12ParseResult.OPDS12ParseFailed<*>::errors)
+
+    return if (extensionErrors.isEmpty()) {
+      val extensionsOK =
+        extensions.flatMap(this::extensionValues)
+
+      OPDS12ParseResult.OPDS12ParseSucceeded(entry.copy(extensions = extensionsOK))
+    } else {
+      this.errors.addAll(extensionErrors)
+      OPDS12ParseResult.OPDS12ParseFailed(this.errors.toList())
     }
   }
 
