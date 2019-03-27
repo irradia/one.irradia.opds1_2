@@ -10,6 +10,15 @@ one.irradia.opds1_2
 
 ![opds1_2](./src/site/resources/opds1_2.jpg?raw=true)
 
+## Features
+
+* Efficient and strict parsing of [OPDS 1.2](https://specs.opds.io/opds-1.2.html) feeds
+* Extensible parser for consuming extension data inserted into feeds in a type-safe manner
+* Explicit support for registering parser extensions via [ServiceLoader](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html) 
+* Parsed feeds exposed as immutable and persistent data types for correctness and thread-safety
+* ISC license
+* High coverage automated test suite
+
 ## Building
 
 Install the Android SDK.
