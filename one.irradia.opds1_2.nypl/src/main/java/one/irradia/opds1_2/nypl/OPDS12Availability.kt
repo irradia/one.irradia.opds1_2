@@ -7,11 +7,17 @@ import java.net.URI
 
 /**
  * Availability information for an OPDS entry.
+ *
+ * @see "https://github.com/NYPL-Simplified/Simplified/wiki/OPDS-For-Library-Patrons"
  */
 
 sealed class OPDS12Availability : OPDS12ExtensionValueType {
 
   companion object {
+
+    /**
+     * The type URI for the extension value.
+     */
 
     val TYPE_URI: URI =
       URI.create("urn:one.irradia.opds1_2.nypl.OPDS12Availability")
@@ -33,9 +39,29 @@ sealed class OPDS12Availability : OPDS12ExtensionValueType {
 
   data class Held(
     override val acquisition: OPDS12Acquisition,
+
+    /**
+     * The reader's current position in the queue.
+     */
+
     val position: Int?,
+
+    /**
+     * The date the reader entered the queue.
+     */
+
     val startDate: Instant?,
+
+    /**
+     * The estimated time at which the hold will become available.
+     */
+
     val endDate: Instant?,
+
+    /**
+     * The revocation URI
+     */
+
     val revokeURI: URI?)
     : OPDS12Availability()
 
@@ -45,7 +71,17 @@ sealed class OPDS12Availability : OPDS12ExtensionValueType {
 
   data class HeldReady(
     override val acquisition: OPDS12Acquisition,
+
+    /**
+     * The estimated time at which the hold will become unavailable.
+     */
+
     val endDate: Instant?,
+
+    /**
+     * The revocation URI
+     */
+
     val revokeURI: URI?)
     : OPDS12Availability()
 
@@ -71,8 +107,23 @@ sealed class OPDS12Availability : OPDS12ExtensionValueType {
 
   data class Loaned(
     override val acquisition: OPDS12Acquisition,
+
+    /**
+     * The creation time of the loan.
+     */
+
     val startDate: Instant?,
+
+    /**
+     * The estimated time at which the loan will expire.
+     */
+
     val endDate: Instant?,
+
+    /**
+     * The revocation URI
+     */
+
     val revokeURI: URI?)
     : OPDS12Availability()
 
@@ -91,6 +142,11 @@ sealed class OPDS12Availability : OPDS12ExtensionValueType {
 
   data class Revoked(
     override val acquisition: OPDS12Acquisition,
+
+    /**
+     * The revocation URI
+     */
+
     val revokeURI: URI)
     : OPDS12Availability()
 }

@@ -6,7 +6,13 @@ import java.net.URI
  * An acquisition relation.
  */
 
-enum class OPDS12AcquisitionRelation(val uri: URI) {
+enum class OPDS12AcquisitionRelation(
+
+  /**
+   * The URI naming the relation.
+   */
+
+  val uri: URI) {
 
   /**
    * An item can be borrowed.

@@ -22,6 +22,11 @@ import javax.xml.parsers.SAXParserFactory
 
 object OPDS12XMLReaderLexical {
 
+  /**
+   * Read an XML file from the given stream, parsing it and inserting lexical information
+   * into each element.
+   */
+
   @JvmStatic
   @Throws(IOException::class, SAXException::class)
   fun readXML(source: URI, inputStream: InputStream): Document {

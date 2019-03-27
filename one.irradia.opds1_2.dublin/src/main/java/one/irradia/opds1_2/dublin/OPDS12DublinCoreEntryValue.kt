@@ -15,6 +15,11 @@ sealed class OPDS12DublinCoreEntryValue : OPDS12ExtensionValueType {
    */
 
   data class Publisher(
+
+    /**
+     * The publisher name.
+     */
+
     val name: String)
     : OPDS12DublinCoreEntryValue() {
 
@@ -27,6 +32,11 @@ sealed class OPDS12DublinCoreEntryValue : OPDS12ExtensionValueType {
    */
 
   data class Issued(
+
+    /**
+     * The issue date.
+     */
+
     val date: Instant)
     : OPDS12DublinCoreEntryValue() {
 
@@ -39,6 +49,11 @@ sealed class OPDS12DublinCoreEntryValue : OPDS12ExtensionValueType {
    */
 
   data class Language(
+
+    /**
+     * The language code.
+     */
+
     val code: String)
     : OPDS12DublinCoreEntryValue() {
 

@@ -2,6 +2,10 @@ package one.irradia.opds1_2.api
 
 import java.net.URI
 
+/**
+ * Identifiers for OPDS and related schemas.
+ */
+
 object OPDS12Identifiers {
 
   val ATOM_URI =

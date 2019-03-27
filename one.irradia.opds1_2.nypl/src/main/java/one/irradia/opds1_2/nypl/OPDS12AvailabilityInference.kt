@@ -19,6 +19,10 @@ import org.w3c.dom.Element
 
 object OPDS12AvailabilityInference {
 
+  /**
+   * Determine the availability of the given element.
+   */
+
   fun availabilityOf(
     element: Element,
     xmlProcessor: OPDS12XMLProcessor,

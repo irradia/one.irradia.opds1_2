@@ -18,7 +18,6 @@ import one.irradia.opds1_2.lexical.OPDS12LexicalPosition
 import one.irradia.opds1_2.parser.api.OPDS12AcquisitionFeedEntryParserType
 import one.irradia.opds1_2.parser.extension.spi.OPDS12AcquisitionFeedEntryExtensionParserContextType
 import one.irradia.opds1_2.parser.extension.spi.OPDS12AcquisitionFeedEntryExtensionParserProviderType
-import org.slf4j.LoggerFactory
 import org.w3c.dom.Element
 import org.xml.sax.SAXParseException
 import java.net.URI
@@ -74,8 +73,7 @@ internal class OPDS12AcquisitionFeedEntryParser internal constructor(
 
       val categories =
         this.xmlProcessor.allChildElementsWithName(this.element, ATOM_URI, "category")
-          .map { element -> this.categoryOf(element) }
-          .filterNotNull()
+          .mapNotNull { element -> this.categoryOf(element) }
 
       val links =
         this.xmlProcessor.allChildElementsWithName(this.element, ATOM_URI, "link")

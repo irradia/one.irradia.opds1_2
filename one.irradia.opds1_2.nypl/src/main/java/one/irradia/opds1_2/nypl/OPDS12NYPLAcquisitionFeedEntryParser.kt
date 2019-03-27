@@ -7,7 +7,13 @@ import one.irradia.opds1_2.commons.OPDS12XMLProcessor
 import one.irradia.opds1_2.parser.extension.spi.OPDS12AcquisitionFeedEntryExtensionParserContextType
 import one.irradia.opds1_2.parser.extension.spi.OPDS12AcquisitionFeedEntryExtensionParserType
 
-class OPDS12NYPLAcquisitionFeedEntryParser(
+/**
+ * A feed entry parser for NYPL extensions.
+ *
+ * The parser produces values of type [OPDS12Availability].
+ */
+
+internal class OPDS12NYPLAcquisitionFeedEntryParser(
   private val context: OPDS12AcquisitionFeedEntryExtensionParserContextType)
   : OPDS12AcquisitionFeedEntryExtensionParserType {
 

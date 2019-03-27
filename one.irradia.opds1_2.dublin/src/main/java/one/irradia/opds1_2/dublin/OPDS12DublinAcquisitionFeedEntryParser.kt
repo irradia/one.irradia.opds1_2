@@ -8,7 +8,13 @@ import one.irradia.opds1_2.parser.extension.spi.OPDS12AcquisitionFeedEntryExtens
 import one.irradia.opds1_2.parser.extension.spi.OPDS12AcquisitionFeedEntryExtensionParserType
 import java.net.URI
 
-class OPDS12DublinAcquisitionFeedEntryParser(
+/**
+ * A feed entry parser for Dublin Core extensions.
+ *
+ * The parser produces values of type [OPDS12DublinCoreEntryValue].
+ */
+
+internal class OPDS12DublinAcquisitionFeedEntryParser(
   private val context: OPDS12AcquisitionFeedEntryExtensionParserContextType)
   : OPDS12AcquisitionFeedEntryExtensionParserType {
 

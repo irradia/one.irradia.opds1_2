@@ -10,9 +10,28 @@ import org.w3c.dom.Element
 import java.net.URI
 import java.net.URISyntaxException
 
+/**
+ * A class for conveniently extracting data from XML.
+ */
+
 class OPDS12XMLProcessor(
+
+  /**
+   * The URI of the document being processed.
+   */
+
   val currentDocument: URI,
+
+  /**
+   * The name of the producer currently using the processor.
+   */
+
   val producer: String,
+
+  /**
+   * A function used to publish parse errors as they occur.
+   */
+
   val errors: (OPDS12XMLParseError) -> Unit) {
 
   private val defaultLexical =

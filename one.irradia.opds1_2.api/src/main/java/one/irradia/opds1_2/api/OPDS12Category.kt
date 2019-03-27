@@ -5,6 +5,21 @@ package one.irradia.opds1_2.api
  */
 
 data class OPDS12Category(
+
+  /**
+   * The categorization scheme
+   */
+
   val scheme: String,
+
+  /**
+   * The category
+   */
+
   val term: String,
-  val label: String?): OPDS12ElementType
+
+  /**
+   * A human-readable label for display
+   */
+
+  val label: String): OPDS12ElementType
