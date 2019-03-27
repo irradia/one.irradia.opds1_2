@@ -100,6 +100,13 @@ class OPDS12XMLProcessor(
     }
   }
 
+  fun optionalElementText(
+    element: Element,
+    namespace: URI,
+    name: String): String? {
+    return firstChildElementTextWithName(element, namespace, name)
+  }
+
   /**
    * Find the first child element with the given name and namespace, and try to parse a timestamp
    * if it exists.
@@ -113,21 +120,21 @@ class OPDS12XMLProcessor(
     name: String): Instant? {
 
     val received =
-      firstChildElementTextWithName(element, namespace, name)
+      firstChildElementWithName(element, namespace, name)
 
     return if (received == null) {
       null
     } else {
       try {
-        Instant.parse(received, ISODateTimeFormat.dateTimeParser())
+        Instant.parse(received.textContent, ISODateTimeFormat.dateTimeParser())
       } catch (e: IllegalArgumentException) {
         val lexical = this.obtainLexicalInfo(element)
         this.errors.invoke(OPDS12XMLParseError(
           producer = this.producer,
           lexical = lexical,
           message = """Malformed time value
-  Expected: A valid time in element '${element.tagName}'
-  Received: $received
+  Expected: A valid time in element '${received.tagName}'
+  Received: ${received.textContent}
   Source:   ${lexical.source}:${lexical.line}:${lexical.column}
             """.trimMargin(),
           exception = e))

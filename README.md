@@ -61,6 +61,21 @@ implementation "one.irradia.opds1_2:one.irradia.opds1_2.parser.vanilla:${LATEST_
 Library code is encouraged to depend only upon the API package in order to give consumers
 the freedom to use other implementations of the API if desired.
 
+## Modules
+
+|Module|Description|
+|------|-----------|
+| [one.irradia.opds1_2.api](https://github.com/irradia/one.irradia.opds1_2/tree/develop/one.irradia.opds1_2.api) | Core API
+| [one.irradia.opds1_2.commons](https://github.com/irradia/one.irradia.opds1_2/tree/develop/one.irradia.opds1_2.commons) | Common code shared between implementations
+| [one.irradia.opds1_2.dublin](https://github.com/irradia/one.irradia.opds1_2/tree/develop/one.irradia.opds1_2.dublin) | Dublin Core extensions
+| [one.irradia.opds1_2.lexical](https://github.com/irradia/one.irradia.opds1_2/tree/develop/one.irradia.opds1_2.lexical) | Lexical types used by parsers
+| [one.irradia.opds1_2.nypl](https://github.com/irradia/one.irradia.opds1_2/tree/develop/one.irradia.opds1_2.nypl) | Functionality specific to NYPL OPDS feeds
+| [one.irradia.opds1_2.parser.api](https://github.com/irradia/one.irradia.opds1_2/tree/develop/one.irradia.opds1_2.parser.api) | Parser API
+| [one.irradia.opds1_2.parser.extension.spi](https://github.com/irradia/one.irradia.opds1_2/tree/develop/one.irradia.opds1_2.parser.extension.spi) | Parser extension SPI
+| [one.irradia.opds1_2.tests.device](https://github.com/irradia/one.irradia.opds1_2/tree/develop/one.irradia.opds1_2.tests.device) | Unit tests that execute on real or emulated devices
+| [one.irradia.opds1_2.tests](https://github.com/irradia/one.irradia.opds1_2/tree/develop/one.irradia.opds1_2.tests) | Unit tests that can execute without needing a real or emulated device
+| [one.irradia.opds1_2.vanilla](https://github.com/irradia/one.irradia.opds1_2/tree/develop/one.irradia.opds1_2.vanilla) | Vanilla parser implementation
+
 ## Publishing Releases
 
 Releases are published to Maven Central with the following invocation:

@@ -16,27 +16,11 @@
 
 dependencies {
   api project(":one.irradia.opds1_2.api")
-  api project(":one.irradia.opds1_2.dublin")
-  api project(":one.irradia.opds1_2.nypl")
-  api project(":one.irradia.opds1_2.parser.api")
-  api project(":one.irradia.opds1_2.parser.vanilla")
+  api project(":one.irradia.opds1_2.parser.extension.spi")
+  api project(":one.irradia.opds1_2.commons")
 }
 
 configurations {
-  api.extendsFrom dependencyJUnit
-  api.extendsFrom dependencySLF4J
-  api.extendsFrom dependencyIrradiaMimeImpl
-
-  implementation.extendsFrom dependencyKotlinStdlib
-
-  testImplementation.extendsFrom dependencyLogback
-}
-
-/*
- * Log unit test executions.
- */
-
-tasks.matching {it instanceof Test}.all {
-  testLogging.events = ["failed", "passed", "skipped"]
-  testLogging.exceptionFormat = "full"
+  implementation.extendsFrom dependencyIrradiaMimeImpl
+  implementation.extendsFrom dependencySLF4J
 }
