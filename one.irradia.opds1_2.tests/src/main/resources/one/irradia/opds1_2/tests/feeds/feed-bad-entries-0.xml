@@ -1,0 +1,7 @@
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xml:base="https://bookserver.archive.org/">
+  <id>x</id>
+  <entry />
+  <entry />
+  <entry />
+</feed>

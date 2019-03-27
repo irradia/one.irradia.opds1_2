@@ -1,7 +1,7 @@
 package one.irradia.opds1_2.tests
 
-import one.irradia.opds1_2.parser.api.OPDS12AcquisitionFeedEntryParserProviderType
-import one.irradia.opds1_2.parser.extension.spi.OPDS12AcquisitionFeedEntryExtensionParserProviderType
+import one.irradia.opds1_2.parser.api.OPDS12FeedEntryParserProviderType
+import one.irradia.opds1_2.parser.extension.spi.OPDS12FeedEntryExtensionParserProviderType
 import org.junit.Assert
 import org.junit.Test
 import org.slf4j.Logger
@@ -14,7 +14,7 @@ abstract class ServicesContract {
   @Test
   fun testOPDS12AcquisitionFeedEntryParserProviderType() {
     val loader =
-      ServiceLoader.load(OPDS12AcquisitionFeedEntryParserProviderType::class.java)
+      ServiceLoader.load(OPDS12FeedEntryParserProviderType::class.java)
     val services =
       loader.iterator().asSequence().toList()
 
@@ -26,7 +26,7 @@ abstract class ServicesContract {
   @Test
   fun testExtensionParsers0() {
     val loader =
-      ServiceLoader.load(OPDS12AcquisitionFeedEntryExtensionParserProviderType::class.java)
+      ServiceLoader.load(OPDS12FeedEntryExtensionParserProviderType::class.java)
     val services =
       loader.iterator().asSequence().toList()
 

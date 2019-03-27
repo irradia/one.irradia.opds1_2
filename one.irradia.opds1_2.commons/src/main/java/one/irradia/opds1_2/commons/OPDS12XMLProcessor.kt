@@ -127,6 +127,38 @@ class OPDS12XMLProcessor(
   }
 
   /**
+   * Retrieve the text content of the named element, or return `null` if the element
+   * does not exist.
+   */
+
+  fun optionalElementURI(
+    element: Element,
+    namespace: URI,
+    name: String): URI? {
+
+    val received = firstChildElementTextWithName(element, namespace, name)
+    return if (received == null) {
+      null
+    } else {
+      try {
+        URI(received)
+      } catch (e: URISyntaxException) {
+        val lexical = this.obtainLexicalInfo(element)
+        this.errors.invoke(OPDS12XMLParseError(
+          producer = this.producer,
+          lexical = lexical,
+          message = """Malformed URI value
+  Expected: A valid URI in element '${element.tagName}'
+  Received: ${received}
+  Source:   ${lexical.source}:${lexical.line}:${lexical.column}
+            """.trimMargin(),
+          exception = e))
+        null
+      }
+    }
+  }
+
+  /**
    * Find the first child element with the given name and namespace, and try to parse a timestamp
    * if it exists.
    *
@@ -215,6 +247,39 @@ class OPDS12XMLProcessor(
   }
 
   /**
+   * Find the first child element with the given name and namespace and parse the contents as a URI.
+   *
+   * @return The element
+   */
+
+  fun requireElementURI(
+    element: Element,
+    namespace: URI,
+    name: String): URI? {
+
+    val received = requireElement(element, namespace, name)?.textContent
+    return if (received == null) {
+      null
+    } else {
+      try {
+        URI(received)
+      } catch (e: URISyntaxException) {
+        val lexical = this.obtainLexicalInfo(element)
+        this.errors.invoke(OPDS12XMLParseError(
+          producer = this.producer,
+          lexical = lexical,
+          message = """Malformed URI in element
+  Expected: A valid URI for element '${element.tagName}'
+  Received: $received
+  Source:   ${lexical.source}:${lexical.line}:${lexical.column}
+            """.trimMargin(),
+          exception = e))
+        null
+      }
+    }
+  }
+
+  /**
    * @return The value of the named attribute
    */
 
@@ -292,6 +357,37 @@ class OPDS12XMLProcessor(
         lexical = lexical,
         message = """Malformed URI in attribute
     Expected: A valid URI for attribute $name in element '${element.tagName}'
+    Received: $text
+    Source:   ${lexical.source}:${lexical.line}:${lexical.column}
+            """.trimMargin(),
+        exception = e))
+      null
+    }
+  }
+
+  /**
+   * @return The value of the named attribute
+   */
+
+  fun optionalAttributeURI(
+    element: Element,
+    namespace: URI,
+    name: String): URI? {
+
+    val text = optionalAttribute(element, namespace, name)
+    return try {
+      if (text != null) {
+        URI(text)
+      } else {
+        null
+      }
+    } catch (e: URISyntaxException) {
+      val lexical = obtainLexicalInfo(element)
+      this.errors.invoke(OPDS12XMLParseError(
+        producer = this.producer,
+        lexical = lexical,
+        message = """Malformed URI in attribute
+    Expected: A valid URI for attribute $namespace:$name in element '${element.tagName}'
     Received: $text
     Source:   ${lexical.source}:${lexical.line}:${lexical.column}
             """.trimMargin(),
@@ -426,6 +522,18 @@ class OPDS12XMLProcessor(
 
   fun optionalAttribute(element: Element, name: String): String? {
     val text = element.getAttribute(name)
+    if (text != null && text.isEmpty()) {
+      return null
+    }
+    return text
+  }
+
+  /**
+   * @return The value of the named attribute
+   */
+
+  fun optionalAttribute(element: Element, namespace: URI, name: String): String? {
+    val text = element.getAttributeNS(namespace.toString(), name)
     if (text != null && text.isEmpty()) {
       return null
     }

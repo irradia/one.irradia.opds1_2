@@ -24,4 +24,4 @@ data class OPDS12Group(
    * The acquisition feed entries.
    */
 
-  val entries: List<OPDS12AcquisitionFeedEntry>): OPDS12ElementType
+  val entries: List<OPDS12FeedEntry>): OPDS12ElementType
