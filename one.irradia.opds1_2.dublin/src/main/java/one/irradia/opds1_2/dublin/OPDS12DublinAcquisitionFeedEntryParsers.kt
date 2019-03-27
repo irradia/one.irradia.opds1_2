@@ -7,6 +7,8 @@ import one.irradia.opds1_2.parser.extension.spi.OPDS12AcquisitionFeedEntryExtens
 /**
  * A parser for Dublin Core extensions.
  *
+ * The parser produces values of type [OPDS12DublinCoreEntryValue].
+ *
  * Note: This class must have a no-argument public constructor to work with [java.util.ServiceLoader].
  */
 
