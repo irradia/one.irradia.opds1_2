@@ -102,12 +102,22 @@ class OPDS12XMLProcessor(
     }
   }
 
+  /**
+   * Retrieve the text content of the named element, or return an empty string if the element
+   * does not exist.
+   */
+
   fun optionalElementTextOrEmpty(
     element: Element,
     namespace: URI,
     name: String): String {
     return firstChildElementTextWithName(element, namespace, name) ?: ""
   }
+
+  /**
+   * Retrieve the text content of the named element, or return `null` if the element
+   * does not exist.
+   */
 
   fun optionalElementText(
     element: Element,
@@ -152,7 +162,7 @@ class OPDS12XMLProcessor(
     }
   }
 
-  /*
+  /**
    * If `element` has an attribute named `attributeName` with value `attributeValue`, then extract
    * the value of the attribute named `attributeExtract` and try to parse it as a URI.
    */
