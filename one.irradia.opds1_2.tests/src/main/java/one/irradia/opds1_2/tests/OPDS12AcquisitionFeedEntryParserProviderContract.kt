@@ -83,7 +83,7 @@ abstract class OPDS12AcquisitionFeedEntryParserProviderContract {
     val result = parser.parse()
     this.dumpParseResult(result)
     val failure = result as OPDS12ParseResult.OPDS12ParseFailed
-    Assert.assertEquals(3, failure.errors.size)
+    Assert.assertEquals(2, failure.errors.size)
 
     this.run {
       val error = result.errors[0]
@@ -99,7 +99,7 @@ abstract class OPDS12AcquisitionFeedEntryParserProviderContract {
     val result = parser.parse()
     this.dumpParseResult(result)
     val failure = result as OPDS12ParseResult.OPDS12ParseFailed
-    Assert.assertEquals(3, failure.errors.size)
+    Assert.assertEquals(2, failure.errors.size)
 
     this.run {
       val error = result.errors[0]

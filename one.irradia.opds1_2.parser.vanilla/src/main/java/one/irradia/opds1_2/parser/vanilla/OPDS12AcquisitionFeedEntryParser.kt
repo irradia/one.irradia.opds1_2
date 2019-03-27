@@ -59,7 +59,7 @@ internal class OPDS12AcquisitionFeedEntryParser internal constructor(
       this.xmlProcessor.requireElementIs(this.element, ATOM_URI, "entry")
 
       val title =
-        this.xmlProcessor.requireElementText(this.element, ATOM_URI, "title")
+        this.xmlProcessor.optionalElementTextOrEmpty(this.element, ATOM_URI, "title")
       val id =
         this.xmlProcessor.requireElementText(this.element, ATOM_URI, "id")
       val summary =
