@@ -19,7 +19,7 @@ abstract class ServicesContract {
 
     val logger = this.logger()
     services.forEach { service -> logger.debug("service: {}", service) }
-    Assert.assertTrue("At least one service exists", services.size > 0)
+    Assert.assertTrue("At least one service exists", services.isNotEmpty())
   }
 
 }

@@ -21,7 +21,7 @@ abstract class OPDS12AcquisitionFeedEntryNYPLParserProviderContract {
   abstract fun parsers(): OPDS12AcquisitionFeedEntryParserProviderType
 
   private fun resource(name: String): InputStream {
-    val path = "/one/irradia/opds1_2/tests/" + name
+    val path = "/one/irradia/opds1_2/tests/$name"
     val url =
       OPDS12AcquisitionFeedEntryNYPLParserProviderContract::class.java.getResource(path)
         ?: throw FileNotFoundException("No such resource: $path")

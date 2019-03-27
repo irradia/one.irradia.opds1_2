@@ -42,10 +42,10 @@ class OPDS12NYPLAcquisitionFeedEntryParser(
       }
     }
 
-    if (this.errors.isEmpty()) {
-      return OPDS12ParseResult.OPDS12ParseSucceeded(this.values.toList())
+    return if (this.errors.isEmpty()) {
+      OPDS12ParseResult.OPDS12ParseSucceeded(this.values.toList())
     } else {
-      return OPDS12ParseResult.OPDS12ParseFailed(this.errors.toList())
+      OPDS12ParseResult.OPDS12ParseFailed(this.errors.toList())
     }
   }
 }

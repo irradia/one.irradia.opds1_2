@@ -1,10 +1,10 @@
 package one.irradia.opds1_2.tests
 
-import one.irradia.opds1_2.api.OPDS12Acquisition
-import one.irradia.opds1_2.parser.api.OPDS12AcquisitionFeedEntryParserProviderType
 import one.irradia.opds1_2.api.OPDS12ParseResult
 import one.irradia.opds1_2.dublin.OPDS12DublinAcquisitionFeedEntryParsers
 import one.irradia.opds1_2.dublin.OPDS12DublinCoreEntryValue
+import one.irradia.opds1_2.parser.api.OPDS12AcquisitionFeedEntryParserProviderType
+import org.joda.time.Instant
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
@@ -12,7 +12,6 @@ import org.slf4j.Logger
 import java.io.FileNotFoundException
 import java.io.InputStream
 import java.net.URI
-import org.joda.time.Instant
 
 abstract class OPDS12AcquisitionFeedEntryDublinParserProviderContract {
 
@@ -21,7 +20,7 @@ abstract class OPDS12AcquisitionFeedEntryDublinParserProviderContract {
   abstract fun parsers(): OPDS12AcquisitionFeedEntryParserProviderType
 
   private fun resource(name: String): InputStream {
-    val path = "/one/irradia/opds1_2/tests/" + name
+    val path = "/one/irradia/opds1_2/tests/$name"
     val url =
       OPDS12AcquisitionFeedEntryDublinParserProviderContract::class.java.getResource(path)
         ?: throw FileNotFoundException("No such resource: $path")

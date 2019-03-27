@@ -1,7 +1,6 @@
 package one.irradia.opds1_2.parser.vanilla
 
 import com.google.common.base.Preconditions
-import one.irradia.opds1_2.lexical.OPDS12LexicalPosition
 import one.irradia.opds1_2.lexical.OPDS12LexicalPosition.Companion.XML_TREE_LEXICAL_KEY
 import org.w3c.dom.Document
 import org.w3c.dom.Element

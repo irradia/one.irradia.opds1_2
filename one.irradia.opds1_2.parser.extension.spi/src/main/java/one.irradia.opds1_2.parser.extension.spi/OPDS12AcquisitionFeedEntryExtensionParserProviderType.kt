@@ -7,10 +7,7 @@ package one.irradia.opds1_2.parser.extension.spi
 interface OPDS12AcquisitionFeedEntryExtensionParserProviderType {
 
   /**
-   * @param documentURI The URI of the owning document
-   * @param entry The parsed entry minus any extensions
-   * @param elementMap The elements that were used to construct a particular feed element
-   * @param element The raw parsed XML element
+   * @param context The parser context
    *
    * Create a parser.
    */

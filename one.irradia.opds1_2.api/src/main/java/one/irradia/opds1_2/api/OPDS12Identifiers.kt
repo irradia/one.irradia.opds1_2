@@ -19,7 +19,7 @@ object OPDS12Identifiers {
   val FACET_URI =
     URI.create("http://opds-spec.org/facet")
 
-  val GROUP_REL_TEXT =
+  const val GROUP_REL_TEXT =
     "collection"
 
   val OPDS_URI =
@@ -28,13 +28,13 @@ object OPDS12Identifiers {
   val THUMBNAIL_URI =
     URI.create("http://opds-spec.org/image/thumbnail")
 
-  val ISSUES_REL_TEXT =
+  const val ISSUES_REL_TEXT =
     "issues"
 
-  val ALTERNATE_REL_TEXT =
+  const val ALTERNATE_REL_TEXT =
     "alternate"
 
-  val RELATED_REL_TEXT =
+  const val RELATED_REL_TEXT =
     "related"
 
   val IMAGE_URI =

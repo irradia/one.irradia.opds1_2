@@ -19,10 +19,8 @@ class OPDS12XMLProcessor(
     OPDS12LexicalPosition(this.currentDocument, -1, -1)
 
   private fun obtainLexicalInfo(element: Element): one.irradia.opds1_2.lexical.OPDS12LexicalPosition {
-    val lexical =
-      (element.getUserData(XML_TREE_LEXICAL_KEY) as one.irradia.opds1_2.lexical.OPDS12LexicalPosition?)
-        ?: this.defaultLexical
-    return lexical
+    return (element.getUserData(XML_TREE_LEXICAL_KEY) as OPDS12LexicalPosition?)
+      ?: defaultLexical
   }
 
   /**
@@ -43,7 +41,7 @@ class OPDS12XMLProcessor(
         producer = this.producer,
         lexical = lexical,
         message = """Unexpected element
-  Expected: An element ${name} in namespace '${namespace}'
+  Expected: An element $name in namespace '$namespace'
   Received: An element '${element.tagName}' in namespace '$namespaceReceived'
   Source:   ${lexical.source}:${lexical.line}:${lexical.column}
 """.trimMargin(),
@@ -89,15 +87,7 @@ class OPDS12XMLProcessor(
     element: Element,
     namespace: URI,
     name: String): String {
-
-    val received =
-      firstChildElementTextWithName(element, namespace, name)
-
-    return if (received == null) {
-      ""
-    } else {
-      received
-    }
+    return firstChildElementTextWithName(element, namespace, name) ?: ""
   }
 
   fun optionalElementText(
@@ -172,7 +162,7 @@ class OPDS12XMLProcessor(
           producer = this.producer,
           lexical = lexical,
           message = """Malformed URI in attribute
-  Expected: A valid URI for attribute $attributeExtract in element '${element.tagName}' with '${attributeName}'='${attributeValue}'
+  Expected: A valid URI for attribute $attributeExtract in element '${element.tagName}' with '$attributeName'='$attributeValue'
   Received: $received
   Source:   ${lexical.source}:${lexical.line}:${lexical.column}
             """.trimMargin(),

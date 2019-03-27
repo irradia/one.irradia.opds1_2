@@ -30,7 +30,6 @@ internal class OPDS12AcquisitionFeedEntryParser internal constructor(
   private val extensionParsers: List<OPDS12AcquisitionFeedEntryExtensionParserProviderType>)
   : OPDS12AcquisitionFeedEntryParserType {
 
-  private val logger = LoggerFactory.getLogger(OPDS12AcquisitionFeedEntryParser::class.java)
   private val errors = mutableListOf<OPDS12ParseResult.OPDS12ParseError>()
   private val elementMap = IdentityHashMap<OPDS12ElementType, Element>()
   private lateinit var element: Element
@@ -71,8 +70,7 @@ internal class OPDS12AcquisitionFeedEntryParser internal constructor(
 
       val authors =
         this.xmlProcessor.allChildElementsWithName(this.element, ATOM_URI, "author")
-          .map { element -> this.authorOf(element) }
-          .filterNotNull()
+          .mapNotNull { element -> this.authorOf(element) }
 
       val categories =
         this.xmlProcessor.allChildElementsWithName(this.element, ATOM_URI, "category")
@@ -139,7 +137,7 @@ internal class OPDS12AcquisitionFeedEntryParser internal constructor(
             published = published,
             summary = summary,
             thumbnail = thumbnail,
-            title = title!!,
+            title = title,
             updated = updated,
             alternate = alternate,
             extensions = listOf())

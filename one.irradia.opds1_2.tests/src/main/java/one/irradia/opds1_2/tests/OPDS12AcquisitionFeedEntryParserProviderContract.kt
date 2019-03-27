@@ -17,7 +17,6 @@ import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
 import org.slf4j.Logger
-import org.w3c.dom.Element
 import org.xml.sax.SAXParseException
 import java.io.FileNotFoundException
 import java.io.InputStream
@@ -30,7 +29,7 @@ abstract class OPDS12AcquisitionFeedEntryParserProviderContract {
   abstract fun parsers(): OPDS12AcquisitionFeedEntryParserProviderType
 
   private fun resource(name: String): InputStream {
-    val path = "/one/irradia/opds1_2/tests/" + name
+    val path = "/one/irradia/opds1_2/tests/$name"
     val url =
       OPDS12AcquisitionFeedEntryParserProviderContract::class.java.getResource(path)
         ?: throw FileNotFoundException("No such resource: $path")
