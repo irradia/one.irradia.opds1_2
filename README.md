@@ -76,27 +76,28 @@ Most real-life OPDS feeds contain metadata expressed as values taken from XML sc
 of the core OPDS schema. The `one.irradia.opds1_2` package exposes this extra data by requiring
 consumers to opt-in to extension data collection by specifying a list of _extension parsers_ when
 parsing OPDS feeds. Extension data that cannot be consumed by any _extension parser_ is silently
-ignored. As an example, if a user wants to parse an acquisition feed entry and wants to receive
-any [Dublin Core](http://purl.org/dc/terms/) metadata that may be included:
+ignored. As an example, if a user wants to parse a feed and wants to receive any
+[Dublin Core](http://purl.org/dc/terms/) metadata that may be included:
 
 ```
-val parsers : OPDS12AcquisitionFeedEntryParserProviderType
+val parsers : OPDS12FeedParserProviderType
 
 val parser =
   this.parsers.createParser(
     uri = URI.create("urn:example"),
     stream = open("feed.xml"),
-    extensionParsers = listOf(OPDS12DublinAcquisitionFeedEntryParsers()))
+    extensionEntryParsers = listOf(OPDSDublinFeedParsers()),
+    extensionParsers = listOf(OPDS12DublinFeedEntryParsers()))
 
 val result = parser.parse()
 ```
 
 Assuming that parsing succeeds, the _Dublin Core_ metadata can be accessed by filtering the list
-of extension values for values of type `one.irradia.opds1_2.dublin.OPDS12DublinCoreEntryValue`:
+of extension values for values of type `one.irradia.opds1_2.dublin.OPDS12DublinCoreValue`:
 
 ```
 val extensions =
-  result.extensions.filterIsInstance(OPDS12DublinCoreEntryValue::class.java)
+  result.extensions.filterIsInstance(OPDS12DublinCoreValue::class.java)
 ```
 
 Consult the documentation for each extension parser to see what types of values can be returned.
