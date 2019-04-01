@@ -1,0 +1,120 @@
+<feed xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opds="http://opds-spec.org/2010/catalog" xmlns="http://www.w3.org/2005/Atom" xml:base="https://bookserver.archive.org/">
+  <title>Internet Archive Catalog</title>
+  <id>urn:x-internet-archive:bookserver</id>
+  <updated>2019-03-27T00:00:00Z</updated>
+  <link rel="self" type="application/atom+xml" href="https://bookserver.archive.org/"/>
+  <author>
+    <name>Internet Archive</name>
+    <uri>https://archive.org</uri>
+  </author>
+  <link rel="http://opds-spec.org/crawlable" type="application/atom+xml" href="https://bookserver.archive.org/crawlable" title="Crawlable feed"/>
+  <link rel="search" type="application/opensearchdescription+xml" href="https://bookserver.archive.org/opensearch.xml"/>
+  <link rel="http://opds-spec.org/auth/document" type="application/vnd.opds.authentication.v1.0+json" href="https://bookserver.archive.org/authentication_document"/>
+  <entry>
+    <title>Modern Books</title>
+    <id>inlibrary</id>
+    <updated>2019-03-27T00:00:00Z</updated>
+    <link href="inlibrary" type="application/atom+xml;profile=opds-catalog"/>
+    <content>Internet Archive core lending collection.</content>
+  </entry>
+  <entry>
+    <title>Librivox Audiobooks</title>
+    <id>group/openaudiobooks</id>
+    <updated>2019-03-27T00:00:00Z</updated>
+    <link href="group/openaudiobooks" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+    <content>Public domain Librivox Audiobooks</content>
+  </entry>
+  <entry>
+    <title>Most Downloaded Books</title>
+    <id>downloads.xml</id>
+    <updated>2019-03-27T00:00:00Z</updated>
+    <link href="downloads.xml" type="application/atom+xml;profile=opds-catalog"/>
+    <content>The most downloaded books from the Internet Archive in the last month.</content>
+  </entry>
+  <entry>
+    <title>Newly Added</title>
+    <id>new</id>
+    <updated>2019-03-27T00:00:00Z</updated>
+    <link href="new" type="application/atom+xml;profile=opds-catalog"/>
+    <content>Books most recently scanned by the Internet Archive.</content>
+  </entry>
+  <entry>
+    <title>Alphabetical By Title</title>
+    <id>alpha.xml</id>
+    <updated>2019-03-27T00:00:00Z</updated>
+    <link href="alpha.xml" type="application/atom+xml;profile=opds-catalog"/>
+    <content>Alphabetical list of all titles.</content>
+  </entry>
+  <entry>
+    <title>Recently Returned</title>
+    <id>group/recentreturns</id>
+    <updated>2019-03-27T00:00:00Z</updated>
+    <link href="group/recentreturns" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  </entry>
+  <entry>
+    <title>Books We Love</title>
+    <id>group/staffpicks</id>
+    <updated>2019-03-27T00:00:00Z</updated>
+    <link href="group/staffpicks" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  </entry>
+  <entry>
+    <title>Romance</title>
+    <id>group/romance</id>
+    <updated>2019-03-27T00:00:00Z</updated>
+    <link href="group/romance" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  </entry>
+  <entry>
+    <title>Kids</title>
+    <id>group/kids</id>
+    <updated>2019-03-27T00:00:00Z</updated>
+    <link href="group/kids" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  </entry>
+  <entry>
+    <title>Thrillers</title>
+    <id>group/thrillers</id>
+    <updated>2019-03-27T00:00:00Z</updated>
+    <link href="group/thrillers" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  </entry>
+  <entry>
+    <title>Textbooks</title>
+    <id>group/textbooks</id>
+    <updated>2019-03-27T00:00:00Z</updated>
+    <link href="group/textbooks" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  </entry>
+  <entry>
+    <title>Authors Alliance &amp; MIT Press</title>
+    <id>group/partners</id>
+    <updated>2019-03-27T00:00:00Z</updated>
+    <link href="group/partners" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  </entry>
+  <entry>
+    <title>Minnesota Prevention Resource Center</title>
+    <id>group/mnprevention</id>
+    <updated>2019-03-27T00:00:00Z</updated>
+    <link href="group/mnprevention" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  </entry>
+  <entry>
+    <title>Boston Public Library</title>
+    <id>group/bostonpubliclibrary</id>
+    <updated>2019-03-27T00:00:00Z</updated>
+    <link href="group/bostonpubliclibrary" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  </entry>
+  <entry>
+    <title>Columbia University Libraries</title>
+    <id>group/columbiauniversitylibraries</id>
+    <updated>2019-03-27T00:00:00Z</updated>
+    <link href="group/columbiauniversitylibraries" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  </entry>
+  <entry>
+    <title>St. Mary's County Library (MD)</title>
+    <id>group/stmaryscountylibrary</id>
+    <updated>2019-03-27T00:00:00Z</updated>
+    <link href="group/stmaryscountylibrary" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  </entry>
+  <entry>
+    <title>Ruth Enlow Library</title>
+    <id>group/ruthenlowlibrary</id>
+    <updated>2019-03-27T00:00:00Z</updated>
+    <link href="group/ruthenlowlibrary" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  </entry>
+</feed>

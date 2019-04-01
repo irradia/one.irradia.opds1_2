@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<entry xmlns:opds="http://opds-spec.org/2010/catalog"
+       xmlns:dcterms="http://purl.org/dc/terms/"
+       xmlns:schema="http://schema.org/"
+       xmlns="http://www.w3.org/2005/Atom"
+       schema:additionalType="http://schema.org/Book">
+  <id>id</id>
+  <dcterms:language>en</dcterms:language>
+  <dcterms:publisher>Fog City Publishing, LLC</dcterms:publisher>
+  <dcterms:issued>2015-08-26</dcterms:issued>
+</entry>

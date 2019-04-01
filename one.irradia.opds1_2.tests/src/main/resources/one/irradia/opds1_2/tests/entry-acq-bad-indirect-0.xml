@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<entry xmlns:opds="http://opds-spec.org/2010/catalog"
+       xmlns:schema="http://schema.org/"
+       xmlns="http://www.w3.org/2005/Atom"
+       schema:additionalType="http://schema.org/Book">
+  <id>id</id>
+  <title>title</title>
+  <author>
+    <name>Author</name>
+  </author>
+  <updated>2000-01-01T00:00:00Z</updated>
+  <published>2000-01-01T00:00:01Z</published>
+
+  <link rel="http://opds-spec.org/acquisition/borrow"
+        href="http://example.com/borrow"
+        type="text/plain">
+    <opds:indirectAcquisition>
+      <opds:indirectAcquisition type="application/epub+zip" />
+    </opds:indirectAcquisition>
+    <opds:indirectAcquisition type="application/atom+xml;type=entry;profile=opds-catalog">
+      <opds:indirectAcquisition type="text/html;profile=http://librarysimplified.org/terms/profiles/streaming-media" />
+    </opds:indirectAcquisition>
+    <opds:availability status="available" />
+    <opds:holds total="0" />
+    <opds:copies available="4"
+                 total="6" />
+  </link>
+
+</entry>
