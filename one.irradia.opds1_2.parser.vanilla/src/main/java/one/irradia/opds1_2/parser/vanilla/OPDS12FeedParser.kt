@@ -19,6 +19,8 @@ import one.irradia.opds1_2.commons.OPDS12XMLParseWarning
 import one.irradia.opds1_2.commons.OPDS12XMLProcessor
 import one.irradia.opds1_2.lexical.OPDS12LexicalPosition
 import one.irradia.opds1_2.parser.api.OPDS12FeedParseRequest
+import one.irradia.opds1_2.parser.api.OPDS12FeedParseTarget
+import one.irradia.opds1_2.parser.api.OPDS12FeedParseTarget.*
 import one.irradia.opds1_2.parser.api.OPDS12FeedParserType
 import one.irradia.opds1_2.parser.extension.spi.OPDS12FeedExtensionParserContextType
 import org.w3c.dom.Element
@@ -197,8 +199,8 @@ internal class OPDS12FeedParser(
 
   private fun parseEntry(entry: Element): OPDS12ParseResult<OPDS12FeedEntry> {
     return this.request.acquisitionFeedEntryParsers.createParser(
-      OPDS12FeedParseRequest.OPDS12FeedParseRequestForElement(
-        element = entry,
+      OPDS12FeedParseRequest(
+        target = OPDS12FeedParseTargetElement(entry),
         uri = this.request.uri,
         extensionParsers = this.request.extensionParsers,
         extensionEntryParsers = this.request.extensionEntryParsers,

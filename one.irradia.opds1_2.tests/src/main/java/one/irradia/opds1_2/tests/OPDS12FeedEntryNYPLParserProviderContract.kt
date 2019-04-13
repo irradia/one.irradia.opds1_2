@@ -7,6 +7,8 @@ import one.irradia.opds1_2.nypl.OPDS12Availability
 import one.irradia.opds1_2.nypl.OPDS12NYPLFeedEntryParsers
 import one.irradia.opds1_2.parser.api.OPDS12FeedParseRequest
 import one.irradia.opds1_2.parser.api.OPDS12FeedParseRequest.*
+import one.irradia.opds1_2.parser.api.OPDS12FeedParseTarget
+import one.irradia.opds1_2.parser.api.OPDS12FeedParseTarget.*
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
@@ -56,10 +58,10 @@ abstract class OPDS12FeedEntryNYPLParserProviderContract {
   @Test
   fun testEntryOKAcquisitionsAvailability() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
         acquisitionFeedEntryParsers = this.parsers,
-        stream = this.resource("entry-ok-acquisitions-availability.xml"),
+        target = OPDS12FeedParseTargetStream(this.resource("entry-ok-acquisitions-availability.xml")),
         extensionEntryParsers = listOf(OPDS12NYPLFeedEntryParsers())))
 
     val result = parser.parse()

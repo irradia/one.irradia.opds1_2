@@ -10,6 +10,8 @@ import one.irradia.opds1_2.lexical.OPDS12LexicalPosition
 import one.irradia.opds1_2.parser.api.OPDS12FeedEntryParserProviderType
 import one.irradia.opds1_2.parser.api.OPDS12FeedParseRequest
 import one.irradia.opds1_2.parser.api.OPDS12FeedParseRequest.*
+import one.irradia.opds1_2.parser.api.OPDS12FeedParseTarget
+import one.irradia.opds1_2.parser.api.OPDS12FeedParseTarget.*
 import one.irradia.opds1_2.parser.extension.spi.OPDS12FeedEntryExtensionParserContextType
 import one.irradia.opds1_2.parser.extension.spi.OPDS12FeedEntryExtensionParserProviderType
 import one.irradia.opds1_2.parser.extension.spi.OPDS12FeedEntryExtensionParserType
@@ -64,11 +66,11 @@ abstract class OPDS12FeedEntryParserProviderContract {
   @Test
   fun testEmpty() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
         acquisitionFeedEntryParsers = this.parsers,
-        stream = this.resource("empty.xml")
-      ))
+        target = OPDS12FeedParseTargetStream( this.resource("empty.xml")
+      )))
 
     val result = parser.parse()
     this.dumpParseResult(result)
@@ -84,10 +86,10 @@ abstract class OPDS12FeedEntryParserProviderContract {
   @Test
   fun testEntryWrongNamespace() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
         acquisitionFeedEntryParsers = this.parsers,
-        stream = this.resource("entry-wrong-namespace.xml")))
+        target = OPDS12FeedParseTargetStream( this.resource("entry-wrong-namespace.xml"))))
 
     val result = parser.parse()
     this.dumpParseResult(result)
@@ -103,11 +105,11 @@ abstract class OPDS12FeedEntryParserProviderContract {
   @Test
   fun testEntryWrongElement() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
         acquisitionFeedEntryParsers = this.parsers,
-        stream = this.resource("entry-wrong-element.xml")
-      ))
+        target = OPDS12FeedParseTargetStream( this.resource("entry-wrong-element.xml")
+      )))
 
     val result = parser.parse()
     this.dumpParseResult(result)
@@ -123,10 +125,10 @@ abstract class OPDS12FeedEntryParserProviderContract {
   @Test
   fun testEntryExtensionFailed() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
         acquisitionFeedEntryParsers = this.parsers,
-        stream = this.resource("entry-ok.xml"),
+        target = OPDS12FeedParseTargetStream(this.resource("entry-ok.xml")),
         extensionEntryParsers = listOf(FailingExtensionParserProvider())))
 
     val result = parser.parse()
@@ -143,10 +145,10 @@ abstract class OPDS12FeedEntryParserProviderContract {
   @Test
   fun testEntryOK() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
         acquisitionFeedEntryParsers = this.parsers,
-        stream = this.resource("entry-ok.xml")))
+        target = OPDS12FeedParseTargetStream( this.resource("entry-ok.xml"))))
 
     val result = parser.parse()
     this.dumpParseResult(result)
@@ -170,10 +172,10 @@ abstract class OPDS12FeedEntryParserProviderContract {
   @Test
   fun testEntryOKEmpties() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
         acquisitionFeedEntryParsers = this.parsers,
-        stream = this.resource("entry-ok-empties.xml")))
+        target = OPDS12FeedParseTargetStream( this.resource("entry-ok-empties.xml"))))
 
     val result = parser.parse()
     this.dumpParseResult(result)
@@ -198,10 +200,10 @@ abstract class OPDS12FeedEntryParserProviderContract {
   @Test
   fun testEntryOKWithPrefix() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
         acquisitionFeedEntryParsers = this.parsers,
-        stream = this.resource("entry-ok-with-prefix.xml")))
+        target = OPDS12FeedParseTargetStream( this.resource("entry-ok-with-prefix.xml"))))
 
     val result = parser.parse()
     val success = result as OPDS12ParseResult.OPDS12ParseSucceeded
@@ -225,10 +227,10 @@ abstract class OPDS12FeedEntryParserProviderContract {
   @Test
   fun testEntryAcquisitionMissingHref() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
         acquisitionFeedEntryParsers = this.parsers,
-        stream = this.resource("entry-acq-missing-href.xml")))
+        target = OPDS12FeedParseTargetStream( this.resource("entry-acq-missing-href.xml"))))
 
     val result = parser.parse()
     this.dumpParseResult(result)
@@ -244,10 +246,10 @@ abstract class OPDS12FeedEntryParserProviderContract {
   @Test
   fun testEntryAcquisitionBadType0() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
         acquisitionFeedEntryParsers = this.parsers,
-        stream = this.resource("entry-acq-bad-type-0.xml")))
+        target = OPDS12FeedParseTargetStream( this.resource("entry-acq-bad-type-0.xml"))))
 
     val result = parser.parse()
     this.dumpParseResult(result)
@@ -263,10 +265,10 @@ abstract class OPDS12FeedEntryParserProviderContract {
   @Test
   fun testEntryAcquisitionBadHref0() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
         acquisitionFeedEntryParsers = this.parsers,
-        stream = this.resource("entry-acq-bad-href-0.xml")))
+        target = OPDS12FeedParseTargetStream( this.resource("entry-acq-bad-href-0.xml"))))
 
     val result = parser.parse()
     this.dumpParseResult(result)
@@ -282,10 +284,10 @@ abstract class OPDS12FeedEntryParserProviderContract {
   @Test
   fun testEntryBadIndirect0() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
         acquisitionFeedEntryParsers = this.parsers,
-        stream = this.resource("entry-acq-bad-indirect-0.xml")))
+        target = OPDS12FeedParseTargetStream( this.resource("entry-acq-bad-indirect-0.xml"))))
 
     val result = parser.parse()
     this.dumpParseResult(result)
@@ -301,10 +303,10 @@ abstract class OPDS12FeedEntryParserProviderContract {
   @Test
   fun testEntryBadPublished() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
         acquisitionFeedEntryParsers = this.parsers,
-        stream = this.resource("entry-bad-published.xml")))
+        target = OPDS12FeedParseTargetStream( this.resource("entry-bad-published.xml"))))
 
     val result = parser.parse()
     this.dumpParseResult(result)
@@ -320,10 +322,10 @@ abstract class OPDS12FeedEntryParserProviderContract {
   @Test
   fun testEntryBadUpdated() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
         acquisitionFeedEntryParsers = this.parsers,
-        stream = this.resource("entry-bad-updated.xml")))
+        target = OPDS12FeedParseTargetStream( this.resource("entry-bad-updated.xml"))))
 
     val result = parser.parse()
     this.dumpParseResult(result)
@@ -339,10 +341,10 @@ abstract class OPDS12FeedEntryParserProviderContract {
   @Test
   fun testEntryBadCoverHref() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
         acquisitionFeedEntryParsers = this.parsers,
-        stream = this.resource("entry-bad-cover.xml")))
+        target = OPDS12FeedParseTargetStream( this.resource("entry-bad-cover.xml"))))
 
     val result = parser.parse()
     this.dumpParseResult(result)
@@ -358,10 +360,10 @@ abstract class OPDS12FeedEntryParserProviderContract {
   @Test
   fun testEntryBadCategory() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
         acquisitionFeedEntryParsers = this.parsers,
-        stream = this.resource("entry-bad-category.xml")))
+        target = OPDS12FeedParseTargetStream( this.resource("entry-bad-category.xml"))))
 
     val result = parser.parse()
     this.dumpParseResult(result)

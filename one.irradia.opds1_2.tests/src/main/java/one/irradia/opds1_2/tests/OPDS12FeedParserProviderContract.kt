@@ -1,12 +1,11 @@
 package one.irradia.opds1_2.tests
 
 import one.irradia.opds1_2.api.OPDS12ExtensionValueType
-import one.irradia.opds1_2.api.OPDS12Feed
 import one.irradia.opds1_2.api.OPDS12ParseResult
 import one.irradia.opds1_2.lexical.OPDS12LexicalPosition
 import one.irradia.opds1_2.parser.api.OPDS12FeedEntryParserProviderType
 import one.irradia.opds1_2.parser.api.OPDS12FeedParseRequest
-import one.irradia.opds1_2.parser.api.OPDS12FeedParseRequest.*
+import one.irradia.opds1_2.parser.api.OPDS12FeedParseTarget.OPDS12FeedParseTargetStream
 import one.irradia.opds1_2.parser.api.OPDS12FeedParserProviderType
 import one.irradia.opds1_2.parser.extension.spi.OPDS12FeedEntryExtensionParserContextType
 import one.irradia.opds1_2.parser.extension.spi.OPDS12FeedEntryExtensionParserProviderType
@@ -63,9 +62,9 @@ abstract class OPDS12FeedParserProviderContract {
   @Test
   fun testEmpty() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
-        stream = this.resource("empty.xml"),
+        target = OPDS12FeedParseTargetStream(this.resource("empty.xml")),
         acquisitionFeedEntryParsers = this.entryParsers(),
         extensionEntryParsers = listOf(),
         extensionParsers = listOf()))
@@ -84,9 +83,9 @@ abstract class OPDS12FeedParserProviderContract {
   @Test
   fun testOrgArchiveMain20190327() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
-        stream = this.resource("feeds/org.archive-main-20190327.xml"),
+        target = OPDS12FeedParseTargetStream(this.resource("feeds/org.archive-main-20190327.xml")),
         acquisitionFeedEntryParsers = this.entryParsers(),
         extensionEntryParsers = listOf(),
         extensionParsers = listOf()))
@@ -103,9 +102,9 @@ abstract class OPDS12FeedParserProviderContract {
   @Test
   fun testOrgLibrarySimplifiedMain20190327() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
-        stream = this.resource("feeds/org.librarysimplified-main-20190327.xml"),
+        target = OPDS12FeedParseTargetStream(this.resource("feeds/org.librarysimplified-main-20190327.xml")),
         acquisitionFeedEntryParsers = this.entryParsers(),
         extensionEntryParsers = listOf(),
         extensionParsers = listOf()))
@@ -123,9 +122,9 @@ abstract class OPDS12FeedParserProviderContract {
   @Test
   fun testBadEntries0() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
-        stream = this.resource("feeds/feed-bad-entries-0.xml"),
+        target = OPDS12FeedParseTargetStream(this.resource("feeds/feed-bad-entries-0.xml")),
         acquisitionFeedEntryParsers = this.entryParsers(),
         extensionEntryParsers = listOf(),
         extensionParsers = listOf()))

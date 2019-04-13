@@ -4,7 +4,7 @@ import one.irradia.opds1_2.api.OPDS12ParseResult
 import one.irradia.opds1_2.nypl.OPDS12NYPLFeedEntryParsers
 import one.irradia.opds1_2.parser.api.OPDS12FeedEntryParserProviderType
 import one.irradia.opds1_2.parser.api.OPDS12FeedParseRequest
-import one.irradia.opds1_2.parser.api.OPDS12FeedParseRequest.*
+import one.irradia.opds1_2.parser.api.OPDS12FeedParseTarget.OPDS12FeedParseTargetStream
 import one.irradia.opds1_2.parser.api.OPDS12FeedParserProviderType
 import org.hamcrest.core.IsInstanceOf
 import org.junit.Assert
@@ -57,9 +57,9 @@ abstract class OPDS12FeedParserNYPLProviderContract {
   @Test
   fun testEmpty() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
-        stream = this.resource("empty.xml"),
+        target = OPDS12FeedParseTargetStream(this.resource("empty.xml")),
         acquisitionFeedEntryParsers = this.entryParsers(),
         extensionEntryParsers = listOf(),
         extensionParsers = listOf()))
@@ -78,9 +78,9 @@ abstract class OPDS12FeedParserNYPLProviderContract {
   @Test
   fun testOrgArchiveMain20190327() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
-        stream = this.resource("feeds/org.archive-main-20190327.xml"),
+        target = OPDS12FeedParseTargetStream(this.resource("feeds/org.archive-main-20190327.xml")),
         acquisitionFeedEntryParsers = this.entryParsers(),
         extensionEntryParsers = listOf(OPDS12NYPLFeedEntryParsers()),
         extensionParsers = listOf()))
@@ -97,9 +97,9 @@ abstract class OPDS12FeedParserNYPLProviderContract {
   @Test
   fun testOrgLibrarySimplifiedMain20190327() {
     val parser =
-      this.parsers.createParser(OPDS12FeedParseRequestForStream(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
-        stream = this.resource("feeds/org.librarysimplified-main-20190327.xml"),
+        target = OPDS12FeedParseTargetStream(this.resource("feeds/org.librarysimplified-main-20190327.xml")),
         acquisitionFeedEntryParsers = this.entryParsers(),
         extensionEntryParsers = listOf(OPDS12NYPLFeedEntryParsers()),
         extensionParsers = listOf()))

@@ -1,6 +1,7 @@
 package one.irradia.opds1_2.parser.vanilla
 
 import one.irradia.opds1_2.parser.api.OPDS12FeedParseRequest
+import one.irradia.opds1_2.parser.api.OPDS12FeedParseTarget
 import one.irradia.opds1_2.parser.api.OPDS12FeedParserProviderType
 import one.irradia.opds1_2.parser.api.OPDS12FeedParserType
 
@@ -13,18 +14,20 @@ import one.irradia.opds1_2.parser.api.OPDS12FeedParserType
 
 class OPDS12FeedParsers : OPDS12FeedParserProviderType {
 
-  override fun createParser(request: OPDS12FeedParseRequest): OPDS12FeedParserType =
-    when (request) {
-      is OPDS12FeedParseRequest.OPDS12FeedParseRequestForElement ->
+  override fun createParser(request: OPDS12FeedParseRequest): OPDS12FeedParserType {
+    val target = request.target
+    return when (target) {
+      is OPDS12FeedParseTarget.OPDS12FeedParseTargetElement ->
         OPDS12FeedParser(
           request = request,
-          elementSupplier = { request.element })
-      is OPDS12FeedParseRequest.OPDS12FeedParseRequestForStream ->
+          elementSupplier = { target.element })
+      is OPDS12FeedParseTarget.OPDS12FeedParseTargetStream ->
         OPDS12FeedParser(
           request = request,
           elementSupplier = {
-            val document = OPDS12XMLReaderLexical.readXML(request.uri, request.stream)
+            val document = OPDS12XMLReaderLexical.readXML(request.uri, target.inputStream)
             document.documentElement
           })
     }
+  }
 }
