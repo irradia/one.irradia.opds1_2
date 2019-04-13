@@ -4,6 +4,8 @@ import one.irradia.opds1_2.api.OPDS12ParseResult
 import one.irradia.opds1_2.dublin.OPDS12DublinFeedEntryParsers
 import one.irradia.opds1_2.dublin.OPDS12DublinCoreValue
 import one.irradia.opds1_2.parser.api.OPDS12FeedEntryParserProviderType
+import one.irradia.opds1_2.parser.api.OPDS12FeedParseRequest
+import one.irradia.opds1_2.parser.api.OPDS12FeedParseRequest.*
 import org.joda.time.Instant
 import org.junit.Assert
 import org.junit.Before
@@ -53,10 +55,11 @@ abstract class OPDS12FeedEntryDublinParserProviderContract {
   @Test
   fun testEntryOKMetadata() {
     val parser =
-      this.parsers.createParser(
+      this.parsers.createParser(OPDS12FeedParseRequestForStream(
         uri = URI.create("urn:test"),
+        acquisitionFeedEntryParsers = this.parsers,
         stream = this.resource("entry-ok-dublin-core.xml"),
-        extensionParsers = listOf(OPDS12DublinFeedEntryParsers()))
+        extensionEntryParsers = listOf(OPDS12DublinFeedEntryParsers())))
 
     val result = parser.parse()
     dumpParseResult(result)
@@ -90,10 +93,11 @@ abstract class OPDS12FeedEntryDublinParserProviderContract {
   @Test
   fun testEntryOKBadMetadata() {
     val parser =
-      this.parsers.createParser(
+      this.parsers.createParser(OPDS12FeedParseRequestForStream(
         uri = URI.create("urn:test"),
         stream = this.resource("entry-ok-dublin-core-bad.xml"),
-        extensionParsers = listOf(OPDS12DublinFeedEntryParsers()))
+        acquisitionFeedEntryParsers = this.parsers,
+        extensionEntryParsers = listOf(OPDS12DublinFeedEntryParsers())))
 
     val result = parser.parse()
     dumpParseResult(result)

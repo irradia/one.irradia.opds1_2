@@ -2,10 +2,7 @@ package one.irradia.opds1_2.parser.vanilla
 
 import one.irradia.opds1_2.parser.api.OPDS12FeedEntryParserProviderType
 import one.irradia.opds1_2.parser.api.OPDS12FeedEntryParserType
-import one.irradia.opds1_2.parser.extension.spi.OPDS12FeedEntryExtensionParserProviderType
-import org.w3c.dom.Element
-import java.io.InputStream
-import java.net.URI
+import one.irradia.opds1_2.parser.api.OPDS12FeedParseRequest
 
 /**
  * A default provider of parsers.
@@ -16,29 +13,18 @@ import java.net.URI
 
 class OPDS12FeedEntryParsers : OPDS12FeedEntryParserProviderType {
 
-  override fun createParser(
-    uri: URI,
-    stream: InputStream,
-    extensionParsers: List<OPDS12FeedEntryExtensionParserProviderType>)
-    : OPDS12FeedEntryParserType {
-    return OPDS12FeedEntryParser(
-      uri = uri,
-      elementSupplier = {
-        val document = OPDS12XMLReaderLexical.readXML(uri, stream)
-        document.documentElement
-      },
-      extensionParsers = extensionParsers)
-  }
-
-  override fun createParser(
-    uri: URI,
-    element: Element,
-    extensionParsers: List<OPDS12FeedEntryExtensionParserProviderType>)
-    : OPDS12FeedEntryParserType {
-    return OPDS12FeedEntryParser(
-      uri = uri,
-      elementSupplier = { element },
-      extensionParsers = extensionParsers)
-  }
-
+  override fun createParser(request: OPDS12FeedParseRequest): OPDS12FeedEntryParserType =
+    when (request) {
+      is OPDS12FeedParseRequest.OPDS12FeedParseRequestForElement ->
+        OPDS12FeedEntryParser(
+          request = request,
+          elementSupplier = { request.element })
+      is OPDS12FeedParseRequest.OPDS12FeedParseRequestForStream ->
+        OPDS12FeedEntryParser(
+          request = request,
+          elementSupplier = {
+            val document = OPDS12XMLReaderLexical.readXML(request.uri, request.stream)
+            document.documentElement
+          })
+    }
 }

@@ -29,6 +29,12 @@ class OPDS12XMLProcessor(
   val producer: String,
 
   /**
+   * A function used to publish parse warnings as they occur.
+   */
+
+  val warnings: (OPDS12XMLParseWarning) -> Unit,
+
+  /**
    * A function used to publish parse errors as they occur.
    */
 
