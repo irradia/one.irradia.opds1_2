@@ -140,7 +140,8 @@ class OPDS12XMLProcessor(
   fun optionalElementURI(
     element: Element,
     namespace: URI,
-    name: String): URI? {
+    name: String,
+    allowInvalid: Boolean): URI? {
 
     val received = firstChildElementTextWithName(element, namespace, name)
     return if (received == null) {
@@ -150,15 +151,27 @@ class OPDS12XMLProcessor(
         URI(received)
       } catch (e: URISyntaxException) {
         val lexical = this.obtainLexicalInfo(element)
-        this.errors.invoke(OPDS12XMLParseError(
-          producer = this.producer,
-          lexical = lexical,
-          message = """Malformed URI value
+        if (allowInvalid) {
+          this.warnings.invoke(OPDS12XMLParseWarning(
+            producer = this.producer,
+            lexical = lexical,
+            message = """Malformed URI value
   Expected: A valid URI in element '${element.tagName}'
   Received: ${received}
   Source:   ${lexical.source}:${lexical.line}:${lexical.column}
             """.trimMargin(),
-          exception = e))
+            exception = e))
+        } else {
+          this.errors.invoke(OPDS12XMLParseError(
+            producer = this.producer,
+            lexical = lexical,
+            message = """Malformed URI value
+  Expected: A valid URI in element '${element.tagName}'
+  Received: ${received}
+  Source:   ${lexical.source}:${lexical.line}:${lexical.column}
+            """.trimMargin(),
+            exception = e))
+        }
         null
       }
     }
@@ -174,7 +187,8 @@ class OPDS12XMLProcessor(
   fun optionalElementInstant(
     element: Element,
     namespace: URI,
-    name: String): Instant? {
+    name: String,
+    allowInvalid: Boolean): Instant? {
 
     val received =
       firstChildElementWithName(element, namespace, name)
@@ -186,15 +200,29 @@ class OPDS12XMLProcessor(
         Instant.parse(received.textContent, ISODateTimeFormat.dateTimeParser())
       } catch (e: IllegalArgumentException) {
         val lexical = this.obtainLexicalInfo(element)
-        this.errors.invoke(OPDS12XMLParseError(
-          producer = this.producer,
-          lexical = lexical,
-          message = """Malformed time value
+
+        if (allowInvalid) {
+          this.warnings.invoke(OPDS12XMLParseWarning(
+            producer = this.producer,
+            lexical = lexical,
+            message = """Malformed time value
   Expected: A valid time in element '${received.tagName}'
   Received: ${received.textContent}
   Source:   ${lexical.source}:${lexical.line}:${lexical.column}
             """.trimMargin(),
-          exception = e))
+            exception = e))
+        } else {
+          this.errors.invoke(OPDS12XMLParseError(
+            producer = this.producer,
+            lexical = lexical,
+            message = """Malformed time value
+  Expected: A valid time in element '${received.tagName}'
+  Received: ${received.textContent}
+  Source:   ${lexical.source}:${lexical.line}:${lexical.column}
+            """.trimMargin(),
+            exception = e))
+        }
+
         null
       }
     }
@@ -377,38 +405,8 @@ class OPDS12XMLProcessor(
 
   fun optionalAttributeURI(
     element: Element,
-    namespace: URI,
-    name: String): URI? {
-
-    val text = optionalAttribute(element, namespace, name)
-    return try {
-      if (text != null) {
-        URI(text)
-      } else {
-        null
-      }
-    } catch (e: URISyntaxException) {
-      val lexical = obtainLexicalInfo(element)
-      this.errors.invoke(OPDS12XMLParseError(
-        producer = this.producer,
-        lexical = lexical,
-        message = """Malformed URI in attribute
-    Expected: A valid URI for attribute $namespace:$name in element '${element.tagName}'
-    Received: $text
-    Source:   ${lexical.source}:${lexical.line}:${lexical.column}
-            """.trimMargin(),
-        exception = e))
-      null
-    }
-  }
-
-  /**
-   * @return The value of the named attribute
-   */
-
-  fun optionalAttributeURI(
-    element: Element,
-    name: String): URI? {
+    name: String,
+    allowInvalid: Boolean): URI? {
 
     val text = optionalAttribute(element, name)
     return try {
@@ -419,15 +417,27 @@ class OPDS12XMLProcessor(
       }
     } catch (e: URISyntaxException) {
       val lexical = obtainLexicalInfo(element)
-      this.errors.invoke(OPDS12XMLParseError(
-        producer = this.producer,
-        lexical = lexical,
-        message = """Malformed URI in attribute
+      if (allowInvalid) {
+        this.errors.invoke(OPDS12XMLParseError(
+          producer = this.producer,
+          lexical = lexical,
+          message = """Malformed URI in attribute
     Expected: A valid URI for attribute $name in element '${element.tagName}'
     Received: $text
     Source:   ${lexical.source}:${lexical.line}:${lexical.column}
             """.trimMargin(),
-        exception = e))
+          exception = e))
+      } else {
+        this.warnings.invoke(OPDS12XMLParseWarning(
+          producer = this.producer,
+          lexical = lexical,
+          message = """Malformed URI in attribute
+    Expected: A valid URI for attribute $name in element '${element.tagName}'
+    Received: $text
+    Source:   ${lexical.source}:${lexical.line}:${lexical.column}
+            """.trimMargin(),
+          exception = e))
+      }
       null
     }
   }
@@ -438,7 +448,8 @@ class OPDS12XMLProcessor(
 
   fun optionalAttributeInt(
     element: Element,
-    name: String): Int? {
+    name: String,
+    allowInvalid: Boolean): Int? {
 
     val text = optionalAttribute(element, name)
     return try {
@@ -449,15 +460,29 @@ class OPDS12XMLProcessor(
       }
     } catch (e: NumberFormatException) {
       val lexical = obtainLexicalInfo(element)
-      this.errors.invoke(OPDS12XMLParseError(
-        producer = this.producer,
-        lexical = lexical,
-        message = """Malformed integer in attribute
+
+      if (allowInvalid) {
+        this.warnings.invoke(OPDS12XMLParseWarning(
+          producer = this.producer,
+          lexical = lexical,
+          message = """Malformed integer in attribute
     Expected: A valid integer for attribute $name in element '${element.tagName}'
     Received: $text
     Source:   ${lexical.source}:${lexical.line}:${lexical.column}
             """.trimMargin(),
-        exception = e))
+          exception = e))
+      } else {
+        this.errors.invoke(OPDS12XMLParseError(
+          producer = this.producer,
+          lexical = lexical,
+          message = """Malformed integer in attribute
+    Expected: A valid integer for attribute $name in element '${element.tagName}'
+    Received: $text
+    Source:   ${lexical.source}:${lexical.line}:${lexical.column}
+            """.trimMargin(),
+          exception = e))
+      }
+
       null
     }
   }
@@ -468,7 +493,8 @@ class OPDS12XMLProcessor(
 
   fun optionalAttributeInstant(
     element: Element,
-    name: String): Instant? {
+    name: String,
+    allowInvalid: Boolean): Instant? {
 
     val text = optionalAttribute(element, name)
     return try {
@@ -479,15 +505,28 @@ class OPDS12XMLProcessor(
       }
     } catch (e: IllegalArgumentException) {
       val lexical = this.obtainLexicalInfo(element)
-      this.errors.invoke(OPDS12XMLParseError(
-        producer = this.producer,
-        lexical = lexical,
-        message = """Malformed time value
+
+      if (allowInvalid) {
+        this.errors.invoke(OPDS12XMLParseError(
+          producer = this.producer,
+          lexical = lexical,
+          message = """Malformed time value
   Expected: A valid time in element '${element.tagName}'
   Received: $text
   Source:   ${lexical.source}:${lexical.line}:${lexical.column}
             """.trimMargin(),
-        exception = e))
+          exception = e))
+      } else {
+        this.warnings.invoke(OPDS12XMLParseWarning(
+          producer = this.producer,
+          lexical = lexical,
+          message = """Malformed time value
+  Expected: A valid time in element '${element.tagName}'
+  Received: $text
+  Source:   ${lexical.source}:${lexical.line}:${lexical.column}
+            """.trimMargin(),
+          exception = e))
+      }
       null
     }
   }
@@ -498,7 +537,8 @@ class OPDS12XMLProcessor(
 
   fun optionalAttributeMIMEType(
     element: Element,
-    name: String): MIMEType? {
+    name: String,
+    allowInvalid: Boolean): MIMEType? {
 
     val text = optionalAttribute(element, name)
     return try {
@@ -509,15 +549,30 @@ class OPDS12XMLProcessor(
       }
     } catch (e: Exception) {
       val lexical = this.obtainLexicalInfo(element)
-      this.errors.invoke(OPDS12XMLParseError(
-        producer = this.producer,
-        lexical = lexical,
-        message = """Malformed MIME type value
+
+      if (allowInvalid) {
+        this.warnings.invoke(OPDS12XMLParseWarning(
+          producer = this.producer,
+          lexical = lexical,
+          message = """Malformed MIME type value
   Expected: A valid MIME type in element '${element.tagName}'
   Received: $text
   Source:   ${lexical.source}:${lexical.line}:${lexical.column}
             """.trimMargin(),
-        exception = e))
+          exception = e))
+      } else {
+        this.errors.invoke(OPDS12XMLParseError(
+          producer = this.producer,
+          lexical = lexical,
+          message = """Malformed MIME type value
+  Expected: A valid MIME type in element '${element.tagName}'
+  Received: $text
+  Source:   ${lexical.source}:${lexical.line}:${lexical.column}
+            """.trimMargin(),
+          exception = e))
+      }
+
+
       null
     }
   }

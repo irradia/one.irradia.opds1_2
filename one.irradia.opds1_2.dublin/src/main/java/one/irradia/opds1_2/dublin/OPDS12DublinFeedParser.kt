@@ -3,6 +3,8 @@ package one.irradia.opds1_2.dublin
 import one.irradia.opds1_2.api.OPDS12ExtensionValueType
 import one.irradia.opds1_2.api.OPDS12ParseResult
 import one.irradia.opds1_2.api.OPDS12ParseResult.OPDS12ParseError
+import one.irradia.opds1_2.api.OPDS12ParseResult.OPDS12ParseFailed
+import one.irradia.opds1_2.api.OPDS12ParseResult.OPDS12ParseSucceeded
 import one.irradia.opds1_2.api.OPDS12ParseResult.OPDS12ParseWarning
 import one.irradia.opds1_2.commons.OPDS12XMLParseError
 import one.irradia.opds1_2.commons.OPDS12XMLParseWarning
@@ -66,16 +68,20 @@ internal class OPDS12DublinFeedParser(
       ?.let { text -> OPDS12DublinCoreValue.Language(text) }
       ?.let { value -> this.values.add(value) }
 
-    this.xmlProcessor.optionalElementInstant(this.context.xmlElement, namespace, "issued")
+    this.xmlProcessor.optionalElementInstant(
+      element = this.context.xmlElement,
+      namespace = namespace,
+      name = "issued",
+      allowInvalid = this.context.configuration.allowInvalidTimestamps)
       ?.let { text -> OPDS12DublinCoreValue.Issued(text) }
       ?.let { value -> this.values.add(value) }
 
     return if (this.errors.isEmpty()) {
-      OPDS12ParseResult.OPDS12ParseSucceeded(
+      OPDS12ParseSucceeded(
         warnings = this.warnings.toList(),
         result = this.values.toList())
     } else {
-      OPDS12ParseResult.OPDS12ParseFailed(
+      OPDS12ParseFailed(
         warnings = this.warnings.toList(),
         errors = this.errors.toList())
     }

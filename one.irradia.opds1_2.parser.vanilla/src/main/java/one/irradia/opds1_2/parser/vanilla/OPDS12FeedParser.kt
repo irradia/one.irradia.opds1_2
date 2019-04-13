@@ -6,6 +6,7 @@ import one.irradia.opds1_2.api.OPDS12ExtensionValueType
 import one.irradia.opds1_2.api.OPDS12Facet
 import one.irradia.opds1_2.api.OPDS12Feed
 import one.irradia.opds1_2.api.OPDS12FeedEntry
+import one.irradia.opds1_2.api.OPDS12FeedParseConfiguration
 import one.irradia.opds1_2.api.OPDS12Group
 import one.irradia.opds1_2.api.OPDS12Identifiers.ATOM_URI
 import one.irradia.opds1_2.api.OPDS12Link
@@ -44,7 +45,7 @@ internal class OPDS12FeedParser(
   private val xmlProcessor =
     OPDS12XMLProcessor(
       currentDocument = this.request.uri,
-      producer = producerName,
+      producer = this.producerName,
       errors = this::publishXMLError,
       warnings = this::publishXMLWarning)
 
@@ -71,15 +72,27 @@ internal class OPDS12FeedParser(
       this.xmlProcessor.requireElementIs(this.element, ATOM_URI, "feed")
 
       val baseURI =
-        this.xmlProcessor.optionalAttributeURI(element, "xml:base")
+        this.xmlProcessor.optionalAttributeURI(
+          element = this.element,
+          name = "xml:base",
+          allowInvalid = this.request.configuration.allowInvalidURIs)
+
       val title =
         this.xmlProcessor.optionalElementTextOrEmpty(this.element, ATOM_URI, "title")
       val id =
         this.xmlProcessor.requireElementText(this.element, ATOM_URI, "id")
       val updated =
-        this.xmlProcessor.optionalElementInstant(this.element, ATOM_URI, "updated")
+        this.xmlProcessor.optionalElementInstant(
+          this.element,
+          ATOM_URI,
+          "updated",
+          allowInvalid = this.request.configuration.allowInvalidTimestamps)
       val published =
-        this.xmlProcessor.optionalElementInstant(this.element, ATOM_URI, "published")
+        this.xmlProcessor.optionalElementInstant(
+          element = this.element,
+          namespace = ATOM_URI,
+          name = "published",
+          allowInvalid = this.request.configuration.allowInvalidTimestamps)
       val facetsInOrder =
         listOf<OPDS12Facet>()
       val groupsInOrder =
@@ -89,12 +102,6 @@ internal class OPDS12FeedParser(
         this.xmlProcessor.allChildElementsWithName(this.element, ATOM_URI, "link")
       val linksValues =
         links.mapNotNull(this::linkOf)
-
-      val next = null
-      val termsOfService = null
-      val about = null
-      val licenses = null
-      val privacyPolicy = null
 
       val entries: List<OPDS12FeedEntry> =
         this.xmlProcessor.allChildElementsWithName(this.element, ATOM_URI, "entry")
@@ -106,7 +113,7 @@ internal class OPDS12FeedParser(
        */
 
       if (this.errors.isEmpty()) {
-        return runExtensions(OPDS12Feed(
+        return this.runExtensions(OPDS12Feed(
           id = id!!,
           title = title,
           updated = updated,
@@ -153,6 +160,8 @@ internal class OPDS12FeedParser(
   private fun runExtensions(feed: OPDS12Feed): OPDS12ParseResult<OPDS12Feed> {
     val req = this.request
     val context = object : OPDS12FeedExtensionParserContextType {
+      override val configuration: OPDS12FeedParseConfiguration
+        get() = this@OPDS12FeedParser.request.configuration
       override val documentURI: URI
         get() = req.uri
       override val feedWithoutExtensions: OPDS12Feed
@@ -161,7 +170,7 @@ internal class OPDS12FeedParser(
         get() = this@OPDS12FeedParser.element
 
       override fun xmlElementFor(element: OPDS12ElementType): Element? {
-        return elementMap[element]
+        return this@OPDS12FeedParser.elementMap[element]
       }
     }
 
@@ -200,6 +209,7 @@ internal class OPDS12FeedParser(
   private fun parseEntry(entry: Element): OPDS12ParseResult<OPDS12FeedEntry> {
     return this.request.acquisitionFeedEntryParsers.createParser(
       OPDS12FeedParseRequest(
+        configuration = this.request.configuration,
         target = OPDS12FeedParseTargetElement(entry),
         uri = this.request.uri,
         extensionParsers = this.request.extensionParsers,
@@ -237,7 +247,10 @@ internal class OPDS12FeedParser(
     val href =
       this.xmlProcessor.requireAttributeURI(element, "href")
     val type =
-      this.xmlProcessor.optionalAttributeMIMEType(element, "type")
+      this.xmlProcessor.optionalAttributeMIMEType(
+        element = element,
+        name = "type",
+        allowInvalid = this.request.configuration.allowInvalidMIMETypes)
     val relation =
       this.xmlProcessor.optionalAttribute(element, "rel")
 

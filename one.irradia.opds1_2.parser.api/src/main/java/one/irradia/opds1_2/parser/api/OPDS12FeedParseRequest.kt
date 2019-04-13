@@ -1,5 +1,6 @@
 package one.irradia.opds1_2.parser.api
 
+import one.irradia.opds1_2.api.OPDS12FeedParseConfiguration
 import one.irradia.opds1_2.parser.extension.spi.OPDS12FeedEntryExtensionParserProviderType
 import one.irradia.opds1_2.parser.extension.spi.OPDS12FeedExtensionParserProviderType
 import java.net.URI
@@ -9,6 +10,12 @@ import java.net.URI
  */
 
 data class OPDS12FeedParseRequest(
+
+  /**
+   * Configuration for the parser.
+   */
+
+  val configuration: OPDS12FeedParseConfiguration = OPDS12FeedParseConfiguration(),
 
   /**
    * The target element to parse.

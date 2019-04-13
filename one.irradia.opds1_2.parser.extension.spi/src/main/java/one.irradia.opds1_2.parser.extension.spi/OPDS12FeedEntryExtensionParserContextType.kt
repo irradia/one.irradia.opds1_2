@@ -1,7 +1,8 @@
 package one.irradia.opds1_2.parser.extension.spi
 
-import one.irradia.opds1_2.api.OPDS12FeedEntry
 import one.irradia.opds1_2.api.OPDS12ElementType
+import one.irradia.opds1_2.api.OPDS12FeedEntry
+import one.irradia.opds1_2.api.OPDS12FeedParseConfiguration
 import org.w3c.dom.Element
 import java.net.URI
 
@@ -10,6 +11,12 @@ import java.net.URI
  */
 
 interface OPDS12FeedEntryExtensionParserContextType {
+
+  /**
+   * The configuration data used for the parser.
+   */
+
+  val configuration: OPDS12FeedParseConfiguration
 
   /**
    * The URI of the owning document.

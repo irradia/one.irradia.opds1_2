@@ -113,4 +113,24 @@ abstract class OPDS12FeedParserNYPLProviderContract {
     Assert.assertEquals("urn:test", feed.baseURI.toString())
     Assert.assertEquals(132, feed.entries.size)
   }
+
+  @Test
+  fun testOrgLibrarySimplifiedClassics20190413() {
+    val parser =
+      this.parsers.createParser(OPDS12FeedParseRequest(
+        uri = URI.create("urn:test"),
+        target = OPDS12FeedParseTargetStream(this.resource("feeds/classics-20190413.xml")),
+        acquisitionFeedEntryParsers = this.entryParsers(),
+        extensionEntryParsers = listOf(OPDS12NYPLFeedEntryParsers()),
+        extensionParsers = listOf()))
+
+    val result = parser.parse()
+    this.dumpParseResult(result)
+    val success = result as OPDS12ParseResult.OPDS12ParseSucceeded
+
+    val feed = success.result
+    Assert.assertTrue("Acquisition feed", feed.isAcquisitionFeed)
+    Assert.assertEquals("urn:test", feed.baseURI.toString())
+    Assert.assertEquals(40, feed.entries.size)
+  }
 }

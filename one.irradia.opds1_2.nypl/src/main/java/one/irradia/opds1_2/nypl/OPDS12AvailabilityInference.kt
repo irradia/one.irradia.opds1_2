@@ -7,6 +7,7 @@ import one.irradia.opds1_2.api.OPDS12AcquisitionRelation.ACQUISITION_GENERIC
 import one.irradia.opds1_2.api.OPDS12AcquisitionRelation.ACQUISITION_OPEN_ACCESS
 import one.irradia.opds1_2.api.OPDS12AcquisitionRelation.ACQUISITION_SAMPLE
 import one.irradia.opds1_2.api.OPDS12AcquisitionRelation.ACQUISITION_SUBSCRIBE
+import one.irradia.opds1_2.api.OPDS12FeedParseConfiguration
 import one.irradia.opds1_2.api.OPDS12Identifiers.OPDS_URI
 import one.irradia.opds1_2.commons.OPDS12XMLProcessor
 import org.w3c.dom.Element
@@ -21,12 +22,16 @@ object OPDS12AvailabilityInference {
 
   private fun mightBeHoldable(
     xmlProcessor: OPDS12XMLProcessor,
+    configuration: OPDS12FeedParseConfiguration,
     copies: Element?,
     acquisition: OPDS12Acquisition): OPDS12Availability {
 
     return if (copies != null) {
       val copiesAvailable =
-        xmlProcessor.optionalAttributeInt(copies, "available") ?: 0
+        xmlProcessor.optionalAttributeInt(
+          element = copies,
+          name = "available",
+          allowInvalid = configuration.allowInvalidIntegers) ?: 0
       if (copiesAvailable > 0)
         OPDS12Availability.Loanable(acquisition)
       else
@@ -41,6 +46,7 @@ object OPDS12AvailabilityInference {
 
   fun availabilityOf(
     element: Element,
+    configuration: OPDS12FeedParseConfiguration,
     xmlProcessor: OPDS12XMLProcessor,
     acquisition: OPDS12Acquisition): OPDS12Availability {
 
@@ -57,14 +63,15 @@ object OPDS12AvailabilityInference {
      */
 
     return if (availability == null) {
-      withoutAvailability(acquisition, xmlProcessor, copies)
+      withoutAvailability(acquisition, configuration, xmlProcessor, copies)
     } else {
-      withAvailability(holds, xmlProcessor, availability, acquisition, copies)
+      withAvailability(holds, configuration, xmlProcessor, availability, acquisition, copies)
     }
   }
 
   private fun withAvailability(
     holds: Element?,
+    configuration: OPDS12FeedParseConfiguration,
     xmlProcessor: OPDS12XMLProcessor,
     availability: Element,
     acquisition: OPDS12Acquisition,
@@ -72,11 +79,22 @@ object OPDS12AvailabilityInference {
   ): OPDS12Availability {
 
     val position =
-      holds?.let { xmlProcessor.optionalAttributeInt(holds, "position") }
+      holds?.let {
+        xmlProcessor.optionalAttributeInt(
+          element = holds,
+          name = "position",
+          allowInvalid = configuration.allowInvalidIntegers)
+      }
     val startDate =
-      xmlProcessor.optionalAttributeInstant(availability, "since")
+      xmlProcessor.optionalAttributeInstant(
+        element = availability,
+        name = "since",
+        allowInvalid = configuration.allowInvalidTimestamps)
     val endDate =
-      xmlProcessor.optionalAttributeInstant(availability, "until")
+      xmlProcessor.optionalAttributeInstant(
+        element = availability,
+        name = "until",
+        allowInvalid = configuration.allowInvalidTimestamps)
 
     /*
      * If there is availability information, the book might be loanable, loaned,
@@ -122,18 +140,23 @@ object OPDS12AvailabilityInference {
           revokeURI = null)
 
       else ->
-        mightBeHoldable(xmlProcessor, copies, acquisition)
+        mightBeHoldable(
+          xmlProcessor = xmlProcessor,
+          configuration = configuration,
+          copies = copies,
+          acquisition = acquisition)
     }
   }
 
   private fun withoutAvailability(
     acquisition: OPDS12Acquisition,
+    configuration: OPDS12FeedParseConfiguration,
     xmlProcessor: OPDS12XMLProcessor,
     copies: Element?): OPDS12Availability {
 
     return when (acquisition.relation) {
       ACQUISITION_BORROW ->
-        mightBeHoldable(xmlProcessor, copies, acquisition)
+        mightBeHoldable(xmlProcessor, configuration, copies, acquisition)
 
       ACQUISITION_BUY ->
         OPDS12Availability.Loanable(acquisition)

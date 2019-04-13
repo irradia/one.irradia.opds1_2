@@ -1,0 +1,1367 @@
+<feed xmlns:app="http://www.w3.org/2007/app" xmlns:bib="http://bib.schema.org/" xmlns:bibframe="http://bibframe.org/vocab/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:drm="http://librarysimplified.org/terms/drm" xmlns:opds="http://opds-spec.org/2010/catalog" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:schema="http://schema.org/" xmlns:simplified="http://librarysimplified.org/terms/" xmlns="http://www.w3.org/2005/Atom" simplified:entryPoint="http://schema.org/EBook">
+  <id>https://circulation.librarysimplified.org/CLASSICS/groups/1831?entrypoint=Book</id>
+  <title>The SimplyE Collection</title>
+  <updated>2019-04-13T16:03:26Z</updated>
+  <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1831?entrypoint=Book" rel="self"/>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>http://www.feedbooks.com/book/2726</id>
+    <title>Tales of Old Japan</title>
+    <author>
+      <name>Lord Redesdale</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Lord%20Redesdale/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Lord Redesdale"/>
+    </author>
+    <summary type="html">&lt;p&gt;Tales of Old Japan is an anthology of short stories, compiled by Algernon Bertram Freeman-Mitford, Lord Redesdale, writing under the better known name of A.B. Mitford. These stories focus on the varying aspects of Japanese life in centuries past. The book, which was written in 1871, is still regarded as an excellent introduction to Japanese literature and culture, by virtue of its ease of access and supplemental notes by the writer. Also included are the author's eyewitness accounts of a selection of Japanese rituals, ranging from the harakiri and marriage to a selection of sermons. This book had a lasting influence on the Western perception of Japanese history, culture and society, particularly because of just one widely known tale about samurai revenge.&lt;/p&gt;</summary>
+    <simplified:pwid>76636563-1716-3e46-ef06-9a7502eaebf7</simplified:pwid>
+    <link href="https://d3pqhns20516vc.cloudfront.net/FeedBooks/URI/http%3A//www.feedbooks.com/book/2726/2726.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://d3pqhns20516vc.cloudfront.net/scaled/300/FeedBooks/URI/http%3A//www.feedbooks.com/book/2726/2726.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Short%20Stories" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Short Stories"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Historical%20Fiction" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Historical Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Literary%20Fiction" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Literary Fiction"/>
+    <dcterms:language>en</dcterms:language>
+    <published>2018-04-11T14:44:53Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/2726/report" rel="issues"/>
+    <id>http://www.feedbooks.com/book/2726</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/2726" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="FeedBooks"/>
+    <published>2018-04-11T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1798?entrypoint=Book" rel="collection" title="Short Reads"/>
+    <updated>2018-05-03T14:16:24Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/311186/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/2726/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/http://www.feedbooks.com/book/2726/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>http://www.feedbooks.com/book/5544</id>
+    <title>The Old Man in the Corner</title>
+    <author>
+      <name>Emma Orczy</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Emma%20Orczy/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Emma Orczy"/>
+    </author>
+    <summary type="html">&lt;p&gt;Created by Baroness Orczy, author of the famous Scarlet Pimpernel series, The Old Man In the Corner was one of the earliest armchair detectives, popping up with so many others in the wake of the huge popularity of the Sherlock Holmes stories.&lt;/p&gt;
+
+&lt;p&gt;The Old Man relies mostly upon sensationalistic "penny dreadful" newspaper accounts, with the occasional courtroom visit. He narrates all this information, while tying complicated knots in a piece of string, to a female Journalist who frequents the same tea-shop (the ABC Teashop on the corner of Norfolk Street and the Strand). They enjoy an antagonistic relationship, as the Journalist attempts to cut the Old Man's ego down to size and the Old Man trumps her every time.&lt;/p&gt;
+
+&lt;p&gt;--Wikipedia&lt;/p&gt;</summary>
+    <simplified:pwid>fb1452dc-4154-19c6-8529-8ec9386f1615</simplified:pwid>
+    <link href="https://d3pqhns20516vc.cloudfront.net/FeedBooks/URI/http%3A//www.feedbooks.com/book/5544/5544.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://d3pqhns20516vc.cloudfront.net/scaled/300/FeedBooks/URI/http%3A//www.feedbooks.com/book/5544/5544.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Short%20Stories" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Short Stories"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Mystery" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Mystery"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Literary%20Fiction" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Literary Fiction"/>
+    <dcterms:language>en</dcterms:language>
+    <published>2018-04-11T19:16:10Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/5544/report" rel="issues"/>
+    <id>http://www.feedbooks.com/book/5544</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/5544" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="FeedBooks"/>
+    <published>2018-04-11T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1798?entrypoint=Book" rel="collection" title="Short Reads"/>
+    <updated>2018-05-03T14:07:47Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/312473/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/5544/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/http://www.feedbooks.com/book/5544/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>urn:isbn:9781683605041</id>
+    <title>Sea Change</title>
+    <author>
+      <name>Anna Zumbro</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Anna%20Zumbro/eng/Children%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Anna Zumbro"/>
+    </author>
+    <summary type="html">Mack and his friends are hanging out on the beach when one of them disappears in the waves&#8212;only to reemerge with gills lining her neck. One by one, the teenagers develop aquatic features never before seen on humans. But Mack, the last one to transform, suspects that something is not quite right. Surely, magic like this cannot come without dire consequences.</summary>
+    <simplified:pwid>29b9697e-e5ad-990c-7358-f0c52bcd179f</simplified:pwid>
+    <link href="https://d14p0gig7ihu1b.cloudfront.net/covers/9781683605041_Sea-Change.thumbnail.jpg" type="image/jpeg" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Young Adult" scheme="http://schema.org/audience" label="Young Adult"/>
+    <category term="14-17" scheme="http://schema.org/typicalAgeRange" label="14-17"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Short%20Stories" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Short Stories"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Fantasy" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Fantasy"/>
+    <dcterms:language>en</dcterms:language>
+    <dcterms:publisher>Ember: A Journal of Luminous Things</dcterms:publisher>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683605041/report" rel="issues"/>
+    <id>urn:isbn:9781683605041</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683605041" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="Plympton"/>
+    <published>2018-04-25T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1798?entrypoint=Book" rel="collection" title="Short Reads"/>
+    <updated>2018-04-25T13:07:36Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313706/fulfill/17" rel="http://opds-spec.org/acquisition/open-access" type="application/vnd.librarysimplified.bearer-token+json" dcterms:rights="http://librarysimplified.org/terms/rights-status/in-copyright">
+      <opds:indirectAcquisition type="application/epub+zip"/>
+      <opds:availability status="available"/>
+      <opds:holds total="0"/>
+      <opds:copies available="1" total="1"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683605041/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/ISBN/9781683605041/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <title>Leafing</title>
+    <author>
+      <name>Elizabeth Sachs</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Elizabeth%20Sachs/eng/Children%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Elizabeth Sachs"/>
+    </author>
+    <summary type="html">Elizabeth Sachs&#8217; heart-wrenching &#8220;Leafing&#8221; finds Lucy and Steve deep into a battle with Steve&#8217;s early-onset, severe Alzheimer&#8217;s. The aging couple&#8217;s plan to visit their son, Nathan, in Asia is met with incredulity and concern from support group members, and even Nate himself. But Lucy is determined to give her husband one last enjoyable experience, before his mind slips away entirely&#8212;and it isn&#8217;t long before she learns that, even in the face of a disease whose outcome is inevitable, surprises are still possible.</summary>
+    <simplified:pwid>ff93b8b9-6259-860c-c226-a198b07db11a</simplified:pwid>
+    <link href="https://covers.nypl.org/Plympton/ISBN/9781683606017/9781683606017_Leafing.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://covers.nypl.org/scaled/300/Plympton/ISBN/9781683606017/9781683606017_Leafing.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Young Adult" scheme="http://schema.org/audience" label="Young Adult"/>
+    <category term="14-17" scheme="http://schema.org/typicalAgeRange" label="14-17"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Short%20Stories" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Short Stories"/>
+    <dcterms:language>en</dcterms:language>
+    <dcterms:publisher>Spark: A Creative Anthology</dcterms:publisher>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683606017/report" rel="issues"/>
+    <id>urn:isbn:9781683606017</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683606017" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="Plympton"/>
+    <published>2018-04-25T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1798?entrypoint=Book" rel="collection" title="Short Reads"/>
+    <updated>2018-05-31T13:05:48Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313582/fulfill/17" rel="http://opds-spec.org/acquisition/open-access" type="application/vnd.librarysimplified.bearer-token+json" dcterms:rights="http://librarysimplified.org/terms/rights-status/in-copyright">
+      <opds:indirectAcquisition type="application/epub+zip"/>
+      <opds:availability status="available"/>
+      <opds:holds total="0"/>
+      <opds:copies available="1" total="1"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683606017/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/ISBN/9781683606017/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>urn:isbn:9781683604594</id>
+    <title>Unhappiness, Guanajuato</title>
+    <author>
+      <name>Pablo Pi&#241;ero Stillmann</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Pablo%20Pi%C3%B1ero%20Stillmann/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Pablo Pi&#241;ero Stillmann"/>
+    </author>
+    <summary type="html">"What if happiness isn't worth searching for?" writes Melissa Swantkowski, Fiction Editor of Bodega magazine, in her introduction to this issue of Recommended Reading. "What if we let go of the idea that permanent bliss is attainable or even desirable? And if we allow that melancholy is our natural state, who&#8217;s to say this isn&#8217;t, in fact, happiness? But by doing away with the search for happiness and instead aiming for its opposite, does unhappiness become just as elusive?
+
+"In 'Unhappiness, Guanajuato' by Pablo Pi&#241;ero Stillmann, the narrator, Joaqu&#237;n, doesn't find any answers. (That would be too easy.) Instead, we get a disjointed narrative, a story about a man who joins a cult of sadness and the legacy of unhappiness he leaves for his family, delivered in small snippets of history and personal anecdote. And after he's delivered his story, he may be more lost than before. I hate to talk about unreliable narrators because on some level every narrator is unreliable&#8212;part of what gets a reader involved is buying into what the story is selling. But Joaqu&#237;n announces his intention to deceive the reader on the first page: 'The false reason why I&#8217;m telling this story: A smokescreen.' In less skillful hands, this piece could go awry at the start, the reader asking herself why she should continue, but Stillmann's prose is confident and deft and each section of the story drives it forward."</summary>
+    <simplified:pwid>7da55043-24ad-1a46-4269-a598cfe3d6cf</simplified:pwid>
+    <link href="https://covers.nypl.org/Plympton/ISBN/9781683604594/9781683604594_Unhappiness-Guanajuato.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://d14p0gig7ihu1b.cloudfront.net/covers/9781683604594_Unhappiness-Guanajuato.thumbnail.jpg" type="image/jpeg" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Short%20Stories" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Short Stories"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Literary%20Fiction" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Literary Fiction"/>
+    <dcterms:language>en</dcterms:language>
+    <dcterms:publisher>Electric Literature</dcterms:publisher>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683604594/report" rel="issues"/>
+    <id>urn:isbn:9781683604594</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683604594" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="Plympton"/>
+    <published>2018-04-25T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1798?entrypoint=Book" rel="collection" title="Short Reads"/>
+    <updated>2018-04-25T12:47:59Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313569/fulfill/17" rel="http://opds-spec.org/acquisition/open-access" type="application/vnd.librarysimplified.bearer-token+json" dcterms:rights="http://librarysimplified.org/terms/rights-status/in-copyright">
+      <opds:indirectAcquisition type="application/epub+zip"/>
+      <opds:availability status="available"/>
+      <opds:holds total="0"/>
+      <opds:copies available="1" total="1"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683604594/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/ISBN/9781683604594/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>urn:isbn:9781683606956</id>
+    <title>The Baghdad Clock</title>
+    <author>
+      <name>Cristina Fern&#225;ndez Cubas</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Cristina%20Fern%C3%A1ndez%20Cubas/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Cristina Fern&#225;ndez Cubas"/>
+    </author>
+    <summary type="html">The arrival of an antique grandfather clock from Baghdad brings disorder and tragedy to an unsuspecting Spanish family.</summary>
+    <simplified:pwid>1a10935f-25f4-ffad-1e7a-0251059468ce</simplified:pwid>
+    <link href="https://covers.nypl.org/Plympton/ISBN/9781683606956/9781683606956_The-Baghdad-Clock.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://d14p0gig7ihu1b.cloudfront.net/covers/9781683606956_The-Baghdad-Clock.thumbnail.jpg" type="image/jpeg" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Short%20Stories" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Short Stories"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Literary%20Fiction" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Literary Fiction"/>
+    <dcterms:language>en</dcterms:language>
+    <dcterms:publisher>Words Without Borders</dcterms:publisher>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683606956/report" rel="issues"/>
+    <id>urn:isbn:9781683606956</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683606956" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="Plympton"/>
+    <published>2018-04-25T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1798?entrypoint=Book" rel="collection" title="Short Reads"/>
+    <updated>2018-04-25T13:21:25Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313813/fulfill/17" rel="http://opds-spec.org/acquisition/open-access" type="application/vnd.librarysimplified.bearer-token+json" dcterms:rights="http://librarysimplified.org/terms/rights-status/in-copyright">
+      <opds:indirectAcquisition type="application/epub+zip"/>
+      <opds:availability status="available"/>
+      <opds:holds total="0"/>
+      <opds:copies available="1" total="1"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683606956/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/ISBN/9781683606956/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>urn:isbn:9781683604211</id>
+    <title>The Duchess of Albany</title>
+    <author>
+      <name>Christine Schutt</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Christine%20Schutt/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Christine Schutt"/>
+    </author>
+    <summary type="html">"Any reader unfamiliar with Christine Schutt&#8217;s work should prepare for an unprecedented event. This is courageous fiction," writes Diane Williams, acclaimed author and editor of NOON, in her introduction to this issue of Recommended Reading.
+"The duchess in this story is an older woman in extremis. She is in mourning for her beloved husband, whose garden, in all its patterns and colorations, has sustained them both. Now his remark about gardens dying with their gardeners rouses her to keep the garden alive and so keep some part of him alive. She is a noble woman in her efforts&#8212;a flower in the garden."</summary>
+    <simplified:pwid>bb766a76-aa60-6d2a-f888-5add5d233141</simplified:pwid>
+    <link href="https://covers.nypl.org/Plympton/ISBN/9781683604211/9781683604211_The-Duchess-of-Albany.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://d14p0gig7ihu1b.cloudfront.net/covers/9781683604211_The-Duchess-of-Albany.thumbnail.jpg" type="image/jpeg" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Short%20Stories" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Short Stories"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Literary%20Fiction" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Literary Fiction"/>
+    <dcterms:language>en</dcterms:language>
+    <dcterms:publisher>Electric Literature</dcterms:publisher>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683604211/report" rel="issues"/>
+    <id>urn:isbn:9781683604211</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683604211" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="Plympton"/>
+    <published>2018-04-25T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1798?entrypoint=Book" rel="collection" title="Short Reads"/>
+    <updated>2018-04-25T13:10:58Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313731/fulfill/17" rel="http://opds-spec.org/acquisition/open-access" type="application/vnd.librarysimplified.bearer-token+json" dcterms:rights="http://librarysimplified.org/terms/rights-status/in-copyright">
+      <opds:indirectAcquisition type="application/epub+zip"/>
+      <opds:availability status="available"/>
+      <opds:holds total="0"/>
+      <opds:copies available="1" total="1"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683604211/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/ISBN/9781683604211/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <title>Four-Way Stop</title>
+    <author>
+      <name>George Singleton</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/George%20Singleton/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="George Singleton"/>
+    </author>
+    <summary type="html">G.R.&#8217;s unusually busy Halloween eve closes with two boys who seem too old to be trick-or-treating. It&#8217;s only after they&#8217;ve left with the last of G.R.&#8217;s candy that he finds out they&#8217;re newly minted local celebrities: &#8220;a Halloween miracle,&#8221; according to the news. His uninterested wife already in bed, G.R. sets out alone to find them, unsure of what he&#8217;ll do but determined to make the news himself&#8212;to tell his and Tina&#8217;s story for the whole world to hear.</summary>
+    <simplified:pwid>747edc01-0ad2-8170-23cc-67f2fec570ac</simplified:pwid>
+    <link href="https://covers.nypl.org/Plympton/ISBN/9781683601791/9781683601791_Four-Way-Stop.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://covers.nypl.org/scaled/300/Plympton/ISBN/9781683601791/9781683601791_Four-Way-Stop.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Short%20Stories" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Short Stories"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Literary%20Fiction" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Literary Fiction"/>
+    <dcterms:language>en</dcterms:language>
+    <dcterms:publisher>Plympton</dcterms:publisher>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683601791/report" rel="issues"/>
+    <id>urn:isbn:9781683601791</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683601791" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="Plympton"/>
+    <published>2018-05-31T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1798?entrypoint=Book" rel="collection" title="Short Reads"/>
+    <updated>2018-05-31T14:10:14Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/315322/fulfill/17" rel="http://opds-spec.org/acquisition/open-access" type="application/vnd.librarysimplified.bearer-token+json" dcterms:rights="http://librarysimplified.org/terms/rights-status/in-copyright">
+      <opds:indirectAcquisition type="application/epub+zip"/>
+      <opds:availability status="available"/>
+      <opds:holds total="0"/>
+      <opds:copies available="1" total="1"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683601791/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/ISBN/9781683601791/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <title>The Vandalists</title>
+    <author>
+      <name>Natalia Theodoridou</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Natalia%20Theodoridou/eng/Children%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Natalia Theodoridou"/>
+    </author>
+    <summary type="html">The city is changing, becoming increasingly distorted. At first the effects were subtle, but now the entire population is rapt by the ever more striking and surreal sights, all linked by a gleaming signature: &#8220;The Vandalists.&#8221; As the city&#8217;s crowds stand dazed, three residents&#8212;Peter, Alice, and Jude&#8212;confront the shifting world around them, and its relation to their own inner worlds.</summary>
+    <simplified:pwid>6f82d92a-3366-7904-d135-cd6f3ab5e451</simplified:pwid>
+    <link href="https://covers.nypl.org/Plympton/ISBN/9781683606222/9781683606222_The-Vandalists.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://covers.nypl.org/scaled/300/Plympton/ISBN/9781683606222/9781683606222_The-Vandalists.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Young Adult" scheme="http://schema.org/audience" label="Young Adult"/>
+    <category term="14-17" scheme="http://schema.org/typicalAgeRange" label="14-17"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Short%20Stories" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Short Stories"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Mystery" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Mystery"/>
+    <dcterms:language>en</dcterms:language>
+    <dcterms:publisher>Spark: A Creative Anthology</dcterms:publisher>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683606222/report" rel="issues"/>
+    <id>urn:isbn:9781683606222</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683606222" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="Plympton"/>
+    <published>2018-05-31T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1798?entrypoint=Book" rel="collection" title="Short Reads"/>
+    <updated>2018-05-31T13:49:46Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/315300/fulfill/17" rel="http://opds-spec.org/acquisition/open-access" type="application/vnd.librarysimplified.bearer-token+json" dcterms:rights="http://librarysimplified.org/terms/rights-status/in-copyright">
+      <opds:indirectAcquisition type="application/epub+zip"/>
+      <opds:availability status="available"/>
+      <opds:holds total="0"/>
+      <opds:copies available="1" total="1"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683606222/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/ISBN/9781683606222/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>urn:isbn:9781683607229</id>
+    <title>Memories of Lily-Colored Photographs</title>
+    <author>
+      <name>Jung Mi-kyung</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Jung%20Mi-kyung/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Jung Mi-kyung"/>
+    </author>
+    <summary type="html">When lovesick Lee Sung-min discovers racy photographs from his last trip with his former girlfriend, Yun-mi, he impulsively calls to tell her. But the unexpected, painful bout of nostalgia turns out to be the least of his worries: his call sets in motion a grave chain of events, entangling the two former lovers, Yun-mi's jealous fiance, and the crew of thugs under his command.</summary>
+    <simplified:pwid>70e94360-b890-c00e-fbaa-a26f34a4f4ae</simplified:pwid>
+    <link href="https://covers.nypl.org/Plympton/ISBN/9781683607229/9781683607229_Memories-of-Lily-Colored-Photographs.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://covers.nypl.org/scaled/300/Plympton/ISBN/9781683607229/9781683607229_Memories-of-Lily-Colored-Photographs.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Short%20Stories" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Short Stories"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Literary%20Fiction" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Literary Fiction"/>
+    <dcterms:language>en</dcterms:language>
+    <dcterms:publisher>Words Without Borders</dcterms:publisher>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683607229/report" rel="issues"/>
+    <id>urn:isbn:9781683607229</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683607229" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="Plympton"/>
+    <published>2018-04-25T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1798?entrypoint=Book" rel="collection" title="Short Reads"/>
+    <updated>2018-04-25T12:42:54Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313536/fulfill/17" rel="http://opds-spec.org/acquisition/open-access" type="application/vnd.librarysimplified.bearer-token+json" dcterms:rights="http://librarysimplified.org/terms/rights-status/in-copyright">
+      <opds:indirectAcquisition type="application/epub+zip"/>
+      <opds:availability status="available"/>
+      <opds:holds total="0"/>
+      <opds:copies available="1" total="1"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683607229/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/ISBN/9781683607229/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <title>White Fang</title>
+    <author>
+      <name>Jack London</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Jack%20London/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Jack London"/>
+    </author>
+    <summary type="html">&lt;p&gt;&lt;i&gt;White Fang&lt;/i&gt; is Jack London&#8217;s companion novel to &lt;i&gt;&lt;a href="https://standardebooks.org/ebooks/jack-london/the-call-of-the-wild"&gt;The Call of the Wild&lt;/a&gt;&lt;/i&gt;. In &lt;i&gt;The Call of the Wild&lt;/i&gt; we follow a dog&#8217;s journey from domestication to wilderness, but in &lt;i&gt;White Fang&lt;/i&gt; we see the opposite: a wild wolf-dog captured by men and eventually domesticated.&lt;/p&gt;
+			&lt;p&gt;White Fang&#8217;s journey isn&#8217;t an easy one; both the wild and civilization have their share of brutal violence. But he eventually seems happy in a home with a loving family. When read side-by-side with &lt;i&gt;The Call of the Wild&lt;/i&gt;, &lt;i&gt;White Fang&lt;/i&gt; poses an interesting question: is wilderness &lt;em&gt;really&lt;/em&gt; an improvement over civilization? Is there one right way to live?&lt;/p&gt;</summary>
+    <simplified:pwid>2b4eb320-35dd-5e1b-9f70-d62904597f17</simplified:pwid>
+    <link href="https://d3pqhns20516vc.cloudfront.net/Standard%20Ebooks/URI/https%3A//standardebooks.org/ebooks/jack-london/white-fang/cover.svg.png" type="image/png" rel="http://opds-spec.org/image"/>
+    <link href="https://d3pqhns20516vc.cloudfront.net/scaled/300/Standard%20Ebooks/URI/https%3A//standardebooks.org/ebooks/jack-london/white-fang/cover.svg.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Adventure" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Adventure"/>
+    <dcterms:language>en</dcterms:language>
+    <dcterms:publisher>Standard Ebooks</dcterms:publisher>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://standardebooks.org/ebooks/jack-london/white-fang/report" rel="issues"/>
+    <id>https://standardebooks.org/ebooks/jack-london/white-fang</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://standardebooks.org/ebooks/jack-london/white-fang" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="Standard Ebooks"/>
+    <published>2018-04-19T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1808?entrypoint=Book" rel="collection" title="Fiction"/>
+    <updated>2018-06-14T14:19:07Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313273/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="http://librarysimplified.org/terms/rights-status/unknown">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313273/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="http://librarysimplified.org/terms/rights-status/generic-open-access">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313273/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="http://librarysimplified.org/terms/rights-status/generic-open-access">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313273/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="http://librarysimplified.org/terms/rights-status/generic-open-access">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313273/fulfill/10" rel="http://opds-spec.org/acquisition/open-access" type="application/x-mobipocket-ebook" dcterms:rights="http://librarysimplified.org/terms/rights-status/generic-open-access">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313273/fulfill/10" rel="http://opds-spec.org/acquisition/open-access" type="application/x-mobi8-ebook" dcterms:rights="http://librarysimplified.org/terms/rights-status/generic-open-access">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313273/fulfill/16" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="http://librarysimplified.org/terms/rights-status/generic-open-access">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://standardebooks.org/ebooks/jack-london/white-fang/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/https://standardebooks.org/ebooks/jack-london/white-fang/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>http://www.feedbooks.com/book/63</id>
+    <title>The Return of Sherlock Holmes</title>
+    <author>
+      <name>Arthur Conan Doyle</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Arthur%20Conan%20Doyle/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Arthur Conan Doyle"/>
+    </author>
+    <schema:Series name="Sherlock Holmes" schema:position="6">
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/series/Sherlock%20Holmes/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="series" title="Sherlock Holmes"/>
+    </schema:Series>
+    <summary type="html">&lt;p&gt;The Return of Sherlock Holmes is a collection of 13 Sherlock Holmes stories, originally published in 1903-1904, by Arthur Conan Doyle.
+&lt;br /&gt;The book was first published on March 7, 1905 by Georges Newnes, Ltd and in a Colonial edition by Longmans. 30,000 copies were made of the initial print run. The US edition by McClure, Phillips &amp; Co. added another 28,000 to the run.
+&lt;br /&gt;This was the first Holmes collection since 1893, when Holmes had "died" in "The Adventure of the Final Problem". Having published The Hound of the Baskervilles in 1901&#8211;1902 (although setting it before Holmes' death) Doyle came under intense pressure to revive his famous character.&lt;/p&gt;</summary>
+    <simplified:pwid>e8d3307e-bcca-22c1-14bc-204d5c5c8343</simplified:pwid>
+    <link href="https://d3pqhns20516vc.cloudfront.net/FeedBooks/URI/http%3A//www.feedbooks.com/book/63/63.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://d3pqhns20516vc.cloudfront.net/scaled/300/FeedBooks/URI/http%3A//www.feedbooks.com/book/63/63.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Short%20Stories" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Short Stories"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Mystery" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Mystery"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Literary%20Fiction" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Literary Fiction"/>
+    <dcterms:language>en</dcterms:language>
+    <published>2018-04-09T13:30:40Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/63/report" rel="issues"/>
+    <id>http://www.feedbooks.com/book/63</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/63" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="FeedBooks"/>
+    <published>2018-04-09T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1808?entrypoint=Book" rel="collection" title="Fiction"/>
+    <updated>2018-05-03T14:11:09Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/309197/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/63/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/http://www.feedbooks.com/book/63/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>https://unglue.it/api/id/work/114454/</id>
+    <title>Pirate Cinema</title>
+    <author>
+      <name>Cory Doctorow</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Cory%20Doctorow/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Cory Doctorow"/>
+    </author>
+    <summary type="html">Trent McCauley is sixteen, brilliant, and obsessed with one thing: making movies on his computer by reassembling footage from popular films he downloads from the net. In the dystopian near-future Britain where Trent is growing up, this is more illegal than ever; the punishment for being caught three times is that your entire household&#8217;s access to the internet is cut off for a year, with no appeal.
+&lt;br /&gt;&lt;br /&gt;
+Trent's too clever for that too happen. Except it does, and it nearly destroys his family. Shamed and shattered, Trent runs away to London, where he slowly he learns the ways of staying alive on the streets. This brings him in touch with a demimonde of artists and activists who are trying to fight a new bill that will criminalize even more harmless internet creativity, making felons of millions of British citizens at a stroke. 
+&lt;br /&gt;&lt;br /&gt;
+Things look bad. Parliament is in power of a few wealthy media conglomerates. But the powers-that-be haven&#8217;t entirely reckoned with the power of a gripping movie to change people&#8217;s minds&#8230;.
+&lt;br /&gt;&lt;br /&gt;Commentary and more at &lt;a href="http://craphound.com/category/pc/"&gt;Craphound&lt;/a&gt;</summary>
+    <simplified:pwid>72ce076b-39c1-f73b-2e0b-58f5fa634cbd</simplified:pwid>
+    <link href="https://covers.nypl.org/Library+Simplified+metadata+wrangler/URI/https%3A//unglue.it/api/id/work/114454//6d71b14527e03a42b22f905530c103ae.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://covers.nypl.org/Library+Simplified+metadata+wrangler/URI/https%3A//unglue.it/api/id/work/114454//6d71b14527e03a42b22f905530c103ae.jpg" type="image/jpeg" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Science%20Fiction" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Science Fiction"/>
+    <dcterms:language>en</dcterms:language>
+    <published>2016-01-28T02:19:36Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/114454//report" rel="issues"/>
+    <id>https://unglue.it/api/id/work/114454/</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/114454/" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="unglue.it"/>
+    <published>2018-04-18T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1808?entrypoint=Book" rel="collection" title="Fiction"/>
+    <updated>2018-04-26T06:29:02Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/312990/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="http://librarysimplified.org/terms/rights-status/unknown">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/312990/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="http://librarysimplified.org/terms/rights-status/generic-open-access">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/312990/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc-nd/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/114454//related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/https://unglue.it/api/id/work/114454//open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>http://www.feedbooks.com/book/4361</id>
+    <title>Sister Carrie</title>
+    <author>
+      <name>Theodore Dreiser</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Theodore%20Dreiser/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Theodore Dreiser"/>
+    </author>
+    <summary type="html">&lt;p&gt;Sister Carrie (1900) is a novel by Theodore Dreiser about a young country girl who moves to the big city where she starts realizing her own American Dream by first becoming a mistress to men that she perceives as superior and later as a famous actress.&lt;/p&gt;</summary>
+    <simplified:pwid>7a68684d-f7c4-6ff5-7f91-98d315d49b8b</simplified:pwid>
+    <link href="https://d3pqhns20516vc.cloudfront.net/FeedBooks/URI/http%3A//www.feedbooks.com/book/4361/4361.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://d3pqhns20516vc.cloudfront.net/scaled/300/FeedBooks/URI/http%3A//www.feedbooks.com/book/4361/4361.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Literary%20Fiction" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Literary Fiction"/>
+    <dcterms:language>en</dcterms:language>
+    <published>2018-04-11T17:28:18Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/4361/report" rel="issues"/>
+    <id>http://www.feedbooks.com/book/4361</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/4361" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="FeedBooks"/>
+    <published>2018-04-11T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1808?entrypoint=Book" rel="collection" title="Fiction"/>
+    <updated>2018-04-11T17:30:06Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/311947/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/4361/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/http://www.feedbooks.com/book/4361/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>http://www.feedbooks.com/book/2936</id>
+    <title>Romeo and Juliet</title>
+    <author>
+      <name>William Shakespeare</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/William%20Shakespeare/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="William Shakespeare"/>
+    </author>
+    <summary type="html">&lt;p&gt;Romeo and Juliet is a tragic play written early in the career of William Shakespeare about two teenage "star-cross'd lovers" whose untimely deaths ultimately unite their feuding households. It was among Shakespeare's most popular plays during his lifetime and, along with Hamlet, is one of his most frequently performed plays. Today, the title characters are regarded as archetypal "young lovers". (From Wikipedia)&lt;/p&gt;</summary>
+    <simplified:pwid>915e61a2-b19c-2aff-3449-78f8f45a29d5</simplified:pwid>
+    <link href="https://d3pqhns20516vc.cloudfront.net/FeedBooks/URI/http%3A//www.feedbooks.com/book/2936/2936.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://d3pqhns20516vc.cloudfront.net/scaled/300/FeedBooks/URI/http%3A//www.feedbooks.com/book/2936/2936.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Drama" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Drama"/>
+    <dcterms:language>en</dcterms:language>
+    <published>2018-04-11T15:04:06Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/2936/report" rel="issues"/>
+    <id>http://www.feedbooks.com/book/2936</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/2936" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="FeedBooks"/>
+    <published>2018-04-11T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1808?entrypoint=Book" rel="collection" title="Fiction"/>
+    <updated>2018-05-03T14:04:11Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/311260/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/2936/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/http://www.feedbooks.com/book/2936/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>http://www.feedbooks.com/book/3920</id>
+    <title>Through Russia</title>
+    <author>
+      <name>Maxim Gorky</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Maxim%20Gorky/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Maxim Gorky"/>
+    </author>
+    <summary type="html">&lt;p&gt;A collection of short stories about Russia.&lt;/p&gt;</summary>
+    <simplified:pwid>ca7b6b88-00bb-c55d-ca24-a39cb1dc933d</simplified:pwid>
+    <link href="https://d3pqhns20516vc.cloudfront.net/FeedBooks/URI/http%3A//www.feedbooks.com/book/3920/3920.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://d3pqhns20516vc.cloudfront.net/scaled/300/FeedBooks/URI/http%3A//www.feedbooks.com/book/3920/3920.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Short%20Stories" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Short Stories"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Literary%20Fiction" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Literary Fiction"/>
+    <dcterms:language>en</dcterms:language>
+    <published>2018-04-11T16:38:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/3920/report" rel="issues"/>
+    <id>http://www.feedbooks.com/book/3920</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/3920" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="FeedBooks"/>
+    <published>2018-04-11T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1808?entrypoint=Book" rel="collection" title="Fiction"/>
+    <updated>2018-05-03T14:14:30Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/311697/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/3920/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/http://www.feedbooks.com/book/3920/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>http://www.feedbooks.com/book/303</id>
+    <title>The Old Curiosity Shop</title>
+    <author>
+      <name>Charles Dickens</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Charles%20Dickens/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Charles Dickens"/>
+    </author>
+    <summary type="html">No Description Available</summary>
+    <simplified:pwid>c9859171-b45c-d38c-40df-9c42a03387a4</simplified:pwid>
+    <link href="https://covers.nypl.org/FeedBooks/URI/http%3A//www.feedbooks.com/book/303/303.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://covers.nypl.org/scaled/300/FeedBooks/URI/http%3A//www.feedbooks.com/book/303/303.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Literary%20Fiction" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Literary Fiction"/>
+    <dcterms:language>en</dcterms:language>
+    <published>2018-04-09T14:31:24Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/303/report" rel="issues"/>
+    <id>http://www.feedbooks.com/book/303</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/303" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="FeedBooks"/>
+    <published>2018-04-09T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1808?entrypoint=Book" rel="collection" title="Fiction"/>
+    <updated>2018-06-05T08:52:52Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/309376/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/303/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/http://www.feedbooks.com/book/303/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>http://www.feedbooks.com/book/93</id>
+    <title>The Age of Innocence</title>
+    <author>
+      <name>Edith Wharton</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Edith%20Wharton/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Edith Wharton"/>
+    </author>
+    <summary type="html">&lt;p&gt;The Age of Innocence centers on one society couple's impending marriage and the introduction of a scandalous woman whose presence threatens their happiness. Though the novel questions the assumptions and mores of turn of the century New York society, it never devolves into an outright condemnation of the institution. In fact, Wharton considered this novel an "apology" for the earlier, more brutal and critical, "The House of Mirth". Not to be overlooked is the author's attention to detailing the charms and customs of this caste. The novel is lauded for its accurate portrayal of how the nineteenth-century East Coast American upper class lived and this combined with the social tragedy earned Wharton a Pulitzer - the first Pulitzer awarded to a woman.&lt;/p&gt;</summary>
+    <simplified:pwid>1c54542e-cbf0-806e-dffe-7afc58463a96</simplified:pwid>
+    <link href="https://d3pqhns20516vc.cloudfront.net/FeedBooks/URI/http%3A//www.feedbooks.com/book/93/93.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://d3pqhns20516vc.cloudfront.net/scaled/300/FeedBooks/URI/http%3A//www.feedbooks.com/book/93/93.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Classics" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Classics"/>
+    <dcterms:language>en</dcterms:language>
+    <published>2018-04-09T13:30:40Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/93/report" rel="issues"/>
+    <id>http://www.feedbooks.com/book/93</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/93" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="FeedBooks"/>
+    <published>2018-04-09T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1808?entrypoint=Book" rel="collection" title="Fiction"/>
+    <updated>2018-04-09T13:38:00Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/309202/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/93/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/http://www.feedbooks.com/book/93/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <title>Outside Inside</title>
+    <author>
+      <name>Martha King</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Martha%20King/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Martha King"/>
+    </author>
+    <summary type="html">San Francisco. 1957. A year after Black Mountain College, the North Carolina, art-centric school closes its doors forever. In the APS 23 feature, &#8220;Outside Inside,&#8221; Martha King narrates her time at the school. Always in transition, King found herself settled in the half-lit mountainside, at odds with the ethic of Black Mountain. &#8220;Black Mountain meant you to prepare yourself to mean something...They meant you to think of art or poetry or even politics as more important than the indexes of your personal importance,&#8221; King writes. She details a legacy of cliques, intellectual violence spurred by naked competition. Shaped by eclectic classmates who continue to intersect, long after Black Mountain fades into selective memory.</summary>
+    <simplified:pwid>dbab6752-5146-db5d-b0a3-c0c6048961d9</simplified:pwid>
+    <link href="https://covers.nypl.org/Plympton/ISBN/9781683609384/9781683609384_Outside-Inside.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://covers.nypl.org/scaled/300/Plympton/ISBN/9781683609384/9781683609384_Outside-Inside.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Short%20Stories" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Short Stories"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Literary%20Fiction" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Literary Fiction"/>
+    <dcterms:language>en</dcterms:language>
+    <dcterms:publisher>A Public Space</dcterms:publisher>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683609384/report" rel="issues"/>
+    <id>urn:isbn:9781683609384</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683609384" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="Plympton"/>
+    <published>2018-05-31T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1808?entrypoint=Book" rel="collection" title="Fiction"/>
+    <updated>2018-05-31T13:50:23Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/315301/fulfill/17" rel="http://opds-spec.org/acquisition/open-access" type="application/vnd.librarysimplified.bearer-token+json" dcterms:rights="http://librarysimplified.org/terms/rights-status/in-copyright">
+      <opds:indirectAcquisition type="application/epub+zip"/>
+      <opds:availability status="available"/>
+      <opds:holds total="0"/>
+      <opds:copies available="1" total="1"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683609384/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/ISBN/9781683609384/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>urn:isbn:9781683603009</id>
+    <title>Ball</title>
+    <author>
+      <name>Tara Ison</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Tara%20Ison/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Tara Ison"/>
+    </author>
+    <summary type="html">The best thing, really, is when your students are sort of better than you are. Often, and this can be a relief, it takes them a while to be better than you are, but when it does happen, there&#8217;s a soaring feeling that you get from it. And so: Tara Ison was my student in the low residency writing program at Bennington College, and she was in a very memorable period for me there, in which virtually every one of my students went on to publish remarkable work. Tara was then, and is now, a cool cat: not show-offy, but patient, warm, funny, and supremely gifted. She was a great pleasure to have in class because she was spot-on, but not aggressive or ungraceful about it. She used her powers for good. I think she published a novel around the time she got to Bennington, and so she was already launched and didn&#8217;t need my help much. &#8220;Ball&#8221; was actually a story I read in that workshop, but my feeling is that she has improved it since then, because while it was really great in those days, it is now astoundingly good.
+
+&#8220;Ball,&#8221; as you are about to find out, is a truly outrageous story about contemporary relationships, sex, and dog ownership. It is about the way these things are very similar. And it is not breezy and light about sex and dog ownership, it is honest and tragicomic and astringent and provocative. There&#8217;s only one other literary dog vulva that is as good as the one described in the opening of &#8220;Ball,&#8221; namely in J. R. Ackerley&#8217;s My Dog Tulip, and Ison&#8217;s literary dog vulva gives Ackerley a run for his money. Ison&#8217;s opening is an opening, as it were, and nothing could be more satisfying. The rest is great, too, after the opening, the grim unromantic coupling of adults who long for love, but are not necessarily prepared for its demands, unless, perhaps, the love comes from a dog instead. Read on! Tara Ison, for all her modesty and stealth, is a real voice for our times, and what she has to say is, e.g., that nothing is sacred, and desperation doesn&#8217;t have to be melodramatic, and that le mot juste is still the only acceptable approach. You will not forget having read this one.
+
+Rick Moody
+Author of Hotels of North America</summary>
+    <simplified:pwid>c4caf73a-68e6-f116-68be-b42801aac261</simplified:pwid>
+    <link href="https://covers.nypl.org/Plympton/ISBN/9781683603009/9781683603009_Ball.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://d14p0gig7ihu1b.cloudfront.net/covers/9781683603009_Ball.thumbnail.jpg" type="image/jpeg" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Short%20Stories" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Short Stories"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Literary%20Fiction" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Literary Fiction"/>
+    <dcterms:language>en</dcterms:language>
+    <dcterms:publisher>Electric Literature</dcterms:publisher>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683603009/report" rel="issues"/>
+    <id>urn:isbn:9781683603009</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683603009" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="Plympton"/>
+    <published>2018-04-25T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1808?entrypoint=Book" rel="collection" title="Fiction"/>
+    <updated>2018-04-25T13:18:00Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313790/fulfill/17" rel="http://opds-spec.org/acquisition/open-access" type="application/vnd.librarysimplified.bearer-token+json" dcterms:rights="http://librarysimplified.org/terms/rights-status/in-copyright">
+      <opds:indirectAcquisition type="application/epub+zip"/>
+      <opds:availability status="available"/>
+      <opds:holds total="0"/>
+      <opds:copies available="1" total="1"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/ISBN/9781683603009/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/ISBN/9781683603009/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>http://www.feedbooks.com/book/2972</id>
+    <title>As You Like It</title>
+    <author>
+      <name>William Shakespeare</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/William%20Shakespeare/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="William Shakespeare"/>
+    </author>
+    <summary type="html">&lt;p&gt;As You Like It is a pastoral comedy by William Shakespeare based on the novel Rosalynde by Thomas Lodge, believed to have been written in 1599 or early 1600. It features one of Shakespeare's most famous and oft-quoted lines, "All the world's a stage", and has been adapted for radio, film, and musical theatre. (From Wikipedia)&lt;/p&gt;</summary>
+    <simplified:pwid>424ad4d7-3115-37a5-5e12-90dbe7d86ad5</simplified:pwid>
+    <link href="https://d3pqhns20516vc.cloudfront.net/FeedBooks/URI/http%3A//www.feedbooks.com/book/2972/2972.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://d3pqhns20516vc.cloudfront.net/scaled/300/FeedBooks/URI/http%3A//www.feedbooks.com/book/2972/2972.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Nonfiction" scheme="http://librarysimplified.org/terms/fiction/" label="Nonfiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Family%20%26%20Relationships" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Family &amp; Relationships"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Performing%20Arts" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Performing Arts"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Law" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Law"/>
+    <dcterms:language>en</dcterms:language>
+    <published>2018-04-11T15:04:06Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/2972/report" rel="issues"/>
+    <id>http://www.feedbooks.com/book/2972</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/2972" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="FeedBooks"/>
+    <published>2018-04-11T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1813?entrypoint=Book" rel="collection" title="Nonfiction"/>
+    <updated>2018-04-11T15:09:02Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/311259/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/2972/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/http://www.feedbooks.com/book/2972/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>https://unglue.it/api/id/work/141532/</id>
+    <title>Structure and Interpretation of Computer Programs, 2nd Edition</title>
+    <author>
+      <name>Harold Abelson</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Harold%20Abelson/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Harold Abelson"/>
+    </author>
+    <summary type="html">Structure and Interpretation of Computer Programs has had a dramatic impact on computer science curricula over the past decade. This long-awaited revision contains changes throughout the text.There are new implementations of most of the major programming systems in the book, including the interpreters and compilers, and the authors have incorporated many small changes that reflect their experience teaching the course at MIT since the first edition was published.A new theme has been introduced that emphasizes the central role played by different approaches to dealing with time in computational models: objects with state, concurrent programming, functional programming and lazy evaluation, and nondeterministic programming. There are new example sections on higher-order procedures in graphics and on applications of stream processing in numerical programming, and many new exercises.In addition, all the programs have been reworked to run in any Scheme implementation that adheres to the IEEE standard.
+&lt;br /&gt;&lt;br /&gt;- The "Wizard Book" n. Hal Abelson's, Jerry Sussman's and Julie Sussman's Structure and Interpretation of Computer Programs (MIT Press, 1984; ISBN 0-262-01077-1), an excellent computer science text used in introductory courses at MIT. So called because of the wizard on the jacket. One of the bibles of the LISP/Scheme world. Also, less commonly, known as the Purple Book.
+&lt;br /&gt;&lt;br /&gt;
+*from The New Hacker's Dictionary, 2nd edition (MIT Press, 1993)*
+&lt;br /&gt;&lt;br /&gt;
+Print available via &lt;a&gt;MIT Press&lt;/a&gt;. &lt;a href="https://unglue.it/work/141546/"&gt;&#26085;&#26412;&#35486;&lt;/a&gt;, &lt;a href="https://unglue.it/work/141534/"&gt;Fran&#231;ais&lt;/a&gt;, &lt;a href="https://unglue.it/work/141544/"&gt;Polski&lt;/a&gt;, &lt;a href="https://unglue.it/work/141533/"&gt;Deutsch&lt;/a&gt;</summary>
+    <simplified:pwid>b7b75766-2270-59c9-8c79-3e56151157e2</simplified:pwid>
+    <link href="https://covers.nypl.org/Library+Simplified+metadata+wrangler/URI/https%3A//unglue.it/api/id/work/141532//books.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://covers.nypl.org/Library+Simplified+metadata+wrangler/URI/https%3A//unglue.it/api/id/work/141532//books.jpg" type="image/jpeg" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Nonfiction" scheme="http://librarysimplified.org/terms/fiction/" label="Nonfiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Computers" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Computers"/>
+    <dcterms:language>en</dcterms:language>
+    <published>2016-01-28T02:08:58Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/141532//report" rel="issues"/>
+    <id>https://unglue.it/api/id/work/141532/</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/141532/" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="unglue.it"/>
+    <published>2018-04-18T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1813?entrypoint=Book" rel="collection" title="Nonfiction"/>
+    <updated>2018-04-26T06:22:48Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/312940/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="http://librarysimplified.org/terms/rights-status/unknown">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/312940/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="http://librarysimplified.org/terms/rights-status/generic-open-access">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/312940/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-sa/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/141532//related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/https://unglue.it/api/id/work/141532//open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>https://unglue.it/api/id/work/297514/</id>
+    <title>An Open Approach to Scholarly Reading and Knowledge Management</title>
+    <author>
+      <name>Hugh McGuire</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Hugh%20McGuire/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Hugh McGuire"/>
+    </author>
+    <summary type="html">&lt;p&gt;In 2017, &lt;a href="http://rebus.foundation/"&gt;The Rebus Foundation&lt;/a&gt; embarked on a research and development project to prototype an open, web-based reading system, with funding from the &lt;a href="https://mellon.org/"&gt;Andrew W. Mellon Foundation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Our main goals with this project were to clearly identify and understand the different players involved in the publication, distribution and consumption of scholarly monographs, and to explore how Open Web technologies could improve scholars&amp;rsquo; access to, and interaction with, scholarly monographs. We've summarized our research findings in this report.&lt;/p&gt;</summary>
+    <simplified:pwid>21aa35b8-0f36-5036-1f31-92704cdf70d8</simplified:pwid>
+    <link href="https://covers.nypl.org/unglue.it/URI/https%3A//unglue.it/api/id/work/297514//005e041ca5950ca9f28bc6c7b29b9aa0.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://covers.nypl.org/unglue.it/URI/https%3A//unglue.it/api/id/work/297514//005e041ca5950ca9f28bc6c7b29b9aa0.jpg" type="image/jpeg" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Nonfiction" scheme="http://librarysimplified.org/terms/fiction/" label="Nonfiction"/>
+    <dcterms:language>en</dcterms:language>
+    <published>2018-04-18T16:16:51Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/297514//report" rel="issues"/>
+    <id>https://unglue.it/api/id/work/297514/</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/297514/" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="unglue.it"/>
+    <published>2018-04-18T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1813?entrypoint=Book" rel="collection" title="Nonfiction"/>
+    <updated>2018-04-26T06:15:11Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313192/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="http://creativecommons.org/licenses/by/4.0/">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/297514//related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/https://unglue.it/api/id/work/297514//open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>https://unglue.it/api/id/work/146049/</id>
+    <title>Hacking Secret Ciphers with Python</title>
+    <author>
+      <name>Al Sweigart</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Al%20Sweigart/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Al Sweigart"/>
+    </author>
+    <summary type="html">Hacking Secret Ciphers with Python teaches complete beginners how to program in the Python programming language. The book features the source code to several ciphers and hacking programs for these ciphers. The programs include the Caesar cipher, transposition cipher, simple substitution cipher, multiplicative &amp; affine ciphers, Vigenere cipher, and hacking programs for each of these ciphers. The final chapters cover the modern RSA cipher and public key cryptography.
+&lt;br /&gt;&lt;br /&gt;
+Proceeds from &lt;a href="http://inventwithpython.com/hacking/"&gt;sales of this book&lt;/a&gt; are donated to the Electronic Frontier Foundation, the Creative Commons, and the Tor Project.</summary>
+    <simplified:pwid>5ab18ab5-bed9-3f6d-5915-4044f2be8759</simplified:pwid>
+    <link href="https://covers.nypl.org/Library+Simplified+metadata+wrangler/URI/https%3A//unglue.it/api/id/work/146049//books.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://covers.nypl.org/Library+Simplified+metadata+wrangler/URI/https%3A//unglue.it/api/id/work/146049//books.jpg" type="image/jpeg" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Nonfiction" scheme="http://librarysimplified.org/terms/fiction/" label="Nonfiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Computers" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Computers"/>
+    <dcterms:language>en</dcterms:language>
+    <published>2018-04-18T15:08:40Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/146049//report" rel="issues"/>
+    <id>https://unglue.it/api/id/work/146049/</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/146049/" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="unglue.it"/>
+    <published>2018-04-18T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1813?entrypoint=Book" rel="collection" title="Nonfiction"/>
+    <updated>2018-04-26T06:31:03Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/312998/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc-sa/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/146049//related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/https://unglue.it/api/id/work/146049//open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>https://unglue.it/api/id/work/207302/</id>
+    <title>Linked Data Patterns: A pattern catalogue for modelling, publishing, and consuming Linked Data</title>
+    <author>
+      <name>Leigh Dodds</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Leigh%20Dodds/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Leigh Dodds"/>
+    </author>
+    <summary type="html">&lt;p&gt;There are many ways to help spread the adoption of a technology, and to share skills and experience amongst a community of practitioners. Different approaches work well for communicating different kinds of knowledge. And we all individually have a preferred means of acquiring new skills, or getting help with a specific problem. Reference manuals, tutorials, recipes, best practice guides and experience reports all have their role. As do training courses, mentoring, pair programming and code reviews.&lt;/p&gt;
+
+&lt;p&gt;This book attempts to add to the steadily growing canon of reference documentation relating to Linked Data. Linked Data is a means of publishing &amp;quot;web-native&amp;quot; data using standards like HTTP, URIs and RDF. The book adopts a tried and tested means of communicating knowledge and experience in software development: the design pattern. The book is organized as a pattern catalogue that covers a range of different areas from the design of web scale identifiers through to application development patterns. The intent is to create a ready reference that will be useful for both the beginner and the experienced practioner alike. It's also intended to grow and mature in line with the practitioner community.&lt;/p&gt;</summary>
+    <simplified:pwid>2434ca56-59f7-cfef-f5f9-437c0bfcde73</simplified:pwid>
+    <link href="https://covers.nypl.org/unglue.it/URI/https%3A//unglue.it/api/id/work/207302//d036c3535e3fef144c58ad0088d21de1.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://covers.nypl.org/unglue.it/URI/https%3A//unglue.it/api/id/work/207302//d036c3535e3fef144c58ad0088d21de1.jpg" type="image/jpeg" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Nonfiction" scheme="http://librarysimplified.org/terms/fiction/" label="Nonfiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Computers" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Computers"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Design" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Design"/>
+    <dcterms:language>en</dcterms:language>
+    <published>2018-04-18T16:07:42Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/207302//report" rel="issues"/>
+    <id>https://unglue.it/api/id/work/207302/</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/207302/" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="unglue.it"/>
+    <published>2018-04-18T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1813?entrypoint=Book" rel="collection" title="Nonfiction"/>
+    <updated>2018-04-26T06:11:03Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313150/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="http://creativecommons.org/licenses/by/4.0/">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/207302//related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/https://unglue.it/api/id/work/207302//open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>https://unglue.it/api/id/work/140346/</id>
+    <title>55 Ways to Have Fun with Google</title>
+    <author>
+      <name>Philipp Lenssen</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Philipp%20Lenssen/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Philipp Lenssen"/>
+    </author>
+    <summary type="html">You probably use Google everyday, but do you know... the Google Snake Game? Googledromes? Memecodes? Googlesport? The Google Calculator? Googlepark and Google Weddings? Google hacking, fighting and rhyming? In this book, you&#8217;ll find Google-related games, cartoons, oddities, tips, stories and everything else that&#8217;s fun. Reading it, you won&#8217;t be the same searcher as before! (From the author of &lt;a href="http://blogoscoped.com/"&gt;Google Blogoscoped&lt;/a&gt;.)
+&lt;br /&gt;&lt;br /&gt;
+Print available from &lt;a href="http://www.55fun.com/"&gt;the book's homepage&lt;/a&gt;.</summary>
+    <simplified:pwid>d4be2631-4cc2-207c-23ab-88b55b464402</simplified:pwid>
+    <link href="https://covers.nypl.org/Library+Simplified+metadata+wrangler/URI/https%3A//unglue.it/api/id/work/140346//books.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://covers.nypl.org/Library+Simplified+metadata+wrangler/URI/https%3A//unglue.it/api/id/work/140346//books.jpg" type="image/jpeg" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Nonfiction" scheme="http://librarysimplified.org/terms/fiction/" label="Nonfiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Computers" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Computers"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/History" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="History"/>
+    <dcterms:language>en</dcterms:language>
+    <published>2018-04-18T14:40:13Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/140346//report" rel="issues"/>
+    <id>https://unglue.it/api/id/work/140346/</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/140346/" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="unglue.it"/>
+    <published>2018-04-18T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1813?entrypoint=Book" rel="collection" title="Nonfiction"/>
+    <updated>2018-04-26T06:17:52Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/312914/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="http://librarysimplified.org/terms/rights-status/unknown">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/312914/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="http://librarysimplified.org/terms/rights-status/generic-open-access">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/312914/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc-sa/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/140346//related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/https://unglue.it/api/id/work/140346//open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>https://unglue.it/api/id/work/202520/</id>
+    <title>Ruby Web Dev: The Other Way</title>
+    <author>
+      <name>Ievgen Kuzminov</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Ievgen%20Kuzminov/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Ievgen Kuzminov"/>
+    </author>
+    <summary type="html">&lt;p&gt;This guide is born after a question &amp;ldquo;Could you write a list of all the things, that a good Ruby on Rails developer should know?&amp;rdquo;. I decided to expand it to the whole of Ruby web development and related &amp;ldquo;Full Stack&amp;rdquo; skills (but also limit it to &amp;ldquo;Web&amp;rdquo;, as it is not about Ruby in general).&lt;/p&gt;
+
+&lt;p&gt;It is inspired by&amp;nbsp;&lt;a href="http://www.phptherightway.com/" target="_self"&gt;&amp;ldquo;PHP The Right Way&amp;rdquo;&lt;/a&gt;&amp;nbsp;guide. The format and advises. This guide also contains sections dedicated to very important aspects of web development, explanation (if needed) and the&amp;nbsp;list of tutorial links.&lt;/p&gt;
+
+&lt;p&gt;Support this book by purchasing at &lt;a href="https://leanpub.com/rwdtow"&gt;Leanpub&lt;/a&gt;.&lt;/p&gt;</summary>
+    <simplified:pwid>acaf8aa2-6f7d-6cd6-b688-074cb3262408</simplified:pwid>
+    <link href="https://covers.nypl.org/unglue.it/URI/https%3A//unglue.it/api/id/work/202520//3e5a85d73b6f186ba679eeb7b87bc29d.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://covers.nypl.org/unglue.it/URI/https%3A//unglue.it/api/id/work/202520//3e5a85d73b6f186ba679eeb7b87bc29d.jpg" type="image/jpeg" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Nonfiction" scheme="http://librarysimplified.org/terms/fiction/" label="Nonfiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Computers" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Computers"/>
+    <dcterms:language>en</dcterms:language>
+    <published>2018-04-18T16:06:34Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/202520//report" rel="issues"/>
+    <id>https://unglue.it/api/id/work/202520/</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/202520/" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="unglue.it"/>
+    <published>2018-04-18T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1813?entrypoint=Book" rel="collection" title="Nonfiction"/>
+    <updated>2018-04-26T06:11:02Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313141/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc-sa/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/202520//related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/https://unglue.it/api/id/work/202520//open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>https://unglue.it/api/id/work/151557/</id>
+    <title>An Open Web: The Web is Closed. The Future is Open.</title>
+    <author>
+      <name>Alejandra Perez Nu&#241;ez</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Alejandra%20Perez%20Nu%C3%B1ez/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Alejandra Perez Nu&#241;ez"/>
+    </author>
+    <summary type="html">The Web was meant to be Everything. As the Internet as a whole assumes an increasingly commanding role as the technology of global commerce and communication, the World Wide Web from its very inception was designed to be a free and open medium through which human knowledge is created, accessed and exchanged. But, that Web is in danger of coming to a close. This book shows what is happening and how you can play an important role in keeping the web open.
+&lt;br /&gt;&lt;br /&gt;
+An Open Web was written in 5 days by 6 collaborators. Zero to book in 5 days. It was an intensive process and loads of fun. You can also participate by improving the book and keeping it alive! (see below for details) - all edits are welcome! The Book Sprint was held in Berlin January 17-21 2011, sponsored by Transmediale and FLOSS Manuals and the CHB.
+&lt;br /&gt;&lt;br /&gt;
+You can order the printed book at &lt;a href="http://openweb.flossmanuals.net/"&gt;flossmanuals.net&lt;/a&gt;
+&lt;br /&gt;&lt;br /&gt;On March 15, 2012, Bassel Safadi was detained in a wave of arrests in the Mazzeh district of Damascus. He is currently being held at Adra Prison in Damascus by the Syrian government.&lt;br /&gt;&lt;br /&gt;
+
+Since his arrest, Bassel&#8217;s valuable volunteer work, both in Syria and around the world, has been stopped. His absence has been painful for the communities that depend on him. In addition, his family, and his wife, have had their lives put on hold.&lt;br /&gt;&lt;br /&gt;
+The United Nations Working Group on Arbitrary Detention has determined that Bassel&#8217;s arrest and imprisonment were arbitrary and in violation of international law, and has asked for his immediate release.&lt;br /&gt;&lt;br /&gt; For information on the campaign to free Bassel, visit &lt;a href="http://freebassel.org/"&gt;FreeBassel.org&lt;/a&gt;</summary>
+    <simplified:pwid>a99c4c34-a3e3-5339-e862-2d23b2d3fa26</simplified:pwid>
+    <link href="https://covers.nypl.org/Library+Simplified+metadata+wrangler/URI/https%3A//unglue.it/api/id/work/151557//1595beb73ee525f351b8cbfce2fe54d9.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://covers.nypl.org/Library+Simplified+metadata+wrangler/URI/https%3A//unglue.it/api/id/work/151557//1595beb73ee525f351b8cbfce2fe54d9.jpg" type="image/jpeg" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Nonfiction" scheme="http://librarysimplified.org/terms/fiction/" label="Nonfiction"/>
+    <dcterms:language>en</dcterms:language>
+    <published>2016-01-28T02:49:12Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/151557//report" rel="issues"/>
+    <id>https://unglue.it/api/id/work/151557/</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/151557/" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="unglue.it"/>
+    <published>2018-04-18T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1813?entrypoint=Book" rel="collection" title="Nonfiction"/>
+    <updated>2018-04-26T06:31:37Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313017/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="http://librarysimplified.org/terms/rights-status/unknown">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313017/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="http://librarysimplified.org/terms/rights-status/generic-open-access">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313017/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="http://creativecommons.org/licenses/by/4.0/">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/151557//related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/https://unglue.it/api/id/work/151557//open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>https://unglue.it/api/id/work/158273/</id>
+    <title>Advice for Young, Unemployed Workers</title>
+    <author>
+      <name>Jeffrey Allen Tucker</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Jeffrey%20Allen%20Tucker/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Jeffrey Allen Tucker"/>
+    </author>
+    <summary type="html">&lt;p&gt;We are now nearing a decade of very choppy hiring markets for young workers. The latest unemployment numbers once again leave them out from posted gains. Not even the boom in temporary employment included them.&lt;/p&gt;
+
+&lt;p&gt;The United States has one of the highest rates of unemployment among 20-to-26-year-olds in the world. Nearly half of the U.S. army of unemployed is under the age of 34. As for those who are hired, there is a huge gap between wage expectations and paycheck realities, which is exactly what you would expect in a post-boom world.&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;The young generation faces challenges unlike any that most people alive have seen. This situation requires new adaptive strategies.&lt;/p&gt;
+
+&lt;p&gt;This short book is a letter of advice to young workers.&lt;/p&gt;</summary>
+    <simplified:pwid>a7475c54-2bfe-037a-2de9-4b23c0e462cc</simplified:pwid>
+    <link href="https://covers.nypl.org/unglue.it/URI/https%3A//unglue.it/api/id/work/158273//369100d8895cfaf8047a09688776a1ba.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://covers.nypl.org/unglue.it/URI/https%3A//unglue.it/api/id/work/158273//369100d8895cfaf8047a09688776a1ba.jpg" type="image/jpeg" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Nonfiction" scheme="http://librarysimplified.org/terms/fiction/" label="Nonfiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Self-Help" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Self-Help"/>
+    <dcterms:language>en</dcterms:language>
+    <published>2016-05-07T02:09:14Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/158273//report" rel="issues"/>
+    <id>https://unglue.it/api/id/work/158273/</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/158273/" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="unglue.it"/>
+    <published>2018-04-18T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1813?entrypoint=Book" rel="collection" title="Nonfiction"/>
+    <updated>2018-04-26T06:37:57Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313100/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="http://librarysimplified.org/terms/rights-status/generic-open-access">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313100/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="http://creativecommons.org/licenses/by/4.0/">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/158273//related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/https://unglue.it/api/id/work/158273//open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>https://unglue.it/api/id/work/156302/</id>
+    <title>Foundations of Academic Success: Words of Wisdom</title>
+    <author>
+      <name>Thomas C. Priester</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Thomas%20C.%20Priester/eng/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Thomas C. Priester"/>
+    </author>
+    <summary type="html">&lt;p&gt;&lt;em&gt;Foundations of Academic Success: Words of Wisdom&lt;/em&gt;&amp;nbsp;(&lt;em&gt;FAS: WoW&lt;/em&gt;) introduces you to the various aspects of student and academic life on campus and prepares you to thrive as a successful college student (since there is a difference between a college student and a successful college student). Each section of&amp;nbsp;&lt;em&gt;FAS: WoW&lt;/em&gt;&amp;nbsp;is framed by self-authored, true-to-life short stories from actual State University of New York (SUNY) students, employees, and alumni. The advice they share includes a variety of techniques to help you cope with the demands of college. The lessons learned are meant to enlarge your awareness of self with respect to your academic and personal goals and assist you to gain the necessary skills to succeed in college.&lt;/p&gt;</summary>
+    <simplified:pwid>8adf898b-d27b-a377-25de-6e624f240f4c</simplified:pwid>
+    <link href="https://covers.nypl.org/unglue.it/URI/https%3A//unglue.it/api/id/work/156302//2ec2ffefd98cefa48c6f8bf802346ef4.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://covers.nypl.org/unglue.it/URI/https%3A//unglue.it/api/id/work/156302//2ec2ffefd98cefa48c6f8bf802346ef4.jpg" type="image/jpeg" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Nonfiction" scheme="http://librarysimplified.org/terms/fiction/" label="Nonfiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Education" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Education"/>
+    <dcterms:language>en</dcterms:language>
+    <published>2016-05-07T02:14:54Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/156302//report" rel="issues"/>
+    <id>https://unglue.it/api/id/work/156302/</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/156302/" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="unglue.it"/>
+    <published>2018-04-18T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1813?entrypoint=Book" rel="collection" title="Nonfiction"/>
+    <updated>2018-04-26T06:36:14Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313077/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="http://librarysimplified.org/terms/rights-status/generic-open-access">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/313077/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc-sa/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/https://unglue.it/api/id/work/156302//related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/https://unglue.it/api/id/work/156302//open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>http://www.feedbooks.com/book/6356</id>
+    <title>Die tanzenden M&#228;nnchen und andere Detektivgeschichten</title>
+    <author>
+      <name>Arthur Conan Doyle</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Arthur%20Conan%20Doyle/ger/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Arthur Conan Doyle"/>
+    </author>
+    <summary type="html">&lt;p&gt;Hilton Cubitt, ein angesehener Gutsherr konsultiert Sherlock Holmes. Cubitts Frau Elsie wird von Geheimbotschaften aus tanzenden Strichm&#228;nnchen in die Verzweiflung getrieben, doch weigert sie sich strikt, Einblick in ihre Vergangenheit in Amerika zu gew&#228;hren, die der Schl&#252;ssel zu sein scheint. W&#228;hrend Holmes den Code entschl&#252;sselt, wird ihm klar, dass es nicht nur um einen dummen Streich geht, sondern um t&#246;dlichen Ernst. Tats&#228;chlich wird sein Klient Cubitt kurz darauf ermordet. Kann Elsie noch gerettet werden?&lt;/p&gt;</summary>
+    <simplified:pwid>29e6f67e-004c-c527-ae69-8fd3e7d4688d</simplified:pwid>
+    <link href="https://d3pqhns20516vc.cloudfront.net/FeedBooks/URI/http%3A//www.feedbooks.com/book/6356/6356.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://d3pqhns20516vc.cloudfront.net/scaled/300/FeedBooks/URI/http%3A//www.feedbooks.com/book/6356/6356.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Short%20Stories" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Short Stories"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Mystery" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Mystery"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Literary%20Fiction" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Literary Fiction"/>
+    <dcterms:language>de</dcterms:language>
+    <published>2018-03-22T15:11:02Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/6356/report" rel="issues"/>
+    <id>http://www.feedbooks.com/book/6356</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/6356" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="FeedBooks"/>
+    <published>2018-03-22T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1830?entrypoint=Book" rel="collection" title="World Languages"/>
+    <updated>2018-05-03T14:20:40Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/307068/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/6356/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/http://www.feedbooks.com/book/6356/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>http://www.feedbooks.com/book/5670</id>
+    <title>L'Appel de la for&#234;t</title>
+    <author>
+      <name>Jack London</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Jack%20London/fre/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Jack London"/>
+    </author>
+    <summary type="html">&lt;p&gt;Un des chefs d'oeuvre de Jack London, un grand classique de la litt&#233;rature de jeunesse.
+&lt;br /&gt;Buck, un crois&#233; de terre-neuve et de colley &#226;g&#233; de 4 ans et demi et pesant 70 kg, appartient &#224; un magistrat de la vall&#233;e de Santa Clara (Haute-Californie). Loin d'avoir une &#171;vie de chien&#187;, Buck coule une existence heureuse dans la famille du juge Miller. Mais tout bascule le jour o&#249;, victime de la tra&#238;trise d'un homme, il se retrouve vendu &#224; un conducteur de tra&#238;neau dans le Grand Nord am&#233;ricain. Finie la vie d'aristocrate blas&#233;, Buck va devoir affronter son destin dans un univers glacial et sans piti&#233;, o&#249; chaque faute, chaque erreur est s&#233;v&#232;rement sanctionn&#233;e. Saura-t-il survivre dans ce monde cruel o&#249; r&#232;gne la loi du plus fort? Qu'adviendra-t-il de cet admirable chien le jour o&#249; il d&#233;couvrira, d'abord avec amertume, puis avec un plaisir trouble et instinctif, le go&#251;t du sang?&lt;/p&gt;</summary>
+    <simplified:pwid>315905dd-8611-b58d-24b6-0bbb03dbd610</simplified:pwid>
+    <link href="https://d3pqhns20516vc.cloudfront.net/FeedBooks/URI/http%3A//www.feedbooks.com/book/5670/5670.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://d3pqhns20516vc.cloudfront.net/scaled/300/FeedBooks/URI/http%3A//www.feedbooks.com/book/5670/5670.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Adventure" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Adventure"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Literary%20Fiction" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Literary Fiction"/>
+    <dcterms:language>fr</dcterms:language>
+    <published>2018-03-28T17:15:58Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/5670/report" rel="issues"/>
+    <id>http://www.feedbooks.com/book/5670</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/5670" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="FeedBooks"/>
+    <published>2018-03-28T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1830?entrypoint=Book" rel="collection" title="World Languages"/>
+    <updated>2018-05-03T14:05:24Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/308862/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/5670/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/http://www.feedbooks.com/book/5670/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>http://www.feedbooks.com/book/3300</id>
+    <title>La d&#233;sob&#233;issance civile</title>
+    <author>
+      <name>Henry David Thoreau</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Henry%20David%20Thoreau/fre/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Henry David Thoreau"/>
+    </author>
+    <summary type="html">&lt;p&gt;La D&#233;sob&#233;issance civile, titre original Civil Disobedience est un essai de Henry David Thoreau publi&#233; en 1849. H.D. Thoreau &#233;crit sur le th&#232;me de la d&#233;sob&#233;issance civile, en se fondant sur son exp&#233;rience personnelle.
+&lt;br /&gt;En juillet 1846, Thoreau fut emprisonn&#233;, n'ayant volontairement pas pay&#233; un imp&#244;t &#224; l'&#233;tat am&#233;ricain, car il lui reprochait de soutenir l'esclavage qui r&#233;gnait alors dans le Sud et de mener une guerre contre le Mexique. Il fut content d'&#234;tre incarc&#233;r&#233; pour cet acte pos&#233;. Il ne passa qu'une nuit en prison, car son entourage paya la caution, ce qui le rendit furieux.
+&lt;br /&gt;Avec le Discours de la servitude volontaire d'&#201;tienne de La Bo&#233;tie, La d&#233;sob&#233;issance civile est un ouvrage pr&#233;curseur du concept de la d&#233;sob&#233;issance civile.
+&lt;br /&gt;Source: Wikipedia&lt;/p&gt;</summary>
+    <simplified:pwid>9d00729a-36cb-35bb-f147-acc6fe54f213</simplified:pwid>
+    <link href="https://d3pqhns20516vc.cloudfront.net/FeedBooks/URI/http%3A//www.feedbooks.com/book/3300/3300.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://d3pqhns20516vc.cloudfront.net/scaled/300/FeedBooks/URI/http%3A//www.feedbooks.com/book/3300/3300.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Nonfiction" scheme="http://librarysimplified.org/terms/fiction/" label="Nonfiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Social%20Sciences" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Social Sciences"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Political%20Science" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Political Science"/>
+    <dcterms:language>fr</dcterms:language>
+    <published>2018-03-28T14:54:40Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/3300/report" rel="issues"/>
+    <id>http://www.feedbooks.com/book/3300</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/3300" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="FeedBooks"/>
+    <published>2018-03-28T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1830?entrypoint=Book" rel="collection" title="World Languages"/>
+    <updated>2018-05-03T14:08:12Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/308261/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/3300/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/http://www.feedbooks.com/book/3300/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>http://www.feedbooks.com/book/7050</id>
+    <title>Antolog&#237;a: poemas y sonetos</title>
+    <author>
+      <name>Miguel De Unamuno</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Miguel%20De%20Unamuno/spa/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Miguel De Unamuno"/>
+    </author>
+    <summary type="html">&lt;p&gt;Antolog&#237;a de poemas, sonetos y Rimas de Miguel de Unamuno.
+&lt;br /&gt;Una breve selecci&#243;n de Mar&#237;a del Pilar MARTINEZ.&lt;/p&gt;
+
+&lt;p&gt;-El Cristo de Vel&#225;zquez (1920)
+&lt;br /&gt;-Blas, el bobo (Blas, el bobo de la aldea)
+&lt;br /&gt;-Castilla (T&#250; me levantas, tierra de Castilla,)
+&lt;br /&gt;-El armador aquel (El armador aquel de casas r&#250;sticas)
+&lt;br /&gt;-El cuerpo canta
+&lt;br /&gt;-El mar de encinas (En este mar de encinas castellano)
+&lt;br /&gt;-En un cementerio de lugar castellano (Corral de muertos, entre pobres tapias,)
+&lt;br /&gt;-Habla, que lo quiere el ni&#241;o
+&lt;br /&gt;-Incidente dom&#233;stico (Traza la ni&#241;a toscos garrapatos)
+&lt;br /&gt;-La luna y la rosa (En el silencio estrellado)
+&lt;br /&gt;-Madre, ll&#233;vame a la cama
+&lt;br /&gt;-Me destierro (Me destierro a la memoria)
+&lt;br /&gt;-Ofelia de Dinamarca (Rosa de nube de carne)
+&lt;br /&gt;-Oh, Se&#241;or, t&#250; que sufres del mundo (Salmo III)
+&lt;br /&gt;-Qu&#233; es tu vida (&#191;Qu&#233; es tu vida, alma m&#237;a?, &#191;cu&#225;l tu pago?,)
+&lt;br /&gt;-Sombra de humo (&#161;Sombra de humo cruza el prado!)
+&lt;br /&gt;-Vendr&#225; de noche (Vendr&#225; de noche cuando todo duerma,)
+&lt;br /&gt;-Y &#191;qu&#233; es eso? (Y &#191;qu&#233; es eso del Infierno?)
+&lt;br /&gt;-De vuelta a casa (Desde mi cielo a despedirme llegas)
+&lt;br /&gt;-Es una antorcha (Es una antorcha al aire esta palmera,)
+&lt;br /&gt;-Horas serenas (Horas serenas del ocaso breve,)
+&lt;br /&gt;-La estrella polar (Luci&#233;rnaga celeste, humilde estrella)
+&lt;br /&gt;-La mar ci&#241;e (La mar ci&#241;e a la noche en su regazo)
+&lt;br /&gt;-La sangre de mi esp&#237;ritu (La sangre de mi esp&#237;ritu es mi lengua)
+&lt;br /&gt;-Muerte (Eres sue&#241;o de un dios; cuando despierte)
+&lt;br /&gt;-Noche de luna llena (Noche blanca en que el agua cristalina)
+&lt;br /&gt;-Cuando duerme una madre junto al ni&#241;o
+&lt;br /&gt;-Por qu&#233; esos lirios que los hielos matan&lt;/p&gt;</summary>
+    <simplified:pwid>e34fd3a1-8d05-6a76-5256-a9a6ea248746</simplified:pwid>
+    <link href="https://d3pqhns20516vc.cloudfront.net/FeedBooks/URI/http%3A//www.feedbooks.com/book/7050/7050.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://d3pqhns20516vc.cloudfront.net/scaled/300/FeedBooks/URI/http%3A//www.feedbooks.com/book/7050/7050.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Poetry" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Poetry"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Literary%20Fiction" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Literary Fiction"/>
+    <dcterms:language>es</dcterms:language>
+    <published>2018-03-27T16:36:15Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/7050/report" rel="issues"/>
+    <id>http://www.feedbooks.com/book/7050</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/7050" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="FeedBooks"/>
+    <published>2018-03-27T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1830?entrypoint=Book" rel="collection" title="World Languages"/>
+    <updated>2018-05-03T14:18:28Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/307841/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/7050/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/http://www.feedbooks.com/book/7050/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>http://www.feedbooks.com/book/7049</id>
+    <title>La t&#237;a Tula</title>
+    <author>
+      <name>Miguel De Unamuno</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Miguel%20De%20Unamuno/spa/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Miguel De Unamuno"/>
+    </author>
+    <summary type="html">&lt;p&gt;La t&#237;a Tula, es, seg&#250;n su autor, &#171;la historia de una joven que, rechazando novios, se queda soltera para cuidar a unos sobrinos, hijos de una hermana que se le muere. Vive con el cu&#241;ado, a quien rechaza para marido, pues no quiere manchar con el d&#233;bito conyugal el recinto en que respiran aire de castidad sus hijos. Satisfecho el instinto de maternidad, &#191;para qu&#233; perder su virginidad? Es virgen madre&#187;. Pero sobre este ca&#241;amazo argumental teje Unamuno una obra cargada de sentidos plurales: Tula, la protagonista, que encarna la concepci&#243;n tradicional de la familia y de la mujer y que es, a al vez, v&#237;ctima de ella, ejemplifica la figura del agonista unamuniano dividido en mil contradicciones.&lt;/p&gt;</summary>
+    <simplified:pwid>4352a17e-e880-a176-1fc3-067d65d99124</simplified:pwid>
+    <link href="https://d3pqhns20516vc.cloudfront.net/FeedBooks/URI/http%3A//www.feedbooks.com/book/7049/7049.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://d3pqhns20516vc.cloudfront.net/scaled/300/FeedBooks/URI/http%3A//www.feedbooks.com/book/7049/7049.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Literary%20Fiction" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Literary Fiction"/>
+    <dcterms:language>es</dcterms:language>
+    <published>2018-03-27T16:36:15Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/7049/report" rel="issues"/>
+    <id>http://www.feedbooks.com/book/7049</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/7049" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="FeedBooks"/>
+    <published>2018-03-27T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1830?entrypoint=Book" rel="collection" title="World Languages"/>
+    <updated>2018-05-03T14:18:04Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/307807/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/7049/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/http://www.feedbooks.com/book/7049/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>http://www.feedbooks.com/book/6013</id>
+    <title>Intenciones</title>
+    <author>
+      <name>Oscar Wilde</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Oscar%20Wilde/spa/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Oscar Wilde"/>
+    </author>
+    <summary type="html">&lt;p&gt;Cuatro ensayos fundamentales sobre la reflexi&#243;n de cr&#237;tica y est&#233;tica de Oscar Wilde.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</summary>
+    <simplified:pwid>731fce71-aabe-9d2f-60ea-89b49f6cc7bb</simplified:pwid>
+    <link href="https://d3pqhns20516vc.cloudfront.net/FeedBooks/URI/http%3A//www.feedbooks.com/book/6013/6013.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://d3pqhns20516vc.cloudfront.net/scaled/300/FeedBooks/URI/http%3A//www.feedbooks.com/book/6013/6013.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Nonfiction" scheme="http://librarysimplified.org/terms/fiction/" label="Nonfiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Literary%20Criticism" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Literary Criticism"/>
+    <dcterms:language>es</dcterms:language>
+    <published>2018-03-27T15:37:47Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/6013/report" rel="issues"/>
+    <id>http://www.feedbooks.com/book/6013</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/6013" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="FeedBooks"/>
+    <published>2018-03-27T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1830?entrypoint=Book" rel="collection" title="World Languages"/>
+    <updated>2018-05-03T14:16:20Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/307594/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/6013/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/http://www.feedbooks.com/book/6013/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>http://www.feedbooks.com/book/6074</id>
+    <title>Ana Karenina</title>
+    <author>
+      <name>Leo Tolstoy</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Leo%20Tolstoy/spa/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Leo Tolstoy"/>
+    </author>
+    <summary type="html">&lt;p&gt;Ana Kar&#233;nina, novela del escritor ruso Le&#243;n Tolst&#243;i publicada en 1877. 
+&lt;br /&gt;La novela es considerada una las oras maestras del Realismo. El personaje de Ana Kar&#233;nina esta inspirado de Aleksandr Pushkin.
+&lt;br /&gt;Muchos cr&#237;ticos calificaron la obra como  un "romance de alta sociedad", Fi&#243;dor Dostoyevski declar&#243; que era una "obra de arte". Vlad&#237;mir Nab&#243;kov secund&#243; esta opini&#243;n, admirando sobre todo la "magia del estilo de Tolst&#243;i" y la figura del tren, que se introduce ya en los primeros cap&#237;tulos (los ni&#241;os jugando con un tren de juguete), desarrollada en cap&#237;tulos siguientes (la pesadilla de Anna) hasta llegar al majestuoso final.&lt;/p&gt;</summary>
+    <simplified:pwid>be470b14-bba1-af73-ef19-0a00ea2c60eb</simplified:pwid>
+    <link href="https://d3pqhns20516vc.cloudfront.net/FeedBooks/URI/http%3A//www.feedbooks.com/book/6074/6074.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://d3pqhns20516vc.cloudfront.net/scaled/300/FeedBooks/URI/http%3A//www.feedbooks.com/book/6074/6074.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Literary%20Fiction" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Literary Fiction"/>
+    <dcterms:language>es</dcterms:language>
+    <published>2018-03-27T15:48:02Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/6074/report" rel="issues"/>
+    <id>http://www.feedbooks.com/book/6074</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/6074" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="FeedBooks"/>
+    <published>2018-03-27T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1830?entrypoint=Book" rel="collection" title="World Languages"/>
+    <updated>2018-05-03T14:16:08Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/307633/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/6074/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/http://www.feedbooks.com/book/6074/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>http://www.feedbooks.com/book/6816</id>
+    <title>M&#233;moires d'Outre-tombe</title>
+    <author>
+      <name>Fran&#231;ois-Ren&#233; de Chateaubriand</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Fran%C3%A7ois-Ren%C3%A9%20de%20Chateaubriand/fre/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Fran&#231;ois-Ren&#233; de Chateaubriand"/>
+    </author>
+    <summary type="html">&lt;p&gt;M&#233;moires d'outre-tombe est une autobiographie de Fran&#231;ois-Ren&#233; de Chateaubriand, dont la r&#233;daction commence en 1809, sous le titre M&#233;moires de ma vie, et s'ach&#232;ve en 1841.&lt;/p&gt;</summary>
+    <simplified:pwid>8b284942-4b49-f7a9-0373-02a60eb38e20</simplified:pwid>
+    <link href="https://d3pqhns20516vc.cloudfront.net/FeedBooks/URI/http%3A//www.feedbooks.com/book/6816/6816.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://d3pqhns20516vc.cloudfront.net/scaled/300/FeedBooks/URI/http%3A//www.feedbooks.com/book/6816/6816.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Nonfiction" scheme="http://librarysimplified.org/terms/fiction/" label="Nonfiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Biography%20%26%20Memoir" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Biography &amp; Memoir"/>
+    <dcterms:language>fr</dcterms:language>
+    <published>2018-03-28T18:24:09Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/6816/report" rel="issues"/>
+    <id>http://www.feedbooks.com/book/6816</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/6816" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="FeedBooks"/>
+    <published>2018-03-28T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1830?entrypoint=Book" rel="collection" title="World Languages"/>
+    <updated>2018-05-03T14:07:22Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/309112/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/6816/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/http://www.feedbooks.com/book/6816/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>http://www.feedbooks.com/book/415</id>
+    <title>Une Vie</title>
+    <author>
+      <name>Guy de Maupassant</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Guy%20de%20Maupassant/fre/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Guy de Maupassant"/>
+    </author>
+    <summary type="html">No Description Available</summary>
+    <simplified:pwid>e3780ee8-1bdf-8cf5-d669-1818030cdeb6</simplified:pwid>
+    <link href="https://d3pqhns20516vc.cloudfront.net/FeedBooks/URI/http%3A//www.feedbooks.com/book/415/415.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://d3pqhns20516vc.cloudfront.net/scaled/300/FeedBooks/URI/http%3A//www.feedbooks.com/book/415/415.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Literary%20Fiction" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Literary Fiction"/>
+    <dcterms:language>fr</dcterms:language>
+    <published>2018-03-28T13:52:48Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/415/report" rel="issues"/>
+    <id>http://www.feedbooks.com/book/415</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/415" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="FeedBooks"/>
+    <published>2018-03-28T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1830?entrypoint=Book" rel="collection" title="World Languages"/>
+    <updated>2018-03-28T13:57:00Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/307952/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/415/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/http://www.feedbooks.com/book/415/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <entry schema:additionalType="http://schema.org/EBook">
+    <id>http://www.feedbooks.com/book/3989</id>
+    <title>Aventures de Lyderic</title>
+    <author>
+      <name>Alexandre Dumas</name>
+      <link href="https://circulation.librarysimplified.org/CLASSICS/works/contributor/Alexandre%20Dumas/fre/Adult%2CAdults+Only%2CChildren%2CYoung+Adult" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="contributor" title="Alexandre Dumas"/>
+    </author>
+    <summary type="html">&lt;p&gt;La l&#233;gende de Lyderic, premier comte de Flandre, au VIIe si&#232;cle.
+&lt;br /&gt;En 628,le prince de Dijon Salwart succombe sous les coups du gigantesque prince Phinard de Buck dans une for&#234;t des Flandres. Sa femme Ermengarde a juste le temps de cacher leur fils Lyderic dans un buisson avant d'&#234;tre faite prisonni&#232;re. Le b&#233;b&#233; est sauv&#233; de la mort par une biche qui le nourrit et un vieil ermite qui l'&#233;l&#232;ve. Il devient vite d'une stature et d'une force redoutable. A la mort de l'ermite, Lyderic part &#224; la recherche de ses origines avec pour seul indice un chapelet qu'il avait autour du cou quand il a &#233;t&#233; trouv&#233;. Avec l'&#233;p&#233;e qu'il s'est forg&#233;e lui-m&#234;me en tant qu'apprenti d'un armurier, il r&#233;ussit &#224; tuer un monstrueux dragon dont le sang le rend invuln&#233;rable &#224; l'exception d'un endroit. Gr&#226;ce au roi Dagobert qu'il sauve de la mort, il apprend son nom et le sort de sa m&#232;re, toujours aux mains de Phinard. Il le d&#233;fie donc...&lt;/p&gt;</summary>
+    <simplified:pwid>b8d4d182-33da-80d9-3882-ac3891352101</simplified:pwid>
+    <link href="https://d3pqhns20516vc.cloudfront.net/FeedBooks/URI/http%3A//www.feedbooks.com/book/3989/3989.jpg" type="image/jpeg" rel="http://opds-spec.org/image"/>
+    <link href="https://d3pqhns20516vc.cloudfront.net/scaled/300/FeedBooks/URI/http%3A//www.feedbooks.com/book/3989/3989.png" type="image/png" rel="http://opds-spec.org/image/thumbnail"/>
+    <category term="Adult" scheme="http://schema.org/audience" label="Adult"/>
+    <category term="http://librarysimplified.org/terms/fiction/Fiction" scheme="http://librarysimplified.org/terms/fiction/" label="Fiction"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Adventure" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Adventure"/>
+    <category term="http://librarysimplified.org/terms/genres/Simplified/Literary%20Fiction" scheme="http://librarysimplified.org/terms/genres/Simplified/" label="Literary Fiction"/>
+    <dcterms:language>fr</dcterms:language>
+    <published>2018-03-28T15:06:49Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/3989/report" rel="issues"/>
+    <id>http://www.feedbooks.com/book/3989</id>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/3989" type="application/atom+xml;type=entry;profile=opds-catalog" rel="alternate"/>
+    <bibframe:distribution bibframe:ProviderName="FeedBooks"/>
+    <published>2018-03-28T00:00:00Z</published>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/1830?entrypoint=Book" rel="collection" title="World Languages"/>
+    <updated>2018-03-28T15:08:17Z</updated>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/308285/fulfill/1" rel="http://opds-spec.org/acquisition/open-access" type="application/epub+zip" dcterms:rights="https://creativecommons.org/licenses/by-nc/4.0">
+      <opds:availability status="available"/>
+    </link>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/works/URI/http://www.feedbooks.com/book/3989/related_books" type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="related" title="Recommended Works"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/analytics/URI/http://www.feedbooks.com/book/3989/open_book" rel="http://librarysimplified.org/terms/rel/analytics/open-book"/>
+  </entry>
+  <link href="https://circulation.librarysimplified.org/CLASSICS/groups/" rel="start" title="All Books"/>
+  <simplified:breadcrumbs>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/" title="All Books"/>
+    <link href="https://circulation.librarysimplified.org/CLASSICS/groups/?entrypoint=Book" title="Book"/>
+  </simplified:breadcrumbs>
+  <link href="https://circulation.librarysimplified.org/CLASSICS/authentication_document" rel="http://opds-spec.org/auth/document"/>
+  <link href="https://circulation.librarysimplified.org/CLASSICS/search/1831?entrypoint=All" type="application/opensearchdescription+xml" rel="search"/>
+  <link href="http://www.librarysimplified.org/iclicenses.html" type="text/html" rel="license"/>
+  <link href="mailto:adrianaalter+abc@nypl.org" rel="help"/>
+</feed>

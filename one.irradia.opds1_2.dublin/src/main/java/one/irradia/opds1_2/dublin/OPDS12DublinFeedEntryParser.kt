@@ -63,7 +63,11 @@ internal class OPDS12DublinFeedEntryParser(
       ?.let { text -> OPDS12DublinCoreValue.Language(text) }
       ?.let { value -> this.values.add(value) }
 
-    this.xmlProcessor.optionalElementInstant(this.context.xmlElement, namespace, "issued")
+    this.xmlProcessor.optionalElementInstant(
+      element = this.context.xmlElement,
+      namespace = namespace,
+      name = "issued",
+      allowInvalid = this.context.configuration.allowInvalidTimestamps)
       ?.let { text -> OPDS12DublinCoreValue.Issued(text) }
       ?.let { value -> this.values.add(value) }
 

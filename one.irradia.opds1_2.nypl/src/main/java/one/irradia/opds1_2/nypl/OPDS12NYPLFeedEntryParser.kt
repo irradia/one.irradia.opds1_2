@@ -56,7 +56,11 @@ internal class OPDS12NYPLFeedEntryParser(
       val element = this.context.xmlElementFor(acquisition)
       if (element != null) {
         val availability =
-          OPDS12AvailabilityInference.availabilityOf(element, this.xmlProcessor, acquisition)
+          OPDS12AvailabilityInference.availabilityOf(
+            element = element,
+            configuration = this.context.configuration,
+            xmlProcessor = this.xmlProcessor,
+            acquisition = acquisition)
         this.values.add(availability)
       }
     }
