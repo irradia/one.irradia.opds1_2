@@ -6,32 +6,36 @@ import one.irradia.opds1_2.api.OPDS12ExtensionValueType
 import one.irradia.opds1_2.api.OPDS12Facet
 import one.irradia.opds1_2.api.OPDS12Feed
 import one.irradia.opds1_2.api.OPDS12FeedEntry
+import one.irradia.opds1_2.api.OPDS12FeedParseConfiguration
 import one.irradia.opds1_2.api.OPDS12Group
 import one.irradia.opds1_2.api.OPDS12Identifiers.ATOM_URI
 import one.irradia.opds1_2.api.OPDS12Link
 import one.irradia.opds1_2.api.OPDS12ParseResult
+import one.irradia.opds1_2.api.OPDS12ParseResult.OPDS12ParseError
+import one.irradia.opds1_2.api.OPDS12ParseResult.OPDS12ParseFailed
+import one.irradia.opds1_2.api.OPDS12ParseResult.OPDS12ParseSucceeded
+import one.irradia.opds1_2.api.OPDS12ParseResult.OPDS12ParseWarning
 import one.irradia.opds1_2.commons.OPDS12XMLParseError
+import one.irradia.opds1_2.commons.OPDS12XMLParseWarning
 import one.irradia.opds1_2.commons.OPDS12XMLProcessor
 import one.irradia.opds1_2.lexical.OPDS12LexicalPosition
-import one.irradia.opds1_2.parser.api.OPDS12FeedEntryParserProviderType
+import one.irradia.opds1_2.parser.api.OPDS12FeedParseRequest
+import one.irradia.opds1_2.parser.api.OPDS12FeedParseTarget
+import one.irradia.opds1_2.parser.api.OPDS12FeedParseTarget.*
 import one.irradia.opds1_2.parser.api.OPDS12FeedParserType
-import one.irradia.opds1_2.parser.extension.spi.OPDS12FeedEntryExtensionParserProviderType
 import one.irradia.opds1_2.parser.extension.spi.OPDS12FeedExtensionParserContextType
-import one.irradia.opds1_2.parser.extension.spi.OPDS12FeedExtensionParserProviderType
 import org.w3c.dom.Element
 import org.xml.sax.SAXParseException
 import java.net.URI
 import java.util.IdentityHashMap
 
 internal class OPDS12FeedParser(
-  private val uri: URI,
   private val elementSupplier: () -> Element,
-  private val acquisitionFeedEntryParsers: OPDS12FeedEntryParserProviderType,
-  private val extensionParsers: List<OPDS12FeedExtensionParserProviderType>,
-  private val extensionEntryParsers: List<OPDS12FeedEntryExtensionParserProviderType>)
+  private val request: OPDS12FeedParseRequest)
   : OPDS12FeedParserType {
 
-  private val errors = mutableListOf<OPDS12ParseResult.OPDS12ParseError>()
+  private val warnings = mutableListOf<OPDS12ParseWarning>()
+  private val errors = mutableListOf<OPDS12ParseError>()
   private val elementMap = IdentityHashMap<OPDS12ElementType, Element>()
   private lateinit var element: Element
 
@@ -40,12 +44,21 @@ internal class OPDS12FeedParser(
 
   private val xmlProcessor =
     OPDS12XMLProcessor(
-      currentDocument = this.uri,
-      producer = producerName,
-      errors = this::publishXMLError)
+      currentDocument = this.request.uri,
+      producer = this.producerName,
+      errors = this::publishXMLError,
+      warnings = this::publishXMLWarning)
+
+  private fun publishXMLWarning(warning: OPDS12XMLParseWarning) {
+    this.warnings.add(OPDS12ParseWarning(
+      producer = warning.producer,
+      lexical = warning.lexical,
+      message = warning.message,
+      exception = warning.exception))
+  }
 
   private fun publishXMLError(error: OPDS12XMLParseError) {
-    this.errors.add(OPDS12ParseResult.OPDS12ParseError(
+    this.errors.add(OPDS12ParseError(
       producer = error.producer,
       lexical = error.lexical,
       message = error.message,
@@ -59,15 +72,27 @@ internal class OPDS12FeedParser(
       this.xmlProcessor.requireElementIs(this.element, ATOM_URI, "feed")
 
       val baseURI =
-        this.xmlProcessor.optionalAttributeURI(element, "xml:base")
+        this.xmlProcessor.optionalAttributeURI(
+          element = this.element,
+          name = "xml:base",
+          allowInvalid = this.request.configuration.allowInvalidURIs)
+
       val title =
         this.xmlProcessor.optionalElementTextOrEmpty(this.element, ATOM_URI, "title")
       val id =
         this.xmlProcessor.requireElementText(this.element, ATOM_URI, "id")
       val updated =
-        this.xmlProcessor.optionalElementInstant(this.element, ATOM_URI, "updated")
+        this.xmlProcessor.optionalElementInstant(
+          this.element,
+          ATOM_URI,
+          "updated",
+          allowInvalid = this.request.configuration.allowInvalidTimestamps)
       val published =
-        this.xmlProcessor.optionalElementInstant(this.element, ATOM_URI, "published")
+        this.xmlProcessor.optionalElementInstant(
+          element = this.element,
+          namespace = ATOM_URI,
+          name = "published",
+          allowInvalid = this.request.configuration.allowInvalidTimestamps)
       val facetsInOrder =
         listOf<OPDS12Facet>()
       val groupsInOrder =
@@ -77,12 +102,6 @@ internal class OPDS12FeedParser(
         this.xmlProcessor.allChildElementsWithName(this.element, ATOM_URI, "link")
       val linksValues =
         links.mapNotNull(this::linkOf)
-
-      val next = null
-      val termsOfService = null
-      val about = null
-      val licenses = null
-      val privacyPolicy = null
 
       val entries: List<OPDS12FeedEntry> =
         this.xmlProcessor.allChildElementsWithName(this.element, ATOM_URI, "entry")
@@ -94,100 +113,120 @@ internal class OPDS12FeedParser(
        */
 
       if (this.errors.isEmpty()) {
-        return runExtensions(OPDS12Feed(
+        return this.runExtensions(OPDS12Feed(
           id = id!!,
           title = title,
           updated = updated,
           published = published,
-          baseURI = baseURI ?: uri,
-          uri = uri,
+          baseURI = baseURI ?: this.request.uri,
+          uri = this.request.uri,
           links = linksValues,
           entries = entries,
           facetsInOrder = facetsInOrder,
           groupsInOrder = groupsInOrder,
           extensions = listOf()))
       } else {
-        OPDS12ParseResult.OPDS12ParseFailed(this.errors.toList())
+        OPDS12ParseFailed(
+          warnings = this.warnings.toList(),
+          errors = this.errors.toList())
       }
     } catch (e: SAXParseException) {
       val error =
-        OPDS12ParseResult.OPDS12ParseError(
+        OPDS12ParseError(
           producer = this.producerName,
-          lexical = OPDS12LexicalPosition(this.uri, e.lineNumber, e.columnNumber),
+          lexical = OPDS12LexicalPosition(this.request.uri, e.lineNumber, e.columnNumber),
           message = e.message!!,
           exception = e)
 
       this.errors.add(error)
-      OPDS12ParseResult.OPDS12ParseFailed(errors = this.errors.toList())
+      OPDS12ParseFailed(
+        warnings = this.warnings.toList(),
+        errors = this.errors.toList())
     } catch (e: Exception) {
       val error =
-        OPDS12ParseResult.OPDS12ParseError(
+        OPDS12ParseError(
           producer = this.producerName,
-          lexical = OPDS12LexicalPosition(this.uri, -1, -1),
+          lexical = OPDS12LexicalPosition(this.request.uri, -1, -1),
           message = e.message!!,
           exception = e)
 
       this.errors.add(error)
-      OPDS12ParseResult.OPDS12ParseFailed(errors = this.errors.toList())
+      OPDS12ParseFailed(
+        warnings = this.warnings.toList(),
+        errors = this.errors.toList())
     }
   }
 
   private fun runExtensions(feed: OPDS12Feed): OPDS12ParseResult<OPDS12Feed> {
+    val req = this.request
     val context = object : OPDS12FeedExtensionParserContextType {
+      override val configuration: OPDS12FeedParseConfiguration
+        get() = this@OPDS12FeedParser.request.configuration
       override val documentURI: URI
-        get() = uri
+        get() = req.uri
       override val feedWithoutExtensions: OPDS12Feed
         get() = feed
       override val xmlElement: Element
         get() = this@OPDS12FeedParser.element
 
       override fun xmlElementFor(element: OPDS12ElementType): Element? {
-        return elementMap[element]
+        return this@OPDS12FeedParser.elementMap[element]
       }
     }
 
     val extensions =
-      this.extensionParsers
+      this.request.extensionParsers
         .map { provider -> provider.createParser(context) }
         .map { parser -> parser.parse() }
 
     val extensionErrors =
-      extensions.filterIsInstance(OPDS12ParseResult.OPDS12ParseFailed::class.java)
-        .flatMap(OPDS12ParseResult.OPDS12ParseFailed<*>::errors)
+      extensions.filterIsInstance(OPDS12ParseFailed::class.java)
+        .flatMap(OPDS12ParseFailed<*>::errors)
 
     return if (extensionErrors.isEmpty()) {
       val extensionsOK =
         extensions.flatMap(this::extensionValues)
 
-      OPDS12ParseResult.OPDS12ParseSucceeded(feed.copy(extensions = extensionsOK))
+      OPDS12ParseSucceeded(
+        warnings = this.warnings.toList(),
+        result = feed.copy(extensions = extensionsOK))
     } else {
       this.errors.addAll(extensionErrors)
-      OPDS12ParseResult.OPDS12ParseFailed(this.errors.toList())
+      OPDS12ParseFailed(
+        warnings = this.warnings.toList(),
+        errors = this.errors.toList())
     }
   }
 
   private fun extensionValues(
     result: OPDS12ParseResult<List<OPDS12ExtensionValueType>>): List<OPDS12ExtensionValueType> {
     return when (result) {
-      is OPDS12ParseResult.OPDS12ParseSucceeded -> result.result
-      is OPDS12ParseResult.OPDS12ParseFailed -> listOf()
+      is OPDS12ParseSucceeded -> result.result
+      is OPDS12ParseFailed -> listOf()
     }
   }
 
   private fun parseEntry(entry: Element): OPDS12ParseResult<OPDS12FeedEntry> {
-    return this.acquisitionFeedEntryParsers.createParser(
-      uri = this.uri,
-      element = entry,
-      extensionParsers = this.extensionEntryParsers)
+    return this.request.acquisitionFeedEntryParsers.createParser(
+      OPDS12FeedParseRequest(
+        configuration = this.request.configuration,
+        target = OPDS12FeedParseTargetElement(entry),
+        uri = this.request.uri,
+        extensionParsers = this.request.extensionParsers,
+        extensionEntryParsers = this.request.extensionEntryParsers,
+        acquisitionFeedEntryParsers = this.request.acquisitionFeedEntryParsers))
       .parse()
   }
 
   private fun consumeEntryParserResult(
     result: OPDS12ParseResult<OPDS12FeedEntry>): List<OPDS12FeedEntry> {
     return when (result) {
-      is OPDS12ParseResult.OPDS12ParseSucceeded ->
+      is OPDS12ParseSucceeded -> {
+        this.warnings.addAll(result.warnings)
         listOf(result.result)
-      is OPDS12ParseResult.OPDS12ParseFailed -> {
+      }
+      is OPDS12ParseFailed -> {
+        this.warnings.addAll(result.warnings)
         this.errors.addAll(result.errors)
         listOf()
       }
@@ -208,7 +247,10 @@ internal class OPDS12FeedParser(
     val href =
       this.xmlProcessor.requireAttributeURI(element, "href")
     val type =
-      this.xmlProcessor.optionalAttributeMIMEType(element, "type")
+      this.xmlProcessor.optionalAttributeMIMEType(
+        element = element,
+        name = "type",
+        allowInvalid = this.request.configuration.allowInvalidMIMETypes)
     val relation =
       this.xmlProcessor.optionalAttribute(element, "rel")
 

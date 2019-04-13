@@ -1,10 +1,12 @@
 package one.irradia.opds1_2.tests
 
 import one.irradia.opds1_2.api.OPDS12ExtensionValueType
-import one.irradia.opds1_2.api.OPDS12Feed
+import one.irradia.opds1_2.api.OPDS12FeedParseConfiguration
 import one.irradia.opds1_2.api.OPDS12ParseResult
 import one.irradia.opds1_2.lexical.OPDS12LexicalPosition
 import one.irradia.opds1_2.parser.api.OPDS12FeedEntryParserProviderType
+import one.irradia.opds1_2.parser.api.OPDS12FeedParseRequest
+import one.irradia.opds1_2.parser.api.OPDS12FeedParseTarget.OPDS12FeedParseTargetStream
 import one.irradia.opds1_2.parser.api.OPDS12FeedParserProviderType
 import one.irradia.opds1_2.parser.extension.spi.OPDS12FeedEntryExtensionParserContextType
 import one.irradia.opds1_2.parser.extension.spi.OPDS12FeedEntryExtensionParserProviderType
@@ -61,12 +63,12 @@ abstract class OPDS12FeedParserProviderContract {
   @Test
   fun testEmpty() {
     val parser =
-      this.parsers.createParser(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
-        stream = this.resource("empty.xml"),
+        target = OPDS12FeedParseTargetStream(this.resource("empty.xml")),
         acquisitionFeedEntryParsers = this.entryParsers(),
         extensionEntryParsers = listOf(),
-        extensionParsers = listOf())
+        extensionParsers = listOf()))
 
     val result = parser.parse()
     this.dumpParseResult(result)
@@ -82,12 +84,12 @@ abstract class OPDS12FeedParserProviderContract {
   @Test
   fun testOrgArchiveMain20190327() {
     val parser =
-      this.parsers.createParser(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
-        stream = this.resource("feeds/org.archive-main-20190327.xml"),
+        target = OPDS12FeedParseTargetStream(this.resource("feeds/org.archive-main-20190327.xml")),
         acquisitionFeedEntryParsers = this.entryParsers(),
         extensionEntryParsers = listOf(),
-        extensionParsers = listOf())
+        extensionParsers = listOf()))
 
     val result = parser.parse()
     this.dumpParseResult(result)
@@ -101,12 +103,12 @@ abstract class OPDS12FeedParserProviderContract {
   @Test
   fun testOrgLibrarySimplifiedMain20190327() {
     val parser =
-      this.parsers.createParser(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
-        stream = this.resource("feeds/org.librarysimplified-main-20190327.xml"),
+        target = OPDS12FeedParseTargetStream(this.resource("feeds/org.librarysimplified-main-20190327.xml")),
         acquisitionFeedEntryParsers = this.entryParsers(),
         extensionEntryParsers = listOf(),
-        extensionParsers = listOf())
+        extensionParsers = listOf()))
 
     val result = parser.parse()
     this.dumpParseResult(result)
@@ -121,12 +123,12 @@ abstract class OPDS12FeedParserProviderContract {
   @Test
   fun testBadEntries0() {
     val parser =
-      this.parsers.createParser(
+      this.parsers.createParser(OPDS12FeedParseRequest(
         uri = URI.create("urn:test"),
-        stream = this.resource("feeds/feed-bad-entries-0.xml"),
+        target = OPDS12FeedParseTargetStream(this.resource("feeds/feed-bad-entries-0.xml")),
         acquisitionFeedEntryParsers = this.entryParsers(),
         extensionEntryParsers = listOf(),
-        extensionParsers = listOf())
+        extensionParsers = listOf()))
 
     val result = parser.parse()
     this.dumpParseResult(result)
@@ -135,6 +137,165 @@ abstract class OPDS12FeedParserProviderContract {
 
     failure.errors.forEach { error ->
       Assert.assertThat(error.message, StringContains("'id'"))
+    }
+  }
+
+  @Test
+  fun testOptionalURIWarning0() {
+    val parser =
+      this.parsers.createParser(OPDS12FeedParseRequest(
+        configuration = OPDS12FeedParseConfiguration(
+          allowInvalidIntegers = false,
+          allowInvalidMIMETypes = false,
+          allowInvalidTimestamps = false,
+          allowInvalidURIs = true
+        ),
+        uri = URI.create("urn:test"),
+        target = OPDS12FeedParseTargetStream(this.resource("optional-uri-warning-0.xml")),
+        acquisitionFeedEntryParsers = this.entryParsers(),
+        extensionEntryParsers = listOf(),
+        extensionParsers = listOf()))
+
+    val result = parser.parse()
+    this.dumpParseResult(result)
+    val success = result as OPDS12ParseResult.OPDS12ParseSucceeded
+
+    Assert.assertEquals(1, success.warnings.size)
+
+    val feed = success.result
+    Assert.assertEquals("urn:test", feed.baseURI.toString())
+    Assert.assertThat( success.warnings[0].message, StringContains("Malformed URI"))
+  }
+
+  @Test
+  fun testOptionalURIError0() {
+    val parser =
+      this.parsers.createParser(OPDS12FeedParseRequest(
+        configuration = OPDS12FeedParseConfiguration(
+          allowInvalidIntegers = false,
+          allowInvalidMIMETypes = false,
+          allowInvalidTimestamps = false,
+          allowInvalidURIs = false
+        ),
+        uri = URI.create("urn:test"),
+        target = OPDS12FeedParseTargetStream(this.resource("optional-uri-warning-0.xml")),
+        acquisitionFeedEntryParsers = this.entryParsers(),
+        extensionEntryParsers = listOf(),
+        extensionParsers = listOf()))
+
+    val result = parser.parse()
+    this.dumpParseResult(result)
+    val failure = result as OPDS12ParseResult.OPDS12ParseFailed
+    Assert.assertEquals(1, failure.errors.size)
+
+    failure.errors.forEach { error ->
+      Assert.assertThat(error.message, StringContains("Malformed URI"))
+    }
+  }
+
+  @Test
+  fun testOptionalMIMEWarning0() {
+    val parser =
+      this.parsers.createParser(OPDS12FeedParseRequest(
+        configuration = OPDS12FeedParseConfiguration(
+          allowInvalidIntegers = false,
+          allowInvalidMIMETypes = true,
+          allowInvalidTimestamps = false,
+          allowInvalidURIs = false
+        ),
+        uri = URI.create("urn:test"),
+        target = OPDS12FeedParseTargetStream(this.resource("optional-mime-warning-0.xml")),
+        acquisitionFeedEntryParsers = this.entryParsers(),
+        extensionEntryParsers = listOf(),
+        extensionParsers = listOf()))
+
+    val result = parser.parse()
+    this.dumpParseResult(result)
+    val success = result as OPDS12ParseResult.OPDS12ParseSucceeded
+
+    Assert.assertEquals(1, success.warnings.size)
+
+    val feed = success.result
+    Assert.assertEquals("urn:test", feed.baseURI.toString())
+    Assert.assertThat( success.warnings[0].message, StringContains("Malformed MIME"))
+  }
+
+  @Test
+  fun testOptionalMIMEError0() {
+    val parser =
+      this.parsers.createParser(OPDS12FeedParseRequest(
+        configuration = OPDS12FeedParseConfiguration(
+          allowInvalidIntegers = false,
+          allowInvalidMIMETypes = false,
+          allowInvalidTimestamps = false,
+          allowInvalidURIs = false
+        ),
+        uri = URI.create("urn:test"),
+        target = OPDS12FeedParseTargetStream(this.resource("optional-mime-warning-0.xml")),
+        acquisitionFeedEntryParsers = this.entryParsers(),
+        extensionEntryParsers = listOf(),
+        extensionParsers = listOf()))
+
+    val result = parser.parse()
+    this.dumpParseResult(result)
+    val failure = result as OPDS12ParseResult.OPDS12ParseFailed
+    Assert.assertEquals(1, failure.errors.size)
+
+    failure.errors.forEach { error ->
+      Assert.assertThat(error.message, StringContains("Malformed MIME"))
+    }
+  }
+
+  @Test
+  fun testOptionalInstantWarning0() {
+    val parser =
+      this.parsers.createParser(OPDS12FeedParseRequest(
+        configuration = OPDS12FeedParseConfiguration(
+          allowInvalidIntegers = false,
+          allowInvalidMIMETypes = false,
+          allowInvalidTimestamps = true,
+          allowInvalidURIs = false
+        ),
+        uri = URI.create("urn:test"),
+        target = OPDS12FeedParseTargetStream(this.resource("optional-timestamp-warning-0.xml")),
+        acquisitionFeedEntryParsers = this.entryParsers(),
+        extensionEntryParsers = listOf(),
+        extensionParsers = listOf()))
+
+    val result = parser.parse()
+    this.dumpParseResult(result)
+    val success = result as OPDS12ParseResult.OPDS12ParseSucceeded
+
+    Assert.assertEquals(1, success.warnings.size)
+
+    val feed = success.result
+    Assert.assertEquals("urn:test", feed.baseURI.toString())
+    Assert.assertThat( success.warnings[0].message, StringContains("Malformed time"))
+  }
+
+  @Test
+  fun testOptionalInstantError0() {
+    val parser =
+      this.parsers.createParser(OPDS12FeedParseRequest(
+        configuration = OPDS12FeedParseConfiguration(
+          allowInvalidIntegers = false,
+          allowInvalidMIMETypes = false,
+          allowInvalidTimestamps = false,
+          allowInvalidURIs = false
+        ),
+        uri = URI.create("urn:test"),
+        target = OPDS12FeedParseTargetStream(this.resource("optional-timestamp-warning-0.xml")),
+        acquisitionFeedEntryParsers = this.entryParsers(),
+        extensionEntryParsers = listOf(),
+        extensionParsers = listOf()))
+
+    val result = parser.parse()
+    this.dumpParseResult(result)
+    val failure = result as OPDS12ParseResult.OPDS12ParseFailed
+    Assert.assertEquals(1, failure.errors.size)
+
+    failure.errors.forEach { error ->
+      Assert.assertThat(error.message, StringContains("Malformed time"))
     }
   }
 

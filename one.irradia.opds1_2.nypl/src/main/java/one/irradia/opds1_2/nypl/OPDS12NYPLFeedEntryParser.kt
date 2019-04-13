@@ -2,7 +2,10 @@ package one.irradia.opds1_2.nypl
 
 import one.irradia.opds1_2.api.OPDS12ExtensionValueType
 import one.irradia.opds1_2.api.OPDS12ParseResult
+import one.irradia.opds1_2.api.OPDS12ParseResult.OPDS12ParseFailed
+import one.irradia.opds1_2.api.OPDS12ParseResult.OPDS12ParseSucceeded
 import one.irradia.opds1_2.commons.OPDS12XMLParseError
+import one.irradia.opds1_2.commons.OPDS12XMLParseWarning
 import one.irradia.opds1_2.commons.OPDS12XMLProcessor
 import one.irradia.opds1_2.parser.extension.spi.OPDS12FeedEntryExtensionParserContextType
 import one.irradia.opds1_2.parser.extension.spi.OPDS12FeedEntryExtensionParserType
@@ -17,6 +20,7 @@ internal class OPDS12NYPLFeedEntryParser(
   private val context: OPDS12FeedEntryExtensionParserContextType)
   : OPDS12FeedEntryExtensionParserType {
 
+  private val warnings = mutableListOf<OPDS12ParseResult.OPDS12ParseWarning>()
   private val errors = mutableListOf<OPDS12ParseResult.OPDS12ParseError>()
   private val values = mutableListOf<OPDS12ExtensionValueType>()
 
@@ -27,8 +31,17 @@ internal class OPDS12NYPLFeedEntryParser(
     OPDS12XMLProcessor(
       currentDocument = this.context.documentURI,
       producer = producerName,
-      errors = this::publishXMLError)
+      errors = this::publishXMLError,
+      warnings = this::publishXMLWarning)
 
+  private fun publishXMLWarning(warning: OPDS12XMLParseWarning) {
+    this.warnings.add(OPDS12ParseResult.OPDS12ParseWarning(
+      producer = warning.producer,
+      lexical = warning.lexical,
+      message = warning.message,
+      exception = warning.exception))
+  }
+  
   private fun publishXMLError(error: OPDS12XMLParseError) {
     this.errors.add(OPDS12ParseResult.OPDS12ParseError(
       producer = error.producer,
@@ -43,15 +56,23 @@ internal class OPDS12NYPLFeedEntryParser(
       val element = this.context.xmlElementFor(acquisition)
       if (element != null) {
         val availability =
-          OPDS12AvailabilityInference.availabilityOf(element, this.xmlProcessor, acquisition)
+          OPDS12AvailabilityInference.availabilityOf(
+            element = element,
+            configuration = this.context.configuration,
+            xmlProcessor = this.xmlProcessor,
+            acquisition = acquisition)
         this.values.add(availability)
       }
     }
 
     return if (this.errors.isEmpty()) {
-      OPDS12ParseResult.OPDS12ParseSucceeded(this.values.toList())
+      OPDS12ParseSucceeded(
+        warnings = this.warnings.toList(),
+        result = this.values.toList())
     } else {
-      OPDS12ParseResult.OPDS12ParseFailed(this.errors.toList())
+      OPDS12ParseFailed(
+        warnings = this.warnings.toList(),
+        errors = this.errors.toList())
     }
   }
 }
