@@ -18,3 +18,7 @@ dependencies {
   api project(":one.irradia.opds1_2.api")
   api project(":one.irradia.opds1_2.parser.extension.spi")
 }
+
+configurations {
+  compileOnly.extendsFrom dependencyOSGiBundleAnnotation
+}

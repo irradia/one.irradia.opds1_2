@@ -27,6 +27,8 @@ configurations {
   api.extendsFrom dependencySLF4J
   api.extendsFrom dependencyIrradiaMimeImpl
 
+  compileOnly.extendsFrom dependencyOSGiBundleAnnotation
+
   implementation.extendsFrom dependencyKotlinStdlib
 
   testImplementation.extendsFrom dependencyLogback
