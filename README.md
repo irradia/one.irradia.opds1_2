@@ -21,10 +21,11 @@ one.irradia.opds1_2
 
 ## Building
 
-Install the Android SDK.
+Install the Android SDK. The package has no dependencies on the Android API
+and is therefore usable in non-Android projects.
 
 ```
-$ ./gradlew clean assembleDebug test
+$ ./gradlew clean assemble test
 ```
 
 If the above fails, it's a bug. Report it!
@@ -122,7 +123,7 @@ Consult the documentation for each extension parser to see what types of values 
 Releases are published to Maven Central with the following invocation:
 
 ```
-$ ./gradlew clean assembleDebug publish closeAndReleaseRepository
+$ ./gradlew clean assemble publish closeAndReleaseRepository
 ```
 
 Consult the documentation for the [Gradle Signing plugin](https://docs.gradle.org/current/userguide/signing_plugin.html)
