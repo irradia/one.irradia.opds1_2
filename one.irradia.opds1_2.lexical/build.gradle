@@ -16,5 +16,7 @@
 
 configurations {
   api.extendsFrom dependencyKotlinStdlib
+
+  compileOnly.extendsFrom dependencyOSGiBundleAnnotation
 }
 

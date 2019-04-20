@@ -17,3 +17,7 @@
 dependencies {
   api project(":one.irradia.opds1_2.api")
 }
+
+configurations {
+  compileOnly.extendsFrom dependencyOSGiBundleAnnotation
+}

@@ -17,6 +17,8 @@
 configurations {
   implementation.extendsFrom dependencyIrradiaMimeImpl
   implementation.extendsFrom dependencySLF4J
+
+  compileOnly.extendsFrom dependencyOSGiBundleAnnotation
 }
 
 dependencies {

@@ -18,6 +18,7 @@ one.irradia.opds1_2
 * Parsed feeds exposed as immutable and persistent data types for correctness and thread-safety
 * ISC license
 * High coverage automated test suite
+* [OSGi](http://www.osgi.org)-ready
 
 ## Building
 

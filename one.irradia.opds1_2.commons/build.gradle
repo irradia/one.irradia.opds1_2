@@ -19,6 +19,8 @@ configurations {
   api.extendsFrom dependencyJodaTime
   api.extendsFrom dependencyIrradiaMimeAPI
   api.extendsFrom dependencyIrradiaMimeImpl
+
+  compileOnly.extendsFrom dependencyOSGiBundleAnnotation
 }
 
 dependencies {
