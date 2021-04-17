@@ -256,7 +256,7 @@ Automatic-Module-Name: ${POM_AUTOMATIC_MODULE_NAME}
             "${VERSION_NAME_PREVIOUS}",
             "--ignoreMissingOld",
             "--newJar",
-            "${buildDir}/outputs/${POM_PACKAGING}/${POM_ARTIFACT_ID}.${POM_PACKAGING}",
+            "${buildDir}/outputs/${POM_PACKAGING}/${POM_ARTIFACT_ID}-debug.${POM_PACKAGING}",
             "--newJarVersion",
             "${VERSION_NAME}",
             "--textReport",
