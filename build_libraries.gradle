@@ -14,6 +14,8 @@
  * IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
+ext.kotlin_version = "1.4.20"
+
 ext.libraries = [
   KotlinReflect           : "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version",
   KotlinStdlib            : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
