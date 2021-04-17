@@ -14,9 +14,9 @@
  * IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-configurations {
-  api.extendsFrom dependencyKotlinStdlib
+dependencies {
+  api libraries.KotlinStdlib
 
-  compileOnly.extendsFrom dependencyOSGiBundleAnnotation
+  compileOnly libraries.OSGiBundleAnnotation
 }
 

@@ -14,15 +14,13 @@
  * IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-configurations {
-  implementation.extendsFrom dependencyKotlinStdlib
-  androidTestImplementation.extendsFrom dependencyAndroidSupportTestRules
-  androidTestImplementation.extendsFrom dependencyAndroidSupportTestRunner
-  androidTestUtil.extendsFrom dependencyAndroidTestOrchestrator
-}
-
 dependencies {
   implementation project(':one.irradia.opds1_2.tests')
+
+  implementation libraries.KotlinStdlib
+  androidTestImplementation libraries.AndroidSupportTestRules
+  androidTestImplementation libraries.AndroidSupportTestRunner
+  androidTestUtil libraries.AndroidTestOrchestrator
 }
 
 /*

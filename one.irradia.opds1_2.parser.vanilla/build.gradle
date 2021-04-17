@@ -14,14 +14,12 @@
  * IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-configurations {
-  implementation.extendsFrom dependencyIrradiaMimeImpl
-  implementation.extendsFrom dependencySLF4J
-
-  compileOnly.extendsFrom dependencyOSGiBundleAnnotation
-}
-
 dependencies {
   api project(":one.irradia.opds1_2.parser.api")
   api project(":one.irradia.opds1_2.commons")
+
+  implementation libraries.IrradiaMimeImpl
+  implementation libraries.SLF4J
+
+  compileOnly libraries.OSGiBundleAnnotation
 }

@@ -1,5 +1,5 @@
 /*
- * Copyright © 2019 <code@irradia.one> http://www.irradia.one
+ * Copyright © 2021 <code@irradia.one> http://www.irradia.one
  *
  * Permission to use, copy, modify, and/or distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -14,29 +14,34 @@
  * IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-dependencies {
-  api project(":one.irradia.opds1_2.api")
-  api project(":one.irradia.opds1_2.dublin")
-  api project(":one.irradia.opds1_2.nypl")
-  api project(":one.irradia.opds1_2.parser.api")
-  api project(":one.irradia.opds1_2.parser.vanilla")
-
-  api libraries.JUnit
-  api libraries.SLF4J
-  api libraries.IrradiaMimeImpl
-
-  compileOnly libraries.OSGiBundleAnnotation
-
-  implementation libraries.KotlinStdlib
-
-  testImplementation libraries.Logback
+repositories {
+  jcenter()
 }
 
-/*
- * Log unit test executions.
- */
+configurations {
+  ktlint
+}
 
-tasks.matching {it instanceof Test}.all {
-  testLogging.events = ["failed", "passed", "skipped"]
-  testLogging.exceptionFormat = "full"
+dependencies {
+  ktlint "com.pinterest:ktlint:0.40.0"
+}
+
+task ktlint(type: JavaExec, group: "quality") {
+  description = "Check Kotlin code style."
+  classpath = configurations.ktlint
+  main = "com.pinterest.ktlint.Main"
+  args "src/**/*.kt"
+}
+
+task ktlintFormat(type: JavaExec, group: "quality") {
+  description = "Fix Kotlin code style deviations."
+  classpath = configurations.ktlint
+  main = "com.pinterest.ktlint.Main"
+  args "-F", "src/**/*.kt"
+}
+
+afterEvaluate {
+  tasks.withType(Test) {
+    dependsOn 'ktlint'
+  }
 }

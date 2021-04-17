@@ -18,11 +18,9 @@ dependencies {
   api project(":one.irradia.opds1_2.api")
   api project(":one.irradia.opds1_2.parser.extension.spi")
   api project(":one.irradia.opds1_2.commons")
-}
 
-configurations {
-  implementation.extendsFrom dependencyIrradiaMimeImpl
-  implementation.extendsFrom dependencySLF4J
+  implementation libraries.IrradiaMimeImpl
+  implementation libraries.SLF4J
 
-  compileOnly.extendsFrom dependencyOSGiBundleAnnotation
+  compileOnly libraries.OSGiBundleAnnotation
 }
