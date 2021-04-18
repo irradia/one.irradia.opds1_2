@@ -16,6 +16,7 @@
 
 dependencies {
   api libraries.KotlinStdlib
+  api libraries.KotlinReflect
 
   compileOnly libraries.OSGiBundleAnnotation
 }

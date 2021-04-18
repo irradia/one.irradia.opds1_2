@@ -76,6 +76,17 @@ apply plugin: "de.undercouch.download"
 allprojects {
   group = project.ext["GROUP"]
   version = project.ext["VERSION_NAME"]
+
+  repositories {
+    mavenLocal()
+    mavenCentral()
+    maven {
+      name "Sonatype Snapshots"
+      url "https://oss.sonatype.org/content/repositories/snapshots/"
+    }
+    jcenter()
+    google()
+  }
 }
 
 subprojects { project ->
@@ -111,6 +122,11 @@ subprojects { project ->
       apply plugin: "java"
       apply plugin: "java-library"
       apply plugin: "kotlin"
+
+      java {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+      }
 
       /*
        * Apply the Animal Sniffer plugin to check that code is Android compatible.
@@ -345,13 +361,16 @@ Automatic-Module-Name: ${POM_AUTOMATIC_MODULE_NAME}
         }
       }
 
-      maven {
-        def releasesRepoUrl = "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
-        def snapshotsRepoUrl = "https://oss.sonatype.org/content/repositories/snapshots/"
-        url = version.endsWith("SNAPSHOT") ? snapshotsRepoUrl : releasesRepoUrl
-        credentials(PasswordCredentials) {
-          username mavenCentralUsername
-          password mavenCentralPassword
+      if ("${VERSION_NAME}".endsWith("-SNAPSHOT")) {
+        logger.info("enabling Sonatype Snapshots publishing repository")
+
+        maven {
+          name = "centralSnapshots"
+          url = "https://oss.sonatype.org/content/repositories/snapshots/"
+          credentials(PasswordCredentials) {
+            username mavenCentralUsername
+            password mavenCentralPassword
+          }
         }
       }
     }
@@ -360,12 +379,6 @@ Automatic-Module-Name: ${POM_AUTOMATIC_MODULE_NAME}
   signing {
     useGpgCmd()
     sign publishing.publications.basicJar
-  }
-
-  repositories {
-    mavenCentral()
-    jcenter()
-    google()
   }
 }
 

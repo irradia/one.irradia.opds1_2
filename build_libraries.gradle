@@ -16,18 +16,22 @@
 
 ext.kotlin_version = "1.4.20"
 
+ext.versions = [
+  irradia_mime          : "1.1.1",
+  junit                 : "4.13.2",
+  joda_time             : "2.10.10",
+  osgi_bundle_annotation: "1.0.0"
+]
+
 ext.libraries = [
-  KotlinReflect           : "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version",
-  KotlinStdlib            : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
-  OSGiBundleAnnotation    : "org.osgi:org.osgi.annotation.bundle:1.0.0",
-  JUnit                   : "junit:junit:4.12",
-  AndroidSupportTestRules : "com.android.support.test:rules:1.0.2",
-  AndroidSupportTestRunner: "com.android.support.test:runner:1.0.2",
-  AndroidTestOrchestrator : "com.android.support.test:orchestrator:1.0.2",
-  JodaTime                : "joda-time:joda-time:2.10.1",
-  IrradiaMimeAPI          : "one.irradia.mime:one.irradia.mime.api:0.0.6",
-  IrradiaMimeImpl         : "one.irradia.mime:one.irradia.mime.vanilla:0.0.6",
-  GoogleGuava             : "com.google.guava:guava:27.1-android",
-  SLF4J                   : "org.slf4j:slf4j-api:1.8.0-beta4",
-  Logback                 : "ch.qos.logback:logback-classic:1.3.0-alpha4",
+  KotlinReflect       : "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version",
+  KotlinStdlib        : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
+  OSGiBundleAnnotation: "org.osgi:org.osgi.annotation.bundle:${versions.osgi_bundle_annotation}",
+  JUnit               : "junit:junit:${versions.junit}",
+  JodaTime            : "joda-time:joda-time:${versions.joda_time}",
+  IrradiaMimeAPI      : "one.irradia.mime:one.irradia.mime.api:${versions.irradia_mime}",
+  IrradiaMimeImpl     : "one.irradia.mime:one.irradia.mime.vanilla:${versions.irradia_mime}",
+  GoogleGuava         : "com.google.guava:guava:27.1-android",
+  SLF4J               : "org.slf4j:slf4j-api:1.8.0-beta4",
+  Logback             : "ch.qos.logback:logback-classic:1.3.0-alpha4",
 ]

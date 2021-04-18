@@ -18,6 +18,7 @@ dependencies {
   api project(":one.irradia.opds1_2.lexical")
 
   api libraries.KotlinStdlib
+  api libraries.KotlinReflect
   api libraries.JodaTime
   api libraries.IrradiaMimeAPI
   api libraries.IrradiaMimeImpl
